@@ -8,4 +8,6 @@ package com.lp.file_demo.globe;
 public class InfoGlobe {
     public final static String EXPORT_INFO = "####################excel表格导出成功####################";
 
+    public final static String IMPORT_INFO = "####################excel表格导入成功####################";
+
 }

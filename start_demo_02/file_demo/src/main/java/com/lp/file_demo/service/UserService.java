@@ -4,11 +4,13 @@ import com.lp.file_demo.entity.User;
 import com.lp.file_demo.entity.pojo.BaseExportData;
 import com.lp.file_demo.entity.pojo.BaseImportData;
 import com.lp.file_demo.files.excel.export.UserExportExcel;
+import com.lp.file_demo.files.excel.imports.UserImportExcel;
 import com.lp.file_demo.globe.ExceptionGlobe;
 import com.lp.file_demo.globe.InfoGlobe;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -20,6 +22,7 @@ import java.util.List;
 public class UserService {
     private final static Logger logger = Logger.getLogger(UserService.class);
     UserExportExcel userExportExcel = new UserExportExcel();
+    UserImportExcel userImportExcel = new UserImportExcel();
 
     // user导出excel表格
     public boolean exportExcel(BaseExportData<User> baseExportData) throws Exception {
@@ -38,8 +41,19 @@ public class UserService {
         return res;
     }
 
-    // todo excel表格导入user
-    public List<User> importExcel(BaseImportData baseImportData){
-        return null;
+    // excel表格导入user
+    public List<User> importExcel(BaseImportData baseImportData) throws Exception {
+        List<User> users = null;
+        String xlsName = baseImportData.getXslName();
+        String sheetName = baseImportData.getSheetName();
+        try {
+            users = userImportExcel.imports(xlsName, sheetName);
+            logger.info(InfoGlobe.IMPORT_INFO);
+            logger.debug("【表格】=>"+xlsName+"【sheet】=>"+sheetName);
+        }catch (Exception e){
+            e.printStackTrace();
+            throw new Exception(ExceptionGlobe.IMPORT_DEFAULT);
+        }
+        return users;
     }
 }

@@ -16,4 +16,6 @@ public class ExceptionGlobe {
     public static String USER_NO_LOGIN = "用户未登录";
 
     public static String EXPORT_DEFAULT = "excel表格导出失败";
+
+    public static String IMPORT_DEFAULT = "excel表格导入失败";
 }

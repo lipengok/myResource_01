@@ -2,7 +2,7 @@ package com.lp.file_demo.controller;
 
 import com.lp.file_demo.entity.User;
 import com.lp.file_demo.entity.pojo.BaseExportData;
-import com.lp.file_demo.entity.pojo.ExportData;
+import com.lp.file_demo.entity.pojo.BaseImportData;
 import com.lp.file_demo.enums.CodeEnum;
 import com.lp.file_demo.enums.MsgEnum;
 import com.lp.file_demo.modle.response.BaseResponse;
@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 /**
  * @Author lipeng
@@ -32,6 +34,12 @@ public class UserController {
         }else {
             return new BaseResponse(MsgEnum.EXPORT_DEFAULT.value(), CodeEnum.COMMON_DEFAULT_CODE.value(), null);
         }
+    }
+
+    @PostMapping("/import")
+    public BaseResponse importStu(@RequestBody BaseImportData baseImportData) throws Exception {
+        List<User> list = userService.importExcel(baseImportData);
+        return new BaseResponse(MsgEnum.IMPORT_SUCCESS.value(), CodeEnum.COMMON_SUCCESS_CODE.value(), list);
     }
 
 }
