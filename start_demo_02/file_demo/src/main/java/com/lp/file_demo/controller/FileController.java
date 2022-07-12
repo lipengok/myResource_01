@@ -5,11 +5,12 @@ import com.lp.file_demo.enums.CodeEnum;
 import com.lp.file_demo.enums.MsgEnum;
 import com.lp.file_demo.modle.response.BaseResponse;
 import com.lp.file_demo.service.StudentService;
+import com.lp.file_demo.service.UploadService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * @Author lipeng
@@ -22,11 +23,25 @@ public class FileController {
     @Autowired
     private StudentService studentService;
 
-    // 上传文件
+    @Autowired
+    private UploadService uploadService;
 
-    // 下载文件
+    // todo 上传文件
+    @PostMapping("/upload/server")
+    public BaseResponse upload(@RequestParam("file") MultipartFile file) throws Exception {
+        boolean res = uploadService.uploadServer(file);
+        if (res){
+            return new BaseResponse(MsgEnum.UPLOAD_SUCCESS.value(), CodeEnum.COMMON_SUCCESS_CODE.value(), file.getName());
+        }else {
+            return new BaseResponse(MsgEnum.UPLOAD_DEFAULT.value(), CodeEnum.COMMON_DEFAULT_CODE.value(), null);
+        }
+    }
 
-    // excel导入
+    // todo 下载文件
+    @GetMapping("/download/{name}")
+    public BaseResponse download(@PathVariable String name, HttpServletResponse response){
+        return null;
+    }
 
     // excel导出
     @PostMapping("/export")

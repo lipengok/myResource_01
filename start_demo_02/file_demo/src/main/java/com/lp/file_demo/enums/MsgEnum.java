@@ -21,6 +21,9 @@ public enum MsgEnum {
     IMPORT_SUCCESS("导入成功"),
     IMPORT_DEFAULT("导入失败"),
 
+    UPLOAD_SUCCESS("上传成功"),
+    UPLOAD_DEFAULT("上传失败"),
+
     SELECT_SUCCESS("查询成功"),
     SELECT_DEFAULT("查询失败");
 

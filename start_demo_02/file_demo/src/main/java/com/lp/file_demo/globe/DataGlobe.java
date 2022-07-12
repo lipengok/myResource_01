@@ -19,4 +19,8 @@ public class DataGlobe {
 
     // user的工作簿对象
     public static HSSFWorkbook wkUser = null;
+
+    // 文件上传到服务器的根目录
+    public static final String uploadPath = "uploads";
+
 }
