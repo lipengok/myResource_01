@@ -16,9 +16,9 @@ import java.io.IOException;
  */
 public class FileUpload {
 
-    // todo 文件上传到oss
+    // todo 文件上传到oss-仅上传图片
 
-    // todo 文件上传到数据库
+    // todo 文件上传到数据库-仅上传内容较小的纯文本
 
     // 文件上传到服务器
     public boolean serverUpload(MultipartFile file) throws Exception {
