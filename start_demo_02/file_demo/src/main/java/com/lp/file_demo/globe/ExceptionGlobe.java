@@ -26,4 +26,6 @@ public class ExceptionGlobe {
     public static final String FILE_HAVE_EXCEPTION = "上传的日志文件已存在";
 
     public static final String FILE_UPLOAD_EXCEPTION =  "上传文件失败";
+
+    public static final String FILE_MUST_IMAGE = "上传的文件必须是图片";
 }
