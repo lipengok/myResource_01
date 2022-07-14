@@ -1,10 +1,12 @@
-package com.lp.netty_demo.netty.client;
+package com.lp.netty_demo.handlers.channel;
 
+import com.lp.netty_demo.globe.LogInfoGlobe;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.util.ReferenceCountUtil;
+import org.apache.log4j.Logger;
 
 /**
  * @Author lipeng
@@ -12,17 +14,20 @@ import io.netty.util.ReferenceCountUtil;
  * @Version 1.0
  */
 public class ClientHandler extends ChannelHandlerAdapter {
+
+    private static final Logger logger = Logger.getLogger(ServerHandler.class);
+
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         for (int i = 0; i < 5; i++) {
             ctx.channel().writeAndFlush(Unpooled.wrappedBuffer("client => server".getBytes()));
-            System.out.println("客户端向服务端发送消息"+i);
             Thread.sleep(1000*5);
         }
     }
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+        logger.info(LogInfoGlobe.GET_SERVER_REQUEST);
         try {
             ByteBuf buf = (ByteBuf) msg;
             byte[] req = new byte[buf.readableBytes()];

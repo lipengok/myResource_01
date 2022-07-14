@@ -1,5 +1,6 @@
 package com.lp.netty_demo.service;
 
+import com.lp.netty_demo.entity.User;
 import com.lp.netty_demo.netty.second.client.SecondClient;
 import com.lp.netty_demo.netty.second.server.SecondServer;
 import io.netty.channel.ChannelHandler;

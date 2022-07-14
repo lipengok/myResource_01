@@ -1,5 +1,6 @@
 package com.lp.netty_demo.modle.pojo;
 
+import com.lp.netty_demo.modle.user.netty.UserClientModel;
 import lombok.Data;
 
 /**
@@ -11,4 +12,5 @@ import lombok.Data;
 public class DataClient {
     private String host;
     private int port;
+    private UserClientModel userClientModel;
 }

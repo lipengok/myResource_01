@@ -3,9 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.lp</groupId>
-    <artifactId>netty_demo</artifactId>
+    <artifactId>listener_demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>netty_demo</name>
+    <name>listener_demo</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -36,24 +36,6 @@
                     <artifactId>junit-vintage-engine</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
-        <!--netty-->
-        <dependency>
-            <groupId>io.netty</groupId>
-            <artifactId>netty-all</artifactId>
-            <version>5.0.0.Alpha2</version>
-        </dependency>
-        <!--log4j-->
-        <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.17</version>
-        </dependency>
-        <!--jackson-->
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-core</artifactId>
-            <version>2.12.7</version>
         </dependency>
     </dependencies>
 
@@ -86,7 +68,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.3.7.RELEASE</version>
                 <configuration>
-                    <mainClass>com.lp.netty_demo.NettyDemoApplication</mainClass>
+                    <mainClass>com.lp.listener_demo.ListenerDemoApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

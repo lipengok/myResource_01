@@ -1,9 +1,11 @@
-package com.lp.netty_demo.netty.server;
+package com.lp.netty_demo.handlers.channel;
 
+import com.lp.netty_demo.globe.LogInfoGlobe;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
+import org.apache.log4j.Logger;
 
 /**
  * @Author lipeng
@@ -11,10 +13,11 @@ import io.netty.channel.ChannelHandlerContext;
  * @Version 1.0
  */
 public class ServerHandler extends ChannelHandlerAdapter {
+    private static final Logger logger = Logger.getLogger(ServerHandler.class);
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
-        System.out.println("服务端接收客户端发送的消息");
+        logger.info(LogInfoGlobe.GET_CLIENT_REQUEST);
     }
 
     @Override

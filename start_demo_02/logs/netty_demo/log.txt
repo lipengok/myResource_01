@@ -1,0 +1,93 @@
+[INFO ] 2022-07-14 14:52:28,067(0) --> [nioEventLoopGroup-1-0] com.lp.netty_demo.handlers.channel.ServerHandler.channelActive(ServerHandler.java:20): **********服务器开始接收到用户发送的请求**********  
+[INFO ] 2022-07-14 14:52:53,108(0) --> [nioEventLoopGroup-0-0] com.lp.netty_demo.handlers.channel.ClientHandler.channelRead(ClientHandler.java:30): **********用户开始接收到服务器发送的请求**********  
+[INFO ] 2022-07-14 14:59:22,444(0) --> [nioEventLoopGroup-0-0] com.lp.netty_demo.handlers.channel.user.UserClientHandler.channelActive(UserClientHandler.java:35): **********用户开始向服务器发送请求**********  
+[DEBUG] 2022-07-14 14:59:47,613(25169) --> [nioEventLoopGroup-0-0] com.lp.netty_demo.handlers.channel.user.UserClientHandler.channelActive(UserClientHandler.java:41): 【发出请求的服务器，发出请求】Request => 
+{"user":{"id":90900,"name":"jack","classes":"大一 计算机科学与技术 二班","school":"蚌埠学院"},"date":1657781958442,"clientIp":"192.168.141.1","request":{"id":90900,"name":"jack","classes":"大一 计算机科学与技术 二班","school":"蚌埠学院"}}  
+[INFO ] 2022-07-14 15:03:55,879(0) --> [nioEventLoopGroup-0-0] com.lp.netty_demo.handlers.channel.user.UserClientHandler.channelActive(UserClientHandler.java:35): **********用户开始向服务器发送请求**********  
+[DEBUG] 2022-07-14 15:04:21,018(25139) --> [nioEventLoopGroup-0-0] com.lp.netty_demo.handlers.channel.user.UserClientHandler.channelActive(UserClientHandler.java:41): 【发出请求的服务器，发出请求】Request => 
+{"user":{"id":90900,"name":"jack","classes":"大一 计算机科学与技术 二班","school":"蚌埠学院"},"date":1657782232189,"clientIp":"192.168.141.1","request":{"id":90900,"name":"jack","classes":"大一 计算机科学与技术 二班","school":"蚌埠学院"}}  
+[INFO ] 2022-07-14 15:08:24,006(0) --> [nioEventLoopGroup-0-0] com.lp.netty_demo.handlers.channel.user.UserClientHandler.channelActive(UserClientHandler.java:35): **********用户开始向服务器发送请求**********  
+[INFO ] 2022-07-14 15:08:24,170(0) --> [nioEventLoopGroup-1-0] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:39): **********服务器开始接收到用户发送的请求**********  
+[DEBUG] 2022-07-14 15:08:24,174(4) --> [nioEventLoopGroup-1-0] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:44): 【做出响应的服务器，接收请求】Receive => 
+{"user":{"id":90900,"name":"jack","classes":"大一 计算机科学与技术 二班","school":"蚌埠学院"},"date":1657782500104,"clientIp":"192.168.141.1","request":{"id":90900,"name":"jack","classes":"大一 计算机科学与技术 二班","school":"蚌埠学院"}}  
+[INFO ] 2022-07-14 15:08:24,174(4) --> [nioEventLoopGroup-1-0] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:46): **********服务器回复用户**********  
+[DEBUG] 2022-07-14 15:08:26,956(2786) --> [nioEventLoopGroup-1-0] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:57): 【做出响应的服务器，发出响应】Send => 
+{"date":1657782504175,"serverIp":"192.168.141.1","response":true}  
+[INFO ] 2022-07-14 15:08:26,956(2786) --> [nioEventLoopGroup-1-0] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelReadComplete(UserServerHandler.java:67): **********服务器回复用户结束**********  
+[INFO ] 2022-07-14 15:08:29,137(4967) --> [nioEventLoopGroup-1-0] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:39): **********服务器开始接收到用户发送的请求**********  
+[DEBUG] 2022-07-14 15:08:29,138(4968) --> [nioEventLoopGroup-1-0] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:44): 【做出响应的服务器，接收请求】Receive => 
+{"user":{"id":90900,"name":"jack","classes":"大一 计算机科学与技术 二班","school":"蚌埠学院"},"date":1657782500104,"clientIp":"192.168.141.1","request":{"id":90900,"name":"jack","classes":"大一 计算机科学与技术 二班","school":"蚌埠学院"}}  
+[INFO ] 2022-07-14 15:08:29,139(4969) --> [nioEventLoopGroup-1-0] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:46): **********服务器回复用户**********  
+[DEBUG] 2022-07-14 15:08:31,823(7653) --> [nioEventLoopGroup-1-0] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:57): 【做出响应的服务器，发出响应】Send => 
+{"date":1657782509140,"serverIp":"192.168.141.1","response":true}  
+[INFO ] 2022-07-14 15:08:31,834(7664) --> [nioEventLoopGroup-1-0] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelReadComplete(UserServerHandler.java:67): **********服务器回复用户结束**********  
+[INFO ] 2022-07-14 15:08:34,138(9968) --> [nioEventLoopGroup-1-0] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:39): **********服务器开始接收到用户发送的请求**********  
+[DEBUG] 2022-07-14 15:08:34,139(9969) --> [nioEventLoopGroup-1-0] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:44): 【做出响应的服务器，接收请求】Receive => 
+{"user":{"id":90900,"name":"jack","classes":"大一 计算机科学与技术 二班","school":"蚌埠学院"},"date":1657782500104,"clientIp":"192.168.141.1","request":{"id":90900,"name":"jack","classes":"大一 计算机科学与技术 二班","school":"蚌埠学院"}}  
+[INFO ] 2022-07-14 15:08:34,139(9969) --> [nioEventLoopGroup-1-0] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:46): **********服务器回复用户**********  
+[DEBUG] 2022-07-14 15:08:36,797(12627) --> [nioEventLoopGroup-1-0] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:57): 【做出响应的服务器，发出响应】Send => 
+{"date":1657782514140,"serverIp":"192.168.141.1","response":true}  
+[INFO ] 2022-07-14 15:08:36,797(12627) --> [nioEventLoopGroup-1-0] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelReadComplete(UserServerHandler.java:67): **********服务器回复用户结束**********  
+[INFO ] 2022-07-14 15:08:39,139(14969) --> [nioEventLoopGroup-1-0] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:39): **********服务器开始接收到用户发送的请求**********  
+[DEBUG] 2022-07-14 15:08:39,144(14974) --> [nioEventLoopGroup-1-0] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:44): 【做出响应的服务器，接收请求】Receive => 
+{"user":{"id":90900,"name":"jack","classes":"大一 计算机科学与技术 二班","school":"蚌埠学院"},"date":1657782500104,"clientIp":"192.168.141.1","request":{"id":90900,"name":"jack","classes":"大一 计算机科学与技术 二班","school":"蚌埠学院"}}  
+[INFO ] 2022-07-14 15:08:39,145(14975) --> [nioEventLoopGroup-1-0] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:46): **********服务器回复用户**********  
+[DEBUG] 2022-07-14 15:08:41,805(17635) --> [nioEventLoopGroup-1-0] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:57): 【做出响应的服务器，发出响应】Send => 
+{"date":1657782519146,"serverIp":"192.168.141.1","response":true}  
+[INFO ] 2022-07-14 15:08:41,805(17635) --> [nioEventLoopGroup-1-0] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelReadComplete(UserServerHandler.java:67): **********服务器回复用户结束**********  
+[INFO ] 2022-07-14 15:08:44,139(19969) --> [nioEventLoopGroup-1-0] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:39): **********服务器开始接收到用户发送的请求**********  
+[DEBUG] 2022-07-14 15:08:44,140(19970) --> [nioEventLoopGroup-1-0] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:44): 【做出响应的服务器，接收请求】Receive => 
+{"user":{"id":90900,"name":"jack","classes":"大一 计算机科学与技术 二班","school":"蚌埠学院"},"date":1657782500104,"clientIp":"192.168.141.1","request":{"id":90900,"name":"jack","classes":"大一 计算机科学与技术 二班","school":"蚌埠学院"}}  
+[INFO ] 2022-07-14 15:08:44,141(19971) --> [nioEventLoopGroup-1-0] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:46): **********服务器回复用户**********  
+[DEBUG] 2022-07-14 15:08:46,781(22611) --> [nioEventLoopGroup-1-0] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:57): 【做出响应的服务器，发出响应】Send => 
+{"date":1657782524142,"serverIp":"192.168.141.1","response":true}  
+[INFO ] 2022-07-14 15:08:46,781(22611) --> [nioEventLoopGroup-1-0] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelReadComplete(UserServerHandler.java:67): **********服务器回复用户结束**********  
+[DEBUG] 2022-07-14 15:08:49,139(25133) --> [nioEventLoopGroup-0-0] com.lp.netty_demo.handlers.channel.user.UserClientHandler.channelActive(UserClientHandler.java:41): 【发出请求的服务器，发出请求】Request => 
+{"user":{"id":90900,"name":"jack","classes":"大一 计算机科学与技术 二班","school":"蚌埠学院"},"date":1657782500104,"clientIp":"192.168.141.1","request":{"id":90900,"name":"jack","classes":"大一 计算机科学与技术 二班","school":"蚌埠学院"}}  
+[INFO ] 2022-07-14 15:08:49,142(25136) --> [nioEventLoopGroup-0-0] com.lp.netty_demo.handlers.channel.user.UserClientHandler.channelRead(UserClientHandler.java:46): **********用户开始接收到服务器发送的请求**********  
+[DEBUG] 2022-07-14 15:08:49,143(25137) --> [nioEventLoopGroup-0-0] com.lp.netty_demo.handlers.channel.user.UserClientHandler.channelRead(UserClientHandler.java:52): 【发出请求的服务器，接收到响应】Response => 
+{"date":1657782504175,"serverIp":"192.168.141.1","response":true}{"date":1657782509140,"serverIp":"192.168.141.1","response":true}{"date":1657782514140,"serverIp":"192.168.141.1","response":true}{"date":1657782519146,"serverIp":"192.168.141.1","response":true}{"date":1657782524142,"serverIp":"192.168.141.1","response":true}  
+[INFO ] 2022-07-14 15:08:49,211(25205) --> [nioEventLoopGroup-0-0] com.lp.netty_demo.handlers.channel.user.UserClientHandler.channelReadComplete(UserClientHandler.java:63): **********用户向服务器发送请求结束**********  
+[INFO ] 2022-07-14 15:09:19,415(55245) --> [nioEventLoopGroup-1-0] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelReadComplete(UserServerHandler.java:67): **********服务器回复用户结束**********  
+[INFO ] 2022-07-14 15:09:30,613(0) --> [nioEventLoopGroup-0-0] com.lp.netty_demo.handlers.channel.user.UserClientHandler.channelActive(UserClientHandler.java:35): **********用户开始向服务器发送请求**********  
+[INFO ] 2022-07-14 15:09:30,754(66584) --> [nioEventLoopGroup-1-2] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:39): **********服务器开始接收到用户发送的请求**********  
+[DEBUG] 2022-07-14 15:09:30,754(66584) --> [nioEventLoopGroup-1-2] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:44): 【做出响应的服务器，接收请求】Receive => 
+{"user":{"id":90900,"name":"jack","classes":"大一 计算机科学与技术 二班","school":"蚌埠学院"},"date":1657782566601,"clientIp":"192.168.141.1","request":{"id":90900,"name":"jack","classes":"大一 计算机科学与技术 二班","school":"蚌埠学院"}}  
+[INFO ] 2022-07-14 15:09:30,754(66584) --> [nioEventLoopGroup-1-2] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:46): **********服务器回复用户**********  
+[DEBUG] 2022-07-14 15:09:33,413(69243) --> [nioEventLoopGroup-1-2] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:57): 【做出响应的服务器，发出响应】Send => 
+{"date":1657782570754,"serverIp":"192.168.141.1","response":true}  
+[INFO ] 2022-07-14 15:09:33,413(69243) --> [nioEventLoopGroup-1-2] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelReadComplete(UserServerHandler.java:67): **********服务器回复用户结束**********  
+[INFO ] 2022-07-14 15:09:35,745(71575) --> [nioEventLoopGroup-1-2] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:39): **********服务器开始接收到用户发送的请求**********  
+[DEBUG] 2022-07-14 15:09:35,745(71575) --> [nioEventLoopGroup-1-2] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:44): 【做出响应的服务器，接收请求】Receive => 
+{"user":{"id":90900,"name":"jack","classes":"大一 计算机科学与技术 二班","school":"蚌埠学院"},"date":1657782566601,"clientIp":"192.168.141.1","request":{"id":90900,"name":"jack","classes":"大一 计算机科学与技术 二班","school":"蚌埠学院"}}  
+[INFO ] 2022-07-14 15:09:35,745(71575) --> [nioEventLoopGroup-1-2] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:46): **********服务器回复用户**********  
+[DEBUG] 2022-07-14 15:09:38,561(74391) --> [nioEventLoopGroup-1-2] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:57): 【做出响应的服务器，发出响应】Send => 
+{"date":1657782575745,"serverIp":"192.168.141.1","response":true}  
+[INFO ] 2022-07-14 15:09:38,561(74391) --> [nioEventLoopGroup-1-2] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelReadComplete(UserServerHandler.java:67): **********服务器回复用户结束**********  
+[INFO ] 2022-07-14 15:09:40,752(76582) --> [nioEventLoopGroup-1-2] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:39): **********服务器开始接收到用户发送的请求**********  
+[DEBUG] 2022-07-14 15:09:40,752(76582) --> [nioEventLoopGroup-1-2] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:44): 【做出响应的服务器，接收请求】Receive => 
+{"user":{"id":90900,"name":"jack","classes":"大一 计算机科学与技术 二班","school":"蚌埠学院"},"date":1657782566601,"clientIp":"192.168.141.1","request":{"id":90900,"name":"jack","classes":"大一 计算机科学与技术 二班","school":"蚌埠学院"}}  
+[INFO ] 2022-07-14 15:09:40,752(76582) --> [nioEventLoopGroup-1-2] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:46): **********服务器回复用户**********  
+[DEBUG] 2022-07-14 15:09:43,536(79366) --> [nioEventLoopGroup-1-2] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:57): 【做出响应的服务器，发出响应】Send => 
+{"date":1657782580752,"serverIp":"192.168.141.1","response":true}  
+[INFO ] 2022-07-14 15:09:43,536(79366) --> [nioEventLoopGroup-1-2] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelReadComplete(UserServerHandler.java:67): **********服务器回复用户结束**********  
+[INFO ] 2022-07-14 15:09:45,757(81587) --> [nioEventLoopGroup-1-2] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:39): **********服务器开始接收到用户发送的请求**********  
+[DEBUG] 2022-07-14 15:09:45,757(81587) --> [nioEventLoopGroup-1-2] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:44): 【做出响应的服务器，接收请求】Receive => 
+{"user":{"id":90900,"name":"jack","classes":"大一 计算机科学与技术 二班","school":"蚌埠学院"},"date":1657782566601,"clientIp":"192.168.141.1","request":{"id":90900,"name":"jack","classes":"大一 计算机科学与技术 二班","school":"蚌埠学院"}}  
+[INFO ] 2022-07-14 15:09:45,757(81587) --> [nioEventLoopGroup-1-2] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:46): **********服务器回复用户**********  
+[DEBUG] 2022-07-14 15:09:48,574(84404) --> [nioEventLoopGroup-1-2] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:57): 【做出响应的服务器，发出响应】Send => 
+{"date":1657782585757,"serverIp":"192.168.141.1","response":true}  
+[INFO ] 2022-07-14 15:09:48,574(84404) --> [nioEventLoopGroup-1-2] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelReadComplete(UserServerHandler.java:67): **********服务器回复用户结束**********  
+[INFO ] 2022-07-14 15:09:50,764(86594) --> [nioEventLoopGroup-1-2] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:39): **********服务器开始接收到用户发送的请求**********  
+[DEBUG] 2022-07-14 15:09:50,764(86594) --> [nioEventLoopGroup-1-2] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:44): 【做出响应的服务器，接收请求】Receive => 
+{"user":{"id":90900,"name":"jack","classes":"大一 计算机科学与技术 二班","school":"蚌埠学院"},"date":1657782566601,"clientIp":"192.168.141.1","request":{"id":90900,"name":"jack","classes":"大一 计算机科学与技术 二班","school":"蚌埠学院"}}  
+[INFO ] 2022-07-14 15:09:50,764(86594) --> [nioEventLoopGroup-1-2] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:46): **********服务器回复用户**********  
+[DEBUG] 2022-07-14 15:09:53,501(89331) --> [nioEventLoopGroup-1-2] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelRead(UserServerHandler.java:57): 【做出响应的服务器，发出响应】Send => 
+{"date":1657782590764,"serverIp":"192.168.141.1","response":true}  
+[INFO ] 2022-07-14 15:09:53,501(89331) --> [nioEventLoopGroup-1-2] com.lp.netty_demo.handlers.channel.user.UserServerHandler.channelReadComplete(UserServerHandler.java:67): **********服务器回复用户结束**********  
+[DEBUG] 2022-07-14 15:09:55,770(25157) --> [nioEventLoopGroup-0-0] com.lp.netty_demo.handlers.channel.user.UserClientHandler.channelActive(UserClientHandler.java:41): 【发出请求的服务器，发出请求】Request => 
+{"user":{"id":90900,"name":"jack","classes":"大一 计算机科学与技术 二班","school":"蚌埠学院"},"date":1657782566601,"clientIp":"192.168.141.1","request":{"id":90900,"name":"jack","classes":"大一 计算机科学与技术 二班","school":"蚌埠学院"}}  
+[INFO ] 2022-07-14 15:09:55,770(25157) --> [nioEventLoopGroup-0-0] com.lp.netty_demo.handlers.channel.user.UserClientHandler.channelRead(UserClientHandler.java:46): **********用户开始接收到服务器发送的请求**********  
+[DEBUG] 2022-07-14 15:09:55,770(25157) --> [nioEventLoopGroup-0-0] com.lp.netty_demo.handlers.channel.user.UserClientHandler.channelRead(UserClientHandler.java:52): 【发出请求的服务器，接收到响应】Response => 
+{"date":1657782570754,"serverIp":"192.168.141.1","response":true}{"date":1657782575745,"serverIp":"192.168.141.1","response":true}{"date":1657782580752,"serverIp":"192.168.141.1","response":true}{"date":1657782585757,"serverIp":"192.168.141.1","response":true}{"date":1657782590764,"serverIp":"192.168.141.1","response":true}  
+[INFO ] 2022-07-14 15:09:55,833(25220) --> [nioEventLoopGroup-0-0] com.lp.netty_demo.handlers.channel.user.UserClientHandler.channelReadComplete(UserClientHandler.java:63): **********用户向服务器发送请求结束**********  
