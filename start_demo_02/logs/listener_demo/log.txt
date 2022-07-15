@@ -1,0 +1,2 @@
+[DEBUG] 2022-07-15 10:10:41,523(0) --> [main] com.lp.listener_demo.listeners.first.springListener.SpringListener01.onApplicationEvent(SpringListener01.java:33): 【SpringListener01】=>MyEventModel(eventName=测试初始化项目, source=User(id=9865456789, name=jack))  
+[DEBUG] 2022-07-15 10:10:41,540(17) --> [main] com.lp.listener_demo.listeners.first.MyEvent.execute(MyEvent.java:26): 【MyEvent】=>MyEventModel(eventName=测试初始化项目, source=User(id=9865456789, name=jack))  
