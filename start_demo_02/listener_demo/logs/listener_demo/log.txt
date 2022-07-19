@@ -27,3 +27,18 @@
 [DEBUG] 2022-07-15 10:41:48,122(345) --> [main] com.lp.listener_demo.listeners.self.springListener.EmailNotifier.onApplicationEvent(EmailNotifier.java:25): 事件属于spring框架自认事件  
 [DEBUG] 2022-07-15 10:41:48,132(355) --> [main] com.lp.listener_demo.listeners.self.springListener.EmailNotifier.onApplicationEvent(EmailNotifier.java:25): 事件属于spring框架自认事件  
 [DEBUG] 2022-07-15 10:41:48,142(365) --> [SpringContextShutdownHook] com.lp.listener_demo.listeners.self.springListener.EmailNotifier.onApplicationEvent(EmailNotifier.java:25): 事件属于spring框架自认事件  
+[DEBUG] 2022-07-15 14:15:23,911(0) --> [main] com.lp.listener_demo.listeners.official.springListener.SpringListener01.onApplicationEvent(SpringListener01.java:31): 【SpringListener01】=>org.springframework.web.context.support.GenericWebApplicationContext@3fa247d1, started on Fri Jul 15 14:15:19 CST 2022  
+[DEBUG] 2022-07-15 14:15:23,919(8) --> [main] com.lp.listener_demo.listeners.official.MyEvent.execute(MyEvent.java:26): 【MyEvent】=>MyEventModel(eventName=测试初始化项目, source=User(id=9865456789, name=jack))  
+[DEBUG] 2022-07-15 14:15:23,920(9) --> [main] com.lp.listener_demo.listeners.self.springListener.EmailNotifier.onApplicationEvent(EmailNotifier.java:26): 【spring事件类型】=>ContextRefreshedEvent  
+[DEBUG] 2022-07-15 14:15:23,934(23) --> [main] com.lp.listener_demo.listeners.self.springListener.EmailNotifier.onApplicationEvent(EmailNotifier.java:28): 【未知spring事件类型】  
+[DEBUG] 2022-07-15 14:15:23,937(26) --> [main] com.lp.listener_demo.listeners.self.springListener.EmailNotifier.onApplicationEvent(EmailNotifier.java:28): 【未知spring事件类型】  
+[DEBUG] 2022-07-15 14:15:23,939(28) --> [main] com.lp.listener_demo.listeners.self.springListener.EmailNotifier.onApplicationEvent(EmailNotifier.java:28): 【未知spring事件类型】  
+[DEBUG] 2022-07-15 14:15:23,940(29) --> [main] com.lp.listener_demo.listeners.self.springListener.EmailNotifier.onApplicationEvent(EmailNotifier.java:28): 【未知spring事件类型】  
+[DEBUG] 2022-07-15 14:15:23,984(73) --> [main] com.lp.listener_demo.listeners.self.springListener.EmailNotifier.onApplicationEvent(EmailNotifier.java:28): 【未知spring事件类型】  
+[DEBUG] 2022-07-15 14:15:23,997(86) --> [main] com.lp.listener_demo.listeners.self.springListener.EmailNotifier.onApplicationEvent(EmailNotifier.java:28): 【未知spring事件类型】  
+[DEBUG] 2022-07-15 14:15:24,322(411) --> [main] com.lp.listener_demo.listeners.self.springListener.EmailNotifier.onApplicationEvent(EmailNotifier.java:28): 【未知spring事件类型】  
+[DEBUG] 2022-07-15 14:15:24,330(419) --> [main] com.lp.listener_demo.listeners.self.springListener.EmailNotifier.onApplicationEvent(EmailNotifier.java:24): 【spring事件类型】=>EmailEvent  
+[DEBUG] 2022-07-15 14:15:24,333(422) --> [main] com.lp.listener_demo.listeners.self.springListener.EmailNotifier.onApplicationEvent(EmailNotifier.java:28): 【未知spring事件类型】  
+[DEBUG] 2022-07-15 14:15:24,340(429) --> [main] com.lp.listener_demo.listeners.self.springListener.EmailNotifier.onApplicationEvent(EmailNotifier.java:28): 【未知spring事件类型】  
+[DEBUG] 2022-07-15 14:15:24,360(449) --> [main] com.lp.listener_demo.listeners.self.springListener.EmailNotifier.onApplicationEvent(EmailNotifier.java:28): 【未知spring事件类型】  
+[DEBUG] 2022-07-15 14:15:24,370(459) --> [SpringContextShutdownHook] com.lp.listener_demo.listeners.self.springListener.EmailNotifier.onApplicationEvent(EmailNotifier.java:28): 【未知spring事件类型】  
