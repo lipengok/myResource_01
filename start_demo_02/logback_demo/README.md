@@ -1,0 +1,5 @@
+logback日志是springboot内部使用的日志。
+logback的性能比log4j的性能更高。
+
+1，在使用通过springboot整合logback的时候，依赖是不需要单独引入。
+2，logback配置文件在application.properties里面引入。

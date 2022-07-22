@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration  scan="true" scanPeriod="30 seconds" debug="false">
+	<!-- 日志输出文件夹（根据情况修改） -->
+	<property name="LOG_HOME" value="../log/front" />
+	<!-- 控制台输出 -->
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS}[%thread][%class:%line] %-5level - %msg%n</pattern>
+		</encoder>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>DEBUG</level>
+		</filter>
+	</appender>
+	<!-- 调试日志文件 -->
+	<appender name="FILE_ALL" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>DEBUG</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>ACCEPT</onMismatch>
+		</filter>
+		<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<FileNamePattern>${LOG_HOME}/I_am_All.%d{yyyy-MM-dd_HH}.%i.log.gz</FileNamePattern>
+			<MaxHistory>1</MaxHistory>
+			<maxFileSize>100MB</maxFileSize>
+			<totalSizeCap>5GB</totalSizeCap>
+		</rollingPolicy>
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS}[%thread][%class:%line] %-5level - %msg%n</pattern>
+			<charset>UTF-8</charset>
+		</encoder>
+	</appender>
+	<!-- 运行日志文件 -->
+	<appender name="FILE_INFO" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>INFO</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+		<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<FileNamePattern>${LOG_HOME}/I_am_Info.%d{yyyy-MM-dd_HH}.%i.log</FileNamePattern>
+			<MaxHistory>7</MaxHistory>
+			<maxFileSize>100MB</maxFileSize>
+			<totalSizeCap>1GB</totalSizeCap>
+		</rollingPolicy>
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS}[%thread][%class:%line] %-5level - %msg%n</pattern>
+			<charset>UTF-8</charset>
+		</encoder>
+	</appender>
+	<!-- 错误日志文件 -->
+	<appender name="FILE_ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>ERROR</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+		<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<FileNamePattern>${LOG_HOME}/I_am_Error.%d{yyyy-MM-dd}.%i.log</FileNamePattern>
+			<MaxHistory>30</MaxHistory>
+			<maxFileSize>100MB</maxFileSize>
+			<totalSizeCap>500MB</totalSizeCap>
+		</rollingPolicy>
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS}[%thread][%class:%line] %-5level - %msg%n</pattern>
+			<charset>UTF-8</charset>
+		</encoder>
+	</appender>
+	<!-- ZK日志文件 -->
+	<appender name="FILE_ZK" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>DEBUG</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>ACCEPT</onMismatch>
+		</filter>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<FileNamePattern>${LOG_HOME}/I_am_ZK.%d{yyyy-MM-dd}.%i.log</FileNamePattern>
+			<MaxHistory>3</MaxHistory>
+			<maxFileSize>100MB</maxFileSize>
+			<totalSizeCap>300MB</totalSizeCap>
+		</rollingPolicy>
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS}[%thread][%class:%line] %-5level - %msg%n</pattern>
+			<charset>UTF-8</charset>
+		</encoder>
+	</appender>
+
+	<root level="DEBUG">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="FILE_ALL" />
+		<appender-ref ref="FILE_INFO" />
+		<appender-ref ref="FILE_ERROR" />
+	</root>
+	<logger name="com.nari.qmy.zk.curator.CuratorClient" additivity="false" level="debug">
+		<appender-ref ref="FILE_ZK" />
+	</logger>
+	
+	<logger name="org.springframework" level="error" />
+	<logger name="org.apache.kafka" level="error" />
+	<logger name="io.netty" level="error" />
+	<logger name="org.quartz" level="error" />
+	<logger name="com.alibaba.druid" level="off" />
+	<logger name="druid.sql" level="error" />
+</configuration>

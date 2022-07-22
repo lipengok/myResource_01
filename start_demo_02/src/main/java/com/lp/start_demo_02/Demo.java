@@ -1,6 +1,7 @@
 package com.lp.start_demo_02;
 
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.util.ResourceUtils;
 
 import java.io.File;
 import java.io.IOException;
@@ -16,7 +17,11 @@ public class Demo {
         System.out.println(System.getProperty("user.dir"));
         File file = classPathResource.getFile();
         System.out.println(file.getPath());
+
         File file1 = new File(System.getProperty("user.dir")+"/test.txt");
         System.out.println(file1.getPath());
+
+        File file2 = ResourceUtils.getFile("classpath:application.properties");
+        System.out.println(file2.getPath());
     }
 }
