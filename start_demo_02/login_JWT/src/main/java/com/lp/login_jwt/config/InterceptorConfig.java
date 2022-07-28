@@ -18,9 +18,7 @@ public class InterceptorConfig implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(authenticateInterceptor())
                 // 不做验证的路径
-                .excludePathPatterns("/**/logout/**")
-                .excludePathPatterns("/**/login/**")
-                .excludePathPatterns("/**/list/**")
+                .excludePathPatterns("/**/logout/**","/**/login/**","/**/list/**")
                 .addPathPatterns("/**");
     }
 

@@ -1,0 +1,3 @@
+dubbo
+默认的通信协议：dubbo协议
+默认的序列化协议：hessian协议
