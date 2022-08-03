@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--mybatis配置文件对应的接口类-->
+<mapper namespace="com.lp.db_mybatisplus.mapper.UserMapper">
+    <resultMap id="user" type="com.lp.db_mybatisplus.entity.User">
+        <id property="id" column="id" javaType="java.lang.Integer"></id>
+        <result property="name" column="name" javaType="java.lang.String"></result>
+        <result property="name" column="name" javaType="java.lang.String"></result>
+        <result property="psw" column="psw" javaType="java.lang.String"></result>
+        <result property="information" column="information" javaType="java.lang.String"></result>
+        <result property="photo" column="photo" javaType="java.lang.String"></result>
+        <result property="school" column="school" javaType="java.lang.String"></result>
+    </resultMap>
+    <resultMap id="seesion" type="com.lp.db_mybatisplus.entity.Seesion">
+        <id property="id" column="id" javaType="java.lang.Integer"></id>
+        <result property="value" column="value" javaType="java.lang.String"></result>
+    </resultMap>
+    <resultMap id="loginInfo" type="com.lp.db_mybatisplus.model.pojo.LoginInfo">
+        <id property="id" column="id" javaType="java.lang.Integer"></id>
+        <association property="seesion" javaType="com.lp.db_mybatisplus.entity.Seesion"></association>
+        <association property="user" javaType="com.lp.db_mybatisplus.entity.User"></association>
+    </resultMap>
+    
+    <select id="findAll" resultType="com.lp.db_mybatisplus.entity.User">
+        select * from user
+    </select>
+
+    <select id="findByName" resultType="com.lp.db_mybatisplus.entity.User" parameterType="java.lang.String">
+        select * from user where name = #{name}
+    </select>
+
+    <select id="findById" resultType="com.lp.db_mybatisplus.entity.User" parameterType="java.lang.Integer">
+        select * from user where id = #{id}
+    </select>
+
+    <select id="findLogin" resultMap="loginInfo">
+        select u.*,s.*
+         from user u , session s
+         where u.id=s.id
+    </select>
+</mapper>

@@ -2,7 +2,7 @@ package com.lp.db_mybatisplus.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.lp.db_mybatisplus.entity.User;
-import com.lp.db_mybatisplus.mappers.UserMapper;
+import com.lp.db_mybatisplus.mapper.UserMapper;
 import com.lp.db_mybatisplus.service.UserService;
 import org.springframework.stereotype.Service;
 

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--mybatis配置文件对应的接口类-->
+<mapper namespace="com.lp.db_mybatisplus.mapper.SessionMApper">
+    <select id="findAll" resultType="com.lp.db_mybatisplus.entity.Seesion">
+        select * from user
+    </select>
+    <select id="findById" resultType="com.lp.db_mybatisplus.entity.Seesion" parameterType="java.lang.Integer">
+        select * from user where id = #{id}
+    </select>
+
+</mapper>
