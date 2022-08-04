@@ -50,6 +50,7 @@ public class Solution {
     public static void main(String[] args) {
         int[] i1 = {1,2};
         int[] i2 = {6,4,5,3,3};
+        // 二分法
         System.out.println(search(i1, 2));
         System.out.println(findMedianSortedArrays(i1,i2));
         // printDemo(combine(i1,i2));
