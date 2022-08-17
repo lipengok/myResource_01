@@ -1,0 +1,40 @@
+## Linux的shell脚本
+
+# 基础知识
+1，shell脚本的后缀
+.sh
+2，shell脚本运行命令
+sh 文件名.sh
+3，第一个shell脚本
+文件名：
+    test.sh
+文件内容：
+    echo "hello world!"
+
+# 内容详情
+1，shell的变量
+实例：
+    your_name="qinjx"
+    echo $your_name
+将变量设置成只读变量
+    readonly your_name
+删除变量：只读的变量不能被删除
+    unset your_name
+
+2，字符串操作
+拼接字符串
+    echo " your_name is $your_name"
+获取字符串的长度
+    echo "${#your_name}"
+    echo "${#your_name[0]}"
+获取字符串片段：从字符串第 2 个字符开始截取 4 个字符
+    string="runoob is a great site"
+    echo ${string:1:4} # 输出 unoo
+
+3，数组
+创建数组
+    arr=("001" "002")
+    echo ${arr[0]}
+数组长度
+    echo ${#arr}
+    echo ${#arr[0]}
