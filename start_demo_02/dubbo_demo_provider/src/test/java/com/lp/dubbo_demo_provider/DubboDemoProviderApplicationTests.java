@@ -13,10 +13,16 @@ class DubboDemoProviderApplicationTests {
     @Autowired
     private UserDao userDao;
 
+
+
     @Test
-    void contextLoads() {
+    void dbTest() {
         List<User> list = userDao.findAll();
         System.out.println(list);
     }
 
+    @Test
+    void dubboTest(){
+
+    }
 }

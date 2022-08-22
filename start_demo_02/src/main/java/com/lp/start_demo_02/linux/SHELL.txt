@@ -36,5 +36,20 @@ sh 文件名.sh
     arr=("001" "002")
     echo ${arr[0]}
 数组长度
-    echo ${#arr}
-    echo ${#arr[0]}
+    echo ${#arr}    # 数组的长度
+    echo ${#arr[0]} # 数组索引为0元素的长度
+读取数组
+    echo ${arr[0]}
+获取数组中的所有的元素
+    echo ${arr[*]}
+    echo ${arr[@]}
+
+3，运算符
+加法运算
+    value=`expr 2+2`
+乘法运算符（需要转义）
+    value=`expr 2 \* 2`
+等号运算符（配合选择语句使用）
+    a=2
+    b=2
+    echo '$a == $b'
