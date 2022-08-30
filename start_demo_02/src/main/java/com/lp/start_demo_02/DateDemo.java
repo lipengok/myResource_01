@@ -1,5 +1,7 @@
 package com.lp.start_demo_02;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.*;
 import java.util.Date;
 
@@ -10,7 +12,44 @@ import java.util.Date;
  */
 public class DateDemo {
     public static void main(String[] args) {
-        new DateDemo().test();
+        // new DateDemo().test();
+        // locDateTimeDemo();
+
+        String str = formatDate(new Date(System.currentTimeMillis()));
+        System.out.println(str);
+    }
+
+    private static final String PATTERN = "yyyy-MM-dd hh:mm:ss";
+
+    /**
+     * 日期格式化成字符串
+     * @param date
+     */
+    private static String formatDate(Date date){
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(PATTERN);
+        return simpleDateFormat.format(date);
+    }
+
+    private static Date parseDate(String dateString) throws ParseException {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(PATTERN);
+        Date date = simpleDateFormat.parse(dateString);
+        return date;
+    }
+
+    private static void locDateTimeDemo(){
+        System.out.println("#############LocalDateTime Demo#############");
+        LocalDateTime localDateTime1 = LocalDateTime.of(2022, Month.AUGUST, 24, 11, 30, 26,501);
+        System.out.println("第一种初始化方式："+localDateTime1);
+        int year = localDateTime1.getYear();
+        System.out.println("year"+year);
+        int month = localDateTime1.getMonth().getValue();
+        System.out.println("month"+month);
+        int day1 = localDateTime1.getDayOfMonth();
+        System.out.println("getDayOfMonth"+day1);
+        int day2 = localDateTime1.getDayOfYear();
+        System.out.println("getDayOfYear"+day2);
+        LocalDate localDate = localDateTime1.toLocalDate();
+        System.out.println(localDate);
     }
 
     private void test(){
