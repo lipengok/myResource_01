@@ -1,0 +1,79 @@
+# kafka
+1，什么是kafka
+kafka是基于发布订阅的消息队列。
+2，kafka的5大组件：
+topic，生产者，消费者，broker，zookeeper
+
+# dubbo
+1，dubbo架构的特性
+连通性，健壮性，伸缩性
+2，dubbo中如果注册中心挂掉了，生产者消费者能不能继续通信
+dubbo具有健壮性，即使生产者消费者在交互的时候dubbo的注册中心挂掉了依然能够通过本地缓存正常通信，
+但是不能注册新的服务。
+3，dubbo连通性是什么
+dubbo的生产者，消费者，注册中心，均是长连接，监控中心除外。
+dubbo的生产者和消费者之间可以直接进行连接。
+4，dubbo的伸缩性是什么
+在服务者无状态的时候，能够将服务者直接部署到服务器，所有的客户端能够自动发现新服务的出现。
+在对等集群中，动态新增注册中心，，所有的客户端能够自动发现新注册中心的出现。
+5，说一说dubbo
+dubbo是阿里巴巴提供的开源的服务架构，通过高性能的rpc进行输入输出。
+可以与spring框架无缝衔接。
+
+# redis
+1，redis有哪几种数据类型
+string，list，set，hash，zset
+2，redis设置过期时间函数
+expire()
+3，给key设置过期时间之后再次set，过期时间还有效吗？
+会
+
+# mysql
+1，sql的调优
+    * 使用连接，代替子查询。
+    * 选取合适的字段属性（字段的宽度应在不影响功能的情况下，尽可能小）。
+    * 使用事务（begin****commit）。
+    * 使用外键
+    * 使用索引
+    * 查询语句优化：尽量不要在列上运算，尽量不要使用in或not in等。
+2，sql去重关键字
+distinct
+
+# springmvc
+1，说一说，springmvc的工作流程
+    * 第一步：一个用户请求到来，首先匹配前端控制器DispatchServlet。
+    * 第二步：前端控制器将请求信息交给映射器，HandlerMapping。
+    * 第三步：映射器给用户的url匹配对应的handler，返回一个执行链。
+    * 第四步：DispatchServlet再次请求处理器适配器HandlerAdapter，调用相应的handler进行处理操作
+    并且返回ModelAndView给DispatchServlet。
+    * 第五步：DispatchServlet将ModelAndView给视图解析器ViewReslover，返回具体的view。
+    * 第六步：DispatchServlet对view进行视图渲染（数据填充到视图的过程）。
+    * 第七步：DispatchServlet将页面响应给用户。
+
+# springboot
+1，springboot的事务注解怎么使用
+    * 在启动类上添加注解@EnableTransationMannger开启事务
+    * 在public方法上添加注解@Transactional。
+    * 在类上添加注解@Transactional，在类上添加事务注解，意味着此类的所有public方法都是开启事务。
+2，springboot的事务注解@Transactional属性（了解）
+    * readOnly：boolean类型，true为只读表明事务中的方法不可进行读之外的操作。
+    * rollbackFor：可为 字符串；也可为数组。用于对指定异常进行回滚。
+    * rollbackForNAme：与rollbackFor作用一样，但是值不用写“.class”，直接写类名。
+    * noRollbackFor：和rollbackFor用法一样，作用相反：指定不会滚的异常。
+    * noRollbackForName：和noRollbackFor作用一样，但是值不用写“.class”，直接写类名。
+    * timeout：单位是秒，默认是-1永不超时，作用是：设置事务超时时间。
+    * isolation：一般使用默认的隔离级别。作用是：设置事务的隔离级别。
+    * propagation：用例：propagation=Propagation.NOT_SUPPORTED。作用是：设置事务的传播行为。
+3，事务的四大特性
+原子性，持久性，一致性，隔离性
+
+# netty
+1，netty的优势
+
+# git的常用命令
+git clone
+git commit -am
+git -status
+git -push：
+git -branch -a：查询所有的分支
+git -branch -f：查询远程所有分支
