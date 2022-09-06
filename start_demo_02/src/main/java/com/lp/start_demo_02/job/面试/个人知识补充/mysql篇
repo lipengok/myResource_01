@@ -1,0 +1,29 @@
+## 基础----SQL语句
+# 基础的增删改查 (user：表名称)
+1，添加一条数据的sql
+insert
+into user("id","name")
+values(1,"jack")
+2，删除一条数据
+delete
+from user
+where ....
+3，修改一条数据
+update user
+set ......
+where ....
+4，查找一条数据
+# 常用关键字
+
+## 进阶----事务
+1，mysql如何实现事务？
+sql语句实现事务：
+begin
+....
+commit;
+2，说说分布式事务
+
+3，说说分布式锁
+
+
+

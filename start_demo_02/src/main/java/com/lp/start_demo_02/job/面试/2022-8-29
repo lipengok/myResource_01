@@ -3,6 +3,25 @@
 kafka是基于发布订阅的消息队列。
 2，kafka的5大组件：
 topic，生产者，消费者，broker，zookeeper
+3，kafka的优势
+    * 缓冲：当大量数据涌入系统的时候，kafka可以将数据缓存到本地，慢慢供消费者消费。
+    * 解耦：在项目开发初期并不明确接下来具体需求的时候，消息队列可以作为一个接口层。
+    * 健壮性：当消费者出现故障的时候，消息可以被暂时保存到本地，等消费者恢复的时候再来读取。
+    * 异步通信：用户可以通过配置kafka，使kafka将消息存储起来，等什么时候消费者需要消息的时候再去取。
+4，broker是什么？
+生产者会将消息存储到broker里面的指定topic，消费者会从broker里的指定topic里拿数据。
+所以broker被称之为----消息代理。
+5，zookeeper是什么？能不能不用zookeeper？
+zookeeper是----分布式的协调组件。
+虽然新版本中，kafka弱化了对zookeeper的依赖，
+但是broker依然依赖zookeeper，
+zookeeper在kafka中还用来：controller选举，broker存活检验。
+6，kafka的高性能（处理速度快）的原因是什么？
+缓存，顺序写，批处理，零拷贝
+7，说一说kafka的选举
+kafka在所有broker中选出一个controller，所有Partition的Leader选举都由controller决定。
+controller会将Leader的改变直接通过RPC的方式（比Zookeeper Queue的方式更高效）通知需为此作出响应的Broker。
+同时controller也负责增删Topic以及Replica的重新分配。
 
 # dubbo
 1，dubbo架构的特性
@@ -32,10 +51,11 @@ expire()
 1，sql的调优
     * 使用连接，代替子查询。
     * 选取合适的字段属性（字段的宽度应在不影响功能的情况下，尽可能小）。
+        -- 在数据库中表越小，执行速度越快。
     * 使用事务（begin****commit）。
     * 使用外键
     * 使用索引
-    * 查询语句优化：尽量不要在列上运算，尽量不要使用in或not in等。
+    * 查询语句优化：尽量不要在列上运算，尽量不要使用in或not in，like等关键字。
 2，sql去重关键字
 distinct
 
@@ -68,7 +88,25 @@ distinct
 原子性，持久性，一致性，隔离性
 
 # netty
-1，netty的优势
+1，说一说netty
+netty是由JBOSS开源的java框架。
+netty是高性能，由异步事件驱动的NIO框架。
+它提供了对TCP，UDP文件传输的支持。
+2，netty的特点
+高并发，传输快，封装好。
+3，netty为什么支持高并发。
+netty是基于NIO（非阻塞IO）实现的网络通信框架。
+4，netty为什么传输快。
+netty传输快是得益于NIO的特性----零拷贝。
+5，为什么说netty封装好
+netty封装了NIO操作的细节，提供了便于操作的api。
+6，什么是NIO，IO是什么？
+NIO：非阻塞IO，无论操作是否完成，都会返回。
+IO：阻塞IO，只有操作完成之后才会返回。
+7，用过什么其他的网络痛惜架构？为什么选择netty网络通信架构。
+socket：由java提供的基于IO的网络通信架构。
+netty与socket最大的区别就是netty网络通信架构是基于NIO，
+netty具有更好的性能：高并发，传输快，封装好。
 
 # git的常用命令
 git clone
