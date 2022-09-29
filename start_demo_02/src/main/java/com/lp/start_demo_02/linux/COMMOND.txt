@@ -16,10 +16,64 @@ rmdir 文件夹名
 rm -rf 文件夹名
 6，复制文件
 cp 复制文件名.后缀名 到文件名.后缀名
+7，授予root权限
+su root
 
 # 进程
 1，搜索java相关的进程
 ps -ef|grep java
 2，根据进程的id结束进程
 kill -9 进程id
-3，
+
+# 端口
+1，查看端口的占用情况
+netstat -tunlp|grep 8080
+
+# 连接远程服务器
+1，测试机器是否能够访问
+ping ip地址
+2，测试机器的端口是否能够访问
+telnet ip地址 端口号
+
+# curl请求
+-- linux下使用shell发送http请求
+1，get请求
+curl www.baidu.com
+2，post请求
+curl -d "param1=value1&param2=value2" www.baidu.com
+
+
+# 查看linux系统中cpu，内存，磁盘占用情况
+ 1，查看cpu内存占用情况
+ top
+ 2，查看内存占用情况
+ free
+
+# 启动各种程序
+ 1，启动mysql：
+    * 启动mysqld服务：service mysqld start
+    * 登录MySQL：mysql -u root -p
+ 2，启动redis：
+    * src/redis-server redis.config
+    * src/redis-cli
+ 3，启动zookeeper
+    * sh bin/zkServer.sh start
+ 4，启动kafka
+    * bin/kafka-server-start.sh config/server.properties
+
+# kafka相关的操作
+    * 创建topic
+        bin/kafka-topics.sh --create --replication-factor 1 --partitions 1 --topic test
+        备注：
+            replication-factor：备份
+            partitions：分区
+    * 查看topic列表
+        bin/kafka-topics.sh --list --zookeeper localhost:2181
+    * 创建生产者
+        bin/kafka-console-producer --broker-list localhost:9092 --topic test
+    * 创建消费者
+        bin/kafka-console-consumer --bootstrap-server localhost:9092 --topic test --from-beginning
+        备注：
+            --from-beginning：从头消费，如果不加的话就是实时消费
+    * 关闭kafka
+        bin/

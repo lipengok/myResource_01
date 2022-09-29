@@ -1,0 +1,23 @@
+1，启动jar包
+java -jar 文件名.jar
+窗口关闭程序关闭。
+
+2，后台启动
+nohup java -jar 文件名.jar &
+窗口关闭之后程序仍然运行
+
+nohup的安装配置
+1，安装nohup
+yum install coreutils
+2，查看nohup的下载位置
+which nohup
+3，配置nohup
+vi ~/.bash_profile
+在PATH=$PATH:$HOME/bin后面添加:/usr/bin
+4，将配置即可生效
+source ~/.bash_profile
+5，测试nohup是否安装成功
+nohup --v
+
+
+

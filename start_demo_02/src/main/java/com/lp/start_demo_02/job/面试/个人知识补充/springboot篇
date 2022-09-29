@@ -1,0 +1,19 @@
+# springboot需要独立的容器运行吗？
+不需要，springboot内置tomcat，jetty等容器。
+
+# springboot如何运行？
+main方法运行，maven插件运行，打包放到容器中运行。
+
+# springboot如何实现配置读取？
+@PropertySource 指定配置文件，作用在类上。
+@Value 绑定配置文件中的变量，作用在方法上。
+
+# springboot如何实现事务？
+@EnableTransactionManager 开启注解事务，作用在启动类上。
+@Transactional 指定事务，作用在类上（表示类的所有public方法全是事务方法），作用在public方法上面。
+
+# springboot使用的内部日志是什么？
+logback
+并且提供了日志抽象sl4j，可以很轻松的实现logback，log4j的日志转换。
+
+

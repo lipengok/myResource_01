@@ -1,0 +1,12 @@
+# 启动各种程序
+ 1，启动mysql：
+    * 启动mysqld服务：service mysqld start
+    * 登录MySQL：mysql -u root -p
+ 2，启动redis：
+    * src/redis-server redis.config
+    * src/redis-cli
+ 3，启动zookeeper
+    * sh bin/zkServer.sh start
+ 4，启动kafka
+    * bin/kafka-server-start.sh config/server.properties
+

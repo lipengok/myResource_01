@@ -15,8 +15,11 @@ public class DateDemo {
         // new DateDemo().test();
         // locDateTimeDemo();
 
-        String str = formatDate(new Date(System.currentTimeMillis()));
-        System.out.println(str);
+        // String str = formatDate(new Date(System.currentTimeMillis()));
+        // System.out.println(str);
+
+        // localdate-plusdate
+        plusDaysDemo();
     }
 
     private static final String PATTERN = "yyyy-MM-dd hh:mm:ss";
@@ -88,5 +91,12 @@ public class DateDemo {
         ZoneId zone = ZoneId.systemDefault();
         Instant instant = localDateTime.atZone(zone).toInstant();
         return Date.from(instant);
+    }
+
+    public static void plusDaysDemo(){
+        LocalDate date = LocalDate.now();
+        System.out.println(date);
+        LocalDate date1 = date.plusDays(0);
+        System.out.println(date1);
     }
 }

@@ -1,0 +1,23 @@
+# 端口
+1，查看本机的端口占用情况
+netstat -tunlp|grep 8080
+2，判断本机是否可以访问远程主机
+ping 远程ip
+3，访问远程主机的指定端口
+telnet ip地址 端口号
+
+# CURL请求
+1，get请求
+curl www.baidu.com
+2，post请求
+curl -d "param1=value1&param2=value2" www.baidu.com
+
+#Linux抓包
+1，抓取指定ip的主机网卡通信的包。
+tcpdump host 127.0.0.1
+2，抓取指定的ip，端口的包
+tcpdump port 22 and host 127.0.0.1
+# todo
+
+
+

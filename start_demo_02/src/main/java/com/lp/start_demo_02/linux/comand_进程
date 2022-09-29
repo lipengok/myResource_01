@@ -1,0 +1,5 @@
+# 进程
+1，搜索java相关的进程
+ps -ef|grep java
+2，根据进程的id结束进程
+kill -9 进程id

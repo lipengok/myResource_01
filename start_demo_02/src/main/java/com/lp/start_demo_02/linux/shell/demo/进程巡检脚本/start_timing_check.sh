@@ -1,0 +1,1 @@
+nohup sh timing_check.sh &

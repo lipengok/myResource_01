@@ -1,0 +1,18 @@
+kafka相关的操作
+
+1，创建topic
+    bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test
+    备注：
+        replication-factor：备份
+        partitions：分区
+2，查看topic列表
+    bin/kafka-topics.sh --list --zookeeper localhost:2181
+3，创建生产者
+    bin/kafka-console-producer --broker-list localhost:9092 --topic test
+4，创建消费者
+    bin/kafka-console-consumer --bootstrap-server localhost:9092 --topic test --from-beginning
+    备注：
+        --from-beginning：从头消费，如果不加的话就是实时消费
+5，查看topic的详细信息
+   bin/kafka-topics.sh --zookeeper localhost:2181 -describe -topic test
+6，
