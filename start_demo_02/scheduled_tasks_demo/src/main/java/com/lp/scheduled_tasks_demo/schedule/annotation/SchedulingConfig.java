@@ -15,9 +15,15 @@ import org.springframework.scheduling.annotation.Scheduled;
 @EnableScheduling    // <task:*>, 让spring进行任务调度
 public class SchedulingConfig {
 
-    @Scheduled(cron="0/2 * * * * ?")    // 20秒执行一次
-    public void scheduler() {
-        System.out.println("定时任务执行了");
+    // 2秒执行一次
+    @Scheduled(cron="0/2 * * * * ?")
+    public void scheduler1() {
+        System.out.println("1：定时任务执行了");
     }
 
+    // 延迟1秒，每2秒执行一次。
+    @Scheduled(initialDelay = 1000, fixedRate = 2000)
+    public void scheduler2() {
+        System.out.println("2：定时任务执行了");
+    }
 }
