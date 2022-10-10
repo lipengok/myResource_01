@@ -13,9 +13,12 @@ import java.io.IOException;
  */
 public class Demo {
     public static void main(String[] args) throws IOException {
-        ClassPathResource classPathResource = new ClassPathResource("test.txt");
+        // E:\github\myResource_02\start_demo_02
         System.out.println(System.getProperty("user.dir"));
+
+        ClassPathResource classPathResource = new ClassPathResource("test.txt");
         File file = classPathResource.getFile();
+        // E:\github\myResource_02\start_demo_02\target\classes\test.txt
         System.out.println(file.getPath());
 
         File file1 = new File(System.getProperty("user.dir")+"/test.txt");
