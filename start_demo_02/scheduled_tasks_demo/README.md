@@ -17,7 +17,7 @@ cron的规则说明：<br>
 @Scheduled(initialDelay = 50000,fixedRate = 6000)：第一次延迟50秒执行，之后按照fixedRate的规则每6秒执行一次<br>
 
 ## 第三方插件quartz
-quartz支持集群定时任务。
+quartz支持集群定时任务。<br>
 
 
 ## 基础的定时方案
