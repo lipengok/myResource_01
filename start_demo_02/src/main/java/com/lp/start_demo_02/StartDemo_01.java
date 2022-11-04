@@ -13,6 +13,7 @@ import java.util.Scanner;
  * 6
  * 说明：
  * 0.5>=0.5，所以5.5需要向上取整为6
+ *
  * @Author lipeng
  * @Date 2022/7/19 15:31
  * @Version 1.0
@@ -22,10 +23,10 @@ public class StartDemo_01 {
         Scanner scanner = new Scanner(System.in);
         double num = scanner.nextDouble();
         int res = 0;
-        if(num%1<0.5){
-            res = (int)num;
-        }else{
-            res = (int)num+1;
+        if (num % 1 < 0.5) {
+            res = (int) num;
+        } else {
+            res = (int) num + 1;
         }
         System.out.println(res);
     }

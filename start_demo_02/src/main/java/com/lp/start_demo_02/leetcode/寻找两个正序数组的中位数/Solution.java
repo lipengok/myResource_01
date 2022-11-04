@@ -48,46 +48,46 @@ package com.lp.start_demo_02.leetcode.寻找两个正序数组的中位数;
 public class Solution {
 
     public static void main(String[] args) {
-        int[] i1 = {1,2};
-        int[] i2 = {6,4,5,3,3};
+        int[] i1 = {1, 2};
+        int[] i2 = {6, 4, 5, 3, 3};
         // 二分法
         System.out.println(search(i1, 2));
-        System.out.println(findMedianSortedArrays(i1,i2));
+        System.out.println(findMedianSortedArrays(i1, i2));
         // printDemo(combine(i1,i2));
-        printDemo(sort(combine(i1,i2)));
+        printDemo(sort(combine(i1, i2)));
     }
 
     private static double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        int[] tmp = sort(combine(nums1,nums2));
-        if (tmp.length%2 == 1){
-            return tmp[tmp.length/2];
-        }else {
-            return (tmp[tmp.length/2]+tmp[tmp.length/2-1])/2;
+        int[] tmp = sort(combine(nums1, nums2));
+        if (tmp.length % 2 == 1) {
+            return tmp[tmp.length / 2];
+        } else {
+            return (tmp[tmp.length / 2] + tmp[tmp.length / 2 - 1]) / 2;
         }
     }
 
     // 将数组合并
-    private static int[] combine(int[] nums1, int[] nums2){
-        int[] tms = new int[nums1.length+nums2.length];
+    private static int[] combine(int[] nums1, int[] nums2) {
+        int[] tms = new int[nums1.length + nums2.length];
 
         for (int i = 0; i < nums1.length; i++) {
             tms[i] = nums1[i];
         }
-        for (int i = 0; i<nums2.length; i++){
-            tms[i+nums1.length] = nums2[i];
+        for (int i = 0; i < nums2.length; i++) {
+            tms[i + nums1.length] = nums2[i];
         }
 
         return tms;
     }
 
     // 数组排序(冒泡排序)
-    private static int[] sort(int[] nums){
+    private static int[] sort(int[] nums) {
         for (int i = 0; i < nums.length; i++) {
-            for (int j = 0; j < nums.length-1; j++) {
-                if (nums[j]>nums[j+1]){
+            for (int j = 0; j < nums.length - 1; j++) {
+                if (nums[j] > nums[j + 1]) {
                     int a = nums[j];
-                    nums[j] = nums[j+1];
-                    nums[j+1] = a;
+                    nums[j] = nums[j + 1];
+                    nums[j + 1] = a;
                 }
             }
         }
@@ -95,7 +95,7 @@ public class Solution {
     }
 
     // 数组排序 二分法 查找
-    private static int search(int[] nums, int queryNum){
+    private static int search(int[] nums, int queryNum) {
         int start = 0;
         int end = nums.length - 1;
         int mid = (start + end) / 2;
@@ -105,7 +105,7 @@ public class Solution {
             }
             if (nums[mid] == queryNum) {
                 return mid;
-            }  else if (nums[mid] > queryNum) {
+            } else if (nums[mid] > queryNum) {
                 end = mid - 1;
                 mid = (start + end) / 2;
             } else if (nums[mid] < queryNum) {
@@ -116,7 +116,7 @@ public class Solution {
     }
 
     // 打印数组，测试用
-    private static void printDemo(int[] arr){
+    private static void printDemo(int[] arr) {
         for (int i : arr) {
             System.out.println(i);
         }

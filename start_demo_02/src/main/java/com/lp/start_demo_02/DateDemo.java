@@ -26,9 +26,10 @@ public class DateDemo {
 
     /**
      * 日期格式化成字符串
+     *
      * @param date
      */
-    private static String formatDate(Date date){
+    private static String formatDate(Date date) {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(PATTERN);
         return simpleDateFormat.format(date);
     }
@@ -39,29 +40,29 @@ public class DateDemo {
         return date;
     }
 
-    private static void locDateTimeDemo(){
+    private static void locDateTimeDemo() {
         System.out.println("#############LocalDateTime Demo#############");
-        LocalDateTime localDateTime1 = LocalDateTime.of(2022, Month.AUGUST, 24, 11, 30, 26,501);
-        System.out.println("第一种初始化方式："+localDateTime1);
+        LocalDateTime localDateTime1 = LocalDateTime.of(2022, Month.AUGUST, 24, 11, 30, 26, 501);
+        System.out.println("第一种初始化方式：" + localDateTime1);
         int year = localDateTime1.getYear();
-        System.out.println("year"+year);
+        System.out.println("year" + year);
         int month = localDateTime1.getMonth().getValue();
-        System.out.println("month"+month);
+        System.out.println("month" + month);
         int day1 = localDateTime1.getDayOfMonth();
-        System.out.println("getDayOfMonth"+day1);
+        System.out.println("getDayOfMonth" + day1);
         int day2 = localDateTime1.getDayOfYear();
-        System.out.println("getDayOfYear"+day2);
+        System.out.println("getDayOfYear" + day2);
         LocalDate localDate = localDateTime1.toLocalDate();
         System.out.println(localDate);
     }
 
-    private void test(){
+    private void test() {
         // 初始化时间
-        LocalDateTime localDateTime1 = LocalDateTime.of(2022, Month.AUGUST, 22, 11, 30, 26,501);
-        System.out.println("dateTime1："+localDateTime1);
+        LocalDateTime localDateTime1 = LocalDateTime.of(2022, Month.AUGUST, 22, 11, 30, 26, 501);
+        System.out.println("dateTime1：" + localDateTime1);
 
         LocalDateTime localDateTime2 = truncTimeTag(96, localDateTime1);
-        System.out.println("dateTime2："+localDateTime2);
+        System.out.println("dateTime2：" + localDateTime2);
     }
 
     // 时标处理
@@ -93,7 +94,7 @@ public class DateDemo {
         return Date.from(instant);
     }
 
-    public static void plusDaysDemo(){
+    public static void plusDaysDemo() {
         LocalDate date = LocalDate.now();
         System.out.println(date);
         LocalDate date1 = date.plusDays(0);

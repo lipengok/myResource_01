@@ -52,10 +52,10 @@ package com.lp.start_demo_02.leetcode.两数之和;
  */
 public class Solution {
     public static void main(String[] args) {
-        int[] pa = {1,3,9,6,3};
+        int[] pa = {1, 3, 9, 6, 3};
         //int[] res = twoSum(pa, 6);
         int[] res = twoSum2(pa, 6);
-        String str = "["+res[0]+","+res[1]+"]";
+        String str = "[" + res[0] + "," + res[1] + "]";
         System.out.println(str);
     }
 
@@ -63,8 +63,8 @@ public class Solution {
         int[] res = new int[2];
         for (int i = 0; i < nums.length; i++) {
             for (int j = 0; j < nums.length; j++) {
-                if (i!=j){
-                    if (nums[i]+nums[j]==target){
+                if (i != j) {
+                    if (nums[i] + nums[j] == target) {
                         res[0] = i;
                         res[1] = j;
                     }
@@ -77,9 +77,9 @@ public class Solution {
     private static int[] twoSum2(int[] nums, int target) {
         int[] res = new int[2];
         for (int i = 0; i < nums.length; i++) {
-            if (nums[i]+nums[nums.length-i-1] == target){
+            if (nums[i] + nums[nums.length - i - 1] == target) {
                 res[0] = i;
-                res[1] = nums.length-i-1;
+                res[1] = nums.length - i - 1;
             }
         }
         return res;

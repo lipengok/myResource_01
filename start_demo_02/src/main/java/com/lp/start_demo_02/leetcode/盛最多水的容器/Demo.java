@@ -49,10 +49,11 @@ import java.util.ArrayList;
 //leetcode submit region begin(Prohibit modification and deletion)
 public class Demo {
     public static void main(String[] args) {
-        int[] height = new int[]{1,8,6,2,5,4,8,3,7};
+        int[] height = new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7};
         int max = maxArea(height);
         System.out.println(max);
     }
+
     private static int maxArea(int[] height) {
         int max = 0;
         // 遍历数组
@@ -60,14 +61,14 @@ public class Demo {
             // 第n条线的x
             int x1 = i;
             // 第n条线的y
-            int y1 = height[i-1];
+            int y1 = height[i - 1];
             for (int i1 = 1; i1 <= height.length; i1++) {
                 // 第n条线的x
                 int x2 = i1;
                 // 第n条线的y
-                int y2 = height[i1-1];
-                int element2 = docker(x1,y1,x2,y2);
-                if (element2>max){
+                int y2 = height[i1 - 1];
+                int element2 = docker(x1, y1, x2, y2);
+                if (element2 > max) {
                     max = element2;
                 }
             }
@@ -76,10 +77,10 @@ public class Demo {
     }
 
     // 计算两个坐标(x1,y1)(x2,y2)与x轴组成的最大存水量
-    private static int docker(int x1,int y1,int x2,int y2){
-        int len = Math.abs(x2-x1);
-        int width = Math.max(y1,y2)-Math.abs(y1-y2);
-        return len*width;
+    private static int docker(int x1, int y1, int x2, int y2) {
+        int len = Math.abs(x2 - x1);
+        int width = Math.max(y1, y2) - Math.abs(y1 - y2);
+        return len * width;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

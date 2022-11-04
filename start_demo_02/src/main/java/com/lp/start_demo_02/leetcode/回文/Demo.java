@@ -58,6 +58,7 @@ public class Demo {
     public static void main(String[] args) {
 
     }
+
     private static boolean isPalindrome(int x) {
         // 如果数字是负数，直接返回false
 

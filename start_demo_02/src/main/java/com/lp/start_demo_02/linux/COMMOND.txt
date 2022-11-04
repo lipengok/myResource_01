@@ -25,10 +25,6 @@ ps -ef|grep java
 2，根据进程的id结束进程
 kill -9 进程id
 
-# 端口
-1，查看端口的占用情况
-netstat -tunlp|grep 8080
-
 # 连接远程服务器
 1，测试机器是否能够访问
 ping ip地址
@@ -48,6 +44,8 @@ curl -d "param1=value1&param2=value2" www.baidu.com
  top
  2，查看内存占用情况
  free
+ 3，查看linux系统中磁盘的分配情况
+ df -h
 
 # 启动各种程序
  1，启动mysql：
@@ -77,3 +75,40 @@ curl -d "param1=value1&param2=value2" www.baidu.com
             --from-beginning：从头消费，如果不加的话就是实时消费
     * 关闭kafka
         bin/
+
+
+## Java GC
+# 每秒查询10次指定Java程序在jvm的gc日志信息
+jstat -gcutil pid(进程号) 1000  10
+1000：1000毫秒
+10：10次
+#
+
+## 网络状态
+# 查看指定端口占用情况
+netstat -an|grep 8080
+netstat -tunlp|grep 8080
+# 查看所有的端口占用情况
+netstat -an
+# 查看本机，外部连接的数量
+netstat -an|grep established | wc -l
+# 查看本机，外部连接的信息
+netstat -an|grep established
+# 查出每个ip与本机的连接数
+netstat -an | grep ESTABLISHED | awk '{print$5}' | awk -F : '{print$1}' |sort |uniq -c | sort -r
+# 查询指定端口的连接数
+netstat -nat | grep -i "80" | wc -l
+
+## linux日志查询
+# 筛选出test在test.txt文件中出现的片段
+grep test test.txt
+# 筛选出test在当前文件夹所有文件中出现的片段
+  grep test *
+
+
+
+
+
+
+
+

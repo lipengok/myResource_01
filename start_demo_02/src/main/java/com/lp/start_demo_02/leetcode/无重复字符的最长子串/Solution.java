@@ -52,15 +52,16 @@ class Solution {
         int count = lengthOfLongestSubstring("yuhhhhoollp");
         System.out.println(count);
     }
+
     private static int lengthOfLongestSubstring(String s) {
         char[] chars = s.toCharArray();
         int count = 0;
         boolean[] tmp = new boolean[1024];
         for (int i = 0; i < chars.length; i++) {
-            if (!tmp[chars[i]]){
+            if (!tmp[chars[i]]) {
                 count++;
             }
-            tmp[chars[i]]=true;
+            tmp[chars[i]] = true;
         }
         return count;
     }

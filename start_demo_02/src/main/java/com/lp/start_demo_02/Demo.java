@@ -21,7 +21,7 @@ public class Demo {
         // E:\github\myResource_02\start_demo_02\target\classes\test.txt
         System.out.println(file.getPath());
 
-        File file1 = new File(System.getProperty("user.dir")+"/test.txt");
+        File file1 = new File(System.getProperty("user.dir") + "/test.txt");
         System.out.println(file1.getPath());
 
         File file2 = ResourceUtils.getFile("classpath:application.properties");

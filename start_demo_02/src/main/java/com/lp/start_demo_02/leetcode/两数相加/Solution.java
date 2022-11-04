@@ -75,33 +75,33 @@ public class Solution {
     public static ArrayList<Integer> addTwoNumbers(ArrayList<Integer> l1, ArrayList<Integer> l2) {
         Integer i1 = reversInteger(l1);
         Integer i2 = reversInteger(l2);
-        return arrToInteger(i1+i2);
+        return arrToInteger(i1 + i2);
     }
 
     // 将数组内的元素倒叙并转换成int类型
-    private static Integer reversInteger(ArrayList<Integer> arr){
+    private static Integer reversInteger(ArrayList<Integer> arr) {
         String str = "";
         for (int i = 0; i < arr.size(); i++) {
-            arr.set(i, arr.get(arr.size()-i-1));
-            str+=arr.get(i);
+            arr.set(i, arr.get(arr.size() - i - 1));
+            str += arr.get(i);
         }
         return Integer.parseInt(str);
     }
 
     // 将数字转换成字符串
-    private static ArrayList<Integer> arrToInteger(Integer integer){
+    private static ArrayList<Integer> arrToInteger(Integer integer) {
         ArrayList<Integer> list = new ArrayList<>();
         char[] chars = integer.toString().toCharArray();
         for (char aChar : chars) {
-            list.add(Integer.parseInt(aChar+""));
+            list.add(Integer.parseInt(aChar + ""));
         }
         return list;
     }
 
-    private static ArrayList<Integer> reversArr(ArrayList<Integer> arr){
+    private static ArrayList<Integer> reversArr(ArrayList<Integer> arr) {
         ArrayList list = new ArrayList();
         for (int i = 0; i < arr.size(); i++) {
-            list.add(i, arr.get(arr.size()-i-1));
+            list.add(i, arr.get(arr.size() - i - 1));
         }
         return list;
     }

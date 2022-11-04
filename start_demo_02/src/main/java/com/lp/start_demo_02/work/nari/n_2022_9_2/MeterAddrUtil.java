@@ -7,7 +7,7 @@ package com.lp.start_demo_02.work.nari.n_2022_9_2;
  */
 public class MeterAddrUtil {
 
-    public static String meterAddrConvert(String meterAddr){
+    public static String meterAddrConvert(String meterAddr) {
         // 将meterAddr转换成新的格式
 
         return "";

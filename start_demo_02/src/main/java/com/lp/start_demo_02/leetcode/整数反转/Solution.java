@@ -55,13 +55,14 @@ public class Solution {
         int a = -120;
         System.out.println(reverse(a));
     }
+
     private static int reverse(int x) {
         StringBuilder stringBuilder = null;
         int res = 0;
-        if (x<0){
+        if (x < 0) {
             stringBuilder = convert(-x);
             res = -Integer.parseInt(stringBuilder.toString());
-        }else {
+        } else {
             stringBuilder = convert(x);
             res = Integer.parseInt(stringBuilder.toString());
         }
@@ -69,12 +70,12 @@ public class Solution {
     }
 
     // 将整数转换成int数组
-    private static StringBuilder convert(int i){
+    private static StringBuilder convert(int i) {
         StringBuilder res = new StringBuilder();
-        while (true){
-            res.append(i%10);
-            i = i/10;
-            if (i==0){
+        while (true) {
+            res.append(i % 10);
+            i = i / 10;
+            if (i == 0) {
                 break;
             }
         }
@@ -82,7 +83,7 @@ public class Solution {
     }
 
     // 测试：循环打印
-    private static void printFor(int[] ints){
+    private static void printFor(int[] ints) {
         for (int anInt : ints) {
             System.out.println(anInt);
         }

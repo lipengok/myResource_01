@@ -66,14 +66,15 @@ public class Solution {
     public static void main(String[] args) {
 
     }
+
     private static String convert(String s, int numRows) {
         int len = s.length();
         // 二维数组列数
-        int cells=0;
-        if (len%3==0||len%3==2){
-            cells = len/2;
-        }else {
-            cells = len/2+1;
+        int cells = 0;
+        if (len % 3 == 0 || len % 3 == 2) {
+            cells = len / 2;
+        } else {
+            cells = len / 2 + 1;
         }
         // 二维数组行数
         int rows = numRows;
@@ -81,7 +82,7 @@ public class Solution {
         char[][] arr = new char[rows][cells];
         char[] chars = s.toCharArray();
         for (int j = 0; j < len; j++) {
-            if (len%rows!=0){
+            if (len % rows != 0) {
                 // todo 特殊排序方式
                 arr[j][0] = s.charAt(j);
             }

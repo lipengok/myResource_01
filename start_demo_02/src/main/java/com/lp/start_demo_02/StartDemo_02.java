@@ -13,6 +13,7 @@ import java.util.Scanner;
  * 9876673
  * 输出：
  * 37689
+ *
  * @Author lipeng
  * @Date 2022/7/19 15:31
  * @Version 1.0
@@ -24,14 +25,14 @@ public class StartDemo_02 {
 
         InputStream in = System.in;
         // 输入的长度
-        int available = in.available()-1;
+        int available = in.available() - 1;
         char[] chars = new char[available];
         while (available-- > 0) {
             chars[available] = (char) in.read();
         }
         StringBuilder resul = new StringBuilder();
         for (int i = 0; i < chars.length; i++) {
-            if (resul.lastIndexOf(String.valueOf(chars[i])) != -1){
+            if (resul.lastIndexOf(String.valueOf(chars[i])) != -1) {
                 continue;
             }
             resul.append(chars[i]);

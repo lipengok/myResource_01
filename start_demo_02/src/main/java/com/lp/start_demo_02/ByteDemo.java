@@ -14,34 +14,34 @@ public class ByteDemo {
     private static Integer BASE16 = 2;
 
     public static void main(String[] args) throws Exception {
-        System.out.println("base16To10:"+base16To10(0x10));
-        System.out.println("base8To10:"+base8To10(10));
-        System.out.println("base2To10:"+base2To10(10));
-        System.out.println("base2To10:"+base2To10(1000));
-        System.out.println("baseNumTo10:"+baseNumTo10(10, 0));
-        System.out.println("baseTo10:"+baseTo10("10100", 0));
-        System.out.println("baseTo10:"+baseTo10("0x1ac", 2));
+        System.out.println("base16To10:" + base16To10(0x10));
+        System.out.println("base8To10:" + base8To10(10));
+        System.out.println("base2To10:" + base2To10(10));
+        System.out.println("base2To10:" + base2To10(1000));
+        System.out.println("baseNumTo10:" + baseNumTo10(10, 0));
+        System.out.println("baseTo10:" + baseTo10("10100", 0));
+        System.out.println("baseTo10:" + baseTo10("0x1ac", 2));
     }
 
     // 16进制转成10进制（2位）
-    private static int base16To10(int num){
+    private static int base16To10(int num) {
         return num & 0xff;
     }
 
     // 8进制转成10进制（2位）
-    private static int base8To10(int num){
+    private static int base8To10(int num) {
         return num & 77;
     }
 
     // 2进制转成10进制（2位）
-    private static int base2To10(int num){
+    private static int base2To10(int num) {
         return num & 22;
     }
 
     // 0：二进制，1：8进制，2：16进制
-    private static int baseNumTo10(int num, int type){
+    private static int baseNumTo10(int num, int type) {
         int res = 0;
-        switch (type){
+        switch (type) {
             case 0:
                 res = num & 22;
                 break;
@@ -59,9 +59,10 @@ public class ByteDemo {
 
     /**
      * 任何进制转换成10
-     *     base的含义：
-     *     0：二进制，1：8进制，2：16进制
-     * @param num 要转换的数字
+     * base的含义：
+     * 0：二进制，1：8进制，2：16进制
+     *
+     * @param num  要转换的数字
      * @param base 要转换的数字的进制
      * @return
      */
@@ -69,47 +70,47 @@ public class ByteDemo {
         int len = num.length();
         char[] chars = num.toCharArray();
         int sum = 0;
-        switch (base){
+        switch (base) {
             case 0:
                 // 2进制
                 int tmp1 = 1;
-                for (int i = len-1; i >= 0; i--) {
+                for (int i = len - 1; i >= 0; i--) {
                     int a = Integer.parseInt(String.valueOf(chars[i]));
                     // 判断是否符合2进制的规则
-                    if (a<0 || a>1){
+                    if (a < 0 || a > 1) {
                         throw new Exception(num + "不符合2进制规则");
                     }
-                    sum += a*tmp1;
+                    sum += a * tmp1;
                     tmp1 *= 2;
                 }
                 break;
             case 1:
                 // 8进制
                 int tmp2 = 1;
-                for (int i = len-1; i >= 0; i--) {
+                for (int i = len - 1; i >= 0; i--) {
                     int a = Integer.parseInt(String.valueOf(chars[i]));
                     // 判断是否符合2进制的规则
-                    if (a<0 || a>7){
+                    if (a < 0 || a > 7) {
                         throw new Exception(num + "不符合8进制规则");
                     }
-                    sum += a*tmp2;
+                    sum += a * tmp2;
                     tmp2 *= 8;
                 }
                 break;
             case 2:
                 // 16进制判断
-                if (len <= 2 || chars[0] != '0' || chars[1] != 'x'){
+                if (len <= 2 || chars[0] != '0' || chars[1] != 'x') {
                     throw new Exception("param is not base16!");
                 }
                 // 将十六进制的每一个元素（字母）转换成数字
                 int tmp3 = 1;
-                for (int i = len-1; i >= 2; i--) {
+                for (int i = len - 1; i >= 2; i--) {
                     // 判断是否符合16进制的规则
-                    if ((int)chars[i]>102){
+                    if ((int) chars[i] > 102) {
                         throw new Exception(num + "不符合16进制规则");
                     }
                     int a = 0;
-                    switch (chars[i]){
+                    switch (chars[i]) {
                         case 'a':
                             a = 10;
                             break;
@@ -132,7 +133,7 @@ public class ByteDemo {
                             a = Integer.parseInt(String.valueOf(chars[i]));
                             break;
                     }
-                    sum += a*tmp3;
+                    sum += a * tmp3;
                     tmp3 *= 16;
                 }
                 break;
@@ -141,7 +142,7 @@ public class ByteDemo {
         return sum;
     }
 
-    private static int base10To2(int num){
+    private static int base10To2(int num) {
         return num & 0xff;
     }
 }

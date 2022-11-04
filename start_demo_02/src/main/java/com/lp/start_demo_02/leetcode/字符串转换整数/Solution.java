@@ -94,6 +94,7 @@ public class Solution {
         int res = myAtoi("   -42");
         System.out.println(res);
     }
+
     private static int myAtoi(String s) {
         // 字符串转成字符串数组
         char[] chars = s.toCharArray();
@@ -103,19 +104,19 @@ public class Solution {
         // 遍历字符数组，筛选出转成int类型范围在48-57的字符而且数字前面有‘-’也要一并输出
         for (int i = 0; i < chars.length; i++) {
             int a = chars[i];
-            if (a>=48&&a<=57){
-                res+=chars[i];
-                flag=flag+1;
+            if (a >= 48 && a <= 57) {
+                res += chars[i];
+                flag = flag + 1;
             }
-            if (flag==1){
+            if (flag == 1) {
                 index = i;
             }
         }
         // 获取筛选出的数字的第一个字符在输入字符的坐标
         // 根据坐标，获取坐标的前一位的字符，如果是'-'，则添加到结果字符串的首位
-        if (index != 0){
-            if ('-' == s.charAt(index-1)){
-                res = "-"+res;
+        if (index != 0) {
+            if ('-' == s.charAt(index - 1)) {
+                res = "-" + res;
             }
         }
         return Integer.parseInt(res);

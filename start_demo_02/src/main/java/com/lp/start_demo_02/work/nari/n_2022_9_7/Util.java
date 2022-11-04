@@ -18,8 +18,8 @@ public class Util {
         System.out.println(convert(meterAddr4));
     }
 
-    private static String convert(String meterAddr){
-        if (meterAddr.contains(":")){
+    private static String convert(String meterAddr) {
+        if (meterAddr.contains(":")) {
             String[] strings = meterAddr.split(":");
             return strings[1].trim();
         }

@@ -43,22 +43,23 @@ public class Solution {
     public static void main(String[] args) {
 
     }
+
     // 判断字符串中的最长回文片段
     private static String longestPalindrome(String s) {
         int len = s.length();
         ArrayList<String> list = new ArrayList<>();
         char[] chars = s.toCharArray();
-        if (check(s)){
+        if (check(s)) {
             return reverse(s);
         }
-        if (len == 1){
+        if (len == 1) {
             return s;
         }
         for (int i = 2; i <= len; i++) {
             String str1 = "";
             for (int i1 = 0; i1 < i; i1++) {
-                str1+=chars[i1];
-                if (check(str1)){
+                str1 += chars[i1];
+                if (check(str1)) {
                     list.add(str1);
                 }
             }
@@ -68,30 +69,32 @@ public class Solution {
     }
 
     // 判断一个字符串是不是回文
-    private static boolean check(String s){
+    private static boolean check(String s) {
         char[] chars = s.toCharArray();
         boolean flag = true;
         for (int i = 0; i < chars.length; i++) {
-            if(chars[i] != s.charAt(chars.length-1)){
+            if (chars[i] != s.charAt(chars.length - 1)) {
                 flag = false;
             }
         }
         return flag;
     }
+
     // 将字符串反转
-    private static String reverse(String s){
+    private static String reverse(String s) {
         char[] chars = s.toCharArray();
         String string = "";
         for (int i = 0; i < chars.length; i++) {
-            string+=chars[chars.length-i];
+            string += chars[chars.length - i];
         }
         return string;
     }
+
     // 找出列表中字符串长度最长的字符串
-    private static String getLen(ArrayList<String> list){
+    private static String getLen(ArrayList<String> list) {
         String res = list.get(0);
         for (int i = 0; i < list.size(); i++) {
-            if (list.get(i).length()>res.length()){
+            if (list.get(i).length() > res.length()) {
                 res = list.get(i);
             }
         }
