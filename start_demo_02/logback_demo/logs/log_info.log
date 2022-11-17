@@ -1,31 +1,149 @@
-2022-11-16 14:55:00.304 [main] INFO  com.lp.logback_demo.LogbackDemoApplicationTests - Starting LogbackDemoApplicationTests on DESKTOP-T987IHU with PID 12924 (started by TY in E:\github\myResource_02\start_demo_02\logback_demo)
-2022-11-16 14:55:00.323 [main] INFO  com.lp.logback_demo.LogbackDemoApplicationTests - No active profile set, falling back to default profiles: default
-2022-11-16 14:55:04.402 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2022-11-16 14:55:04.993 [main] INFO  com.lp.logback_demo.LogbackDemoApplicationTests - Started LogbackDemoApplicationTests in 5.383 seconds (JVM running for 7.528)
-2022-11-16 14:55:05.472 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-2022-11-16 14:55:19.683 [main] INFO  com.lp.logback_demo.LogbackDemoApplicationTests - Starting LogbackDemoApplicationTests on DESKTOP-T987IHU with PID 12784 (started by TY in E:\github\myResource_02\start_demo_02\logback_demo)
-2022-11-16 14:55:19.686 [main] INFO  com.lp.logback_demo.LogbackDemoApplicationTests - No active profile set, falling back to default profiles: default
-2022-11-16 14:55:23.101 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2022-11-16 14:55:23.848 [main] INFO  com.lp.logback_demo.LogbackDemoApplicationTests - Started LogbackDemoApplicationTests in 4.772 seconds (JVM running for 6.874)
-2022-11-16 14:55:24.300 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-2022-11-16 14:57:10.443 [main] INFO  com.lp.logback_demo.LogbackDemoApplicationTests - Starting LogbackDemoApplicationTests on DESKTOP-T987IHU with PID 14320 (started by TY in E:\github\myResource_02\start_demo_02\logback_demo)
-2022-11-16 14:57:10.445 [main] INFO  com.lp.logback_demo.LogbackDemoApplicationTests - No active profile set, falling back to default profiles: default
-2022-11-16 14:57:13.527 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2022-11-16 14:57:14.206 [main] INFO  com.lp.logback_demo.LogbackDemoApplicationTests - Started LogbackDemoApplicationTests in 4.426 seconds (JVM running for 6.381)
-2022-11-16 14:57:14.632 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-2022-11-16 14:58:37.601 [main] INFO  com.lp.logback_demo.LogbackDemoApplication - Starting LogbackDemoApplication on DESKTOP-T987IHU with PID 3400 (E:\github\myResource_02\start_demo_02\logback_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
-2022-11-16 14:58:37.604 [main] INFO  com.lp.logback_demo.LogbackDemoApplication - No active profile set, falling back to default profiles: default
-2022-11-16 14:58:39.695 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2022-11-16 14:58:39.711 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2022-11-16 14:58:39.712 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2022-11-16 14:58:39.713 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2022-11-16 14:58:39.851 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2022-11-16 14:58:39.851 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2029 ms
-2022-11-16 14:58:40.070 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2022-11-16 14:58:40.254 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2022-11-16 14:58:40.281 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2022-11-16 14:58:40.318 [main] INFO  com.lp.logback_demo.LogbackDemoApplication - Started LogbackDemoApplication in 3.947 seconds (JVM running for 6.909)
-2022-11-16 14:59:12.518 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-11-16 14:59:12.519 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2022-11-16 14:59:12.528 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
-2022-11-16 14:59:25.767 [http-nio-8080-exec-3] INFO  com.lp.logback_demo.controller.LogbackController - 项目路径=>[E:\github\myResource_02\start_demo_02]
+2022-11-17 13:56:01.317[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting LogbackDemoApplication on DESKTOP-T987IHU with PID 12456 (E:\github\myResource_02\start_demo_02\logback_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2022-11-17 13:56:01.319[main][org.springframework.boot.SpringApplication:651] INFO  - No active profile set, falling back to default profiles: default
+2022-11-17 13:56:03.601[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2022-11-17 13:56:03.616[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-17 13:56:03.617[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2022-11-17 13:56:03.620[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-11-17 13:56:03.756[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2022-11-17 13:56:03.756[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] INFO  - Root WebApplicationContext: initialization completed in 2318 ms
+2022-11-17 13:56:04.015[main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:181] INFO  - Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-17 13:56:04.239[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-17 13:56:04.268[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-17 13:56:04.304[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started LogbackDemoApplication in 3.929 seconds (JVM running for 6.655)
+2022-11-17 13:59:55.801[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting LogbackDemoApplication on DESKTOP-T987IHU with PID 14988 (E:\github\myResource_02\start_demo_02\logback_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2022-11-17 13:59:55.806[main][org.springframework.boot.SpringApplication:651] INFO  - No active profile set, falling back to default profiles: default
+2022-11-17 13:59:57.848[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2022-11-17 13:59:57.862[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-17 13:59:57.863[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2022-11-17 13:59:57.864[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-11-17 13:59:57.987[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2022-11-17 13:59:57.988[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] INFO  - Root WebApplicationContext: initialization completed in 2072 ms
+2022-11-17 13:59:58.205[main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:181] INFO  - Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-17 13:59:58.389[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-17 13:59:58.412[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-17 13:59:58.450[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started LogbackDemoApplication in 4.02 seconds (JVM running for 6.935)
+2022-11-17 14:04:15.893[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting LogbackDemoApplication on DESKTOP-T987IHU with PID 15172 (E:\github\myResource_02\start_demo_02\logback_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2022-11-17 14:04:15.896[main][org.springframework.boot.SpringApplication:651] INFO  - No active profile set, falling back to default profiles: default
+2022-11-17 14:04:17.863[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2022-11-17 14:04:17.877[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-17 14:04:17.879[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2022-11-17 14:04:17.879[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-11-17 14:04:18.011[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2022-11-17 14:04:18.012[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] INFO  - Root WebApplicationContext: initialization completed in 1923 ms
+2022-11-17 14:04:18.264[main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:181] INFO  - Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-17 14:04:18.505[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-17 14:04:18.536[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-17 14:04:18.576[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started LogbackDemoApplication in 3.793 seconds (JVM running for 6.537)
+2022-11-17 14:08:25.434[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting LogbackDemoApplication on DESKTOP-T987IHU with PID 14460 (E:\github\myResource_02\start_demo_02\logback_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2022-11-17 14:08:25.436[main][org.springframework.boot.SpringApplication:651] INFO  - No active profile set, falling back to default profiles: default
+2022-11-17 14:08:27.350[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2022-11-17 14:08:27.361[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-17 14:08:27.361[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2022-11-17 14:08:27.362[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-11-17 14:08:27.498[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2022-11-17 14:08:27.498[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] INFO  - Root WebApplicationContext: initialization completed in 1904 ms
+2022-11-17 14:08:27.766[main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:181] INFO  - Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-17 14:08:27.981[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-17 14:08:28.011[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-17 14:08:28.040[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started LogbackDemoApplication in 3.591 seconds (JVM running for 6.243)
+2022-11-17 14:08:49.728[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting LogbackDemoApplication on DESKTOP-T987IHU with PID 5668 (E:\github\myResource_02\start_demo_02\logback_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2022-11-17 14:08:49.731[main][org.springframework.boot.SpringApplication:651] INFO  - No active profile set, falling back to default profiles: default
+2022-11-17 14:08:51.661[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2022-11-17 14:08:51.671[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-17 14:08:51.671[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2022-11-17 14:08:51.672[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-11-17 14:08:51.782[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2022-11-17 14:08:51.782[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] INFO  - Root WebApplicationContext: initialization completed in 1914 ms
+2022-11-17 14:08:51.972[main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:181] INFO  - Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-17 14:08:52.127[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-17 14:08:52.150[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-17 14:08:52.177[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started LogbackDemoApplication in 3.423 seconds (JVM running for 6.15)
+2022-11-17 14:09:05.891[http-nio-8080-exec-1][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-17 14:09:05.891[http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet:525] INFO  - Initializing Servlet 'dispatcherServlet'
+2022-11-17 14:09:05.898[http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet:547] INFO  - Completed initialization in 7 ms
+2022-11-17 14:09:05.927[http-nio-8080-exec-1][com.lp.logback_demo.controller.LogbackController:21] INFO  - 项目路径=>[E:\github\myResource_02\start_demo_02]
+2022-11-17 14:09:18.441[http-nio-8080-exec-2][com.lp.logback_demo.controller.LogbackController:21] INFO  - 项目路径=>[E:\github\myResource_02\start_demo_02]
+2022-11-17 14:12:30.810[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting LogbackDemoApplication on DESKTOP-T987IHU with PID 10064 (E:\github\myResource_02\start_demo_02\logback_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2022-11-17 14:12:30.850[main][org.springframework.boot.SpringApplication:651] INFO  - No active profile set, falling back to default profiles: default
+2022-11-17 14:12:33.270[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2022-11-17 14:12:33.283[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-17 14:12:33.284[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2022-11-17 14:12:33.284[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-11-17 14:12:33.426[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2022-11-17 14:12:33.428[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] INFO  - Root WebApplicationContext: initialization completed in 2391 ms
+2022-11-17 14:12:33.726[main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:181] INFO  - Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-17 14:12:33.960[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-17 14:12:33.994[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-17 14:12:34.038[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started LogbackDemoApplication in 4.592 seconds (JVM running for 8.346)
+2022-11-17 14:15:48.802[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting LogbackDemoApplication on DESKTOP-T987IHU with PID 15020 (E:\github\myResource_02\start_demo_02\logback_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2022-11-17 14:15:48.835[main][org.springframework.boot.SpringApplication:651] INFO  - No active profile set, falling back to default profiles: default
+2022-11-17 14:15:50.907[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2022-11-17 14:15:50.922[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-17 14:15:50.923[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2022-11-17 14:15:50.924[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-11-17 14:15:51.025[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2022-11-17 14:15:51.026[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] INFO  - Root WebApplicationContext: initialization completed in 2054 ms
+2022-11-17 14:15:51.278[main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:181] INFO  - Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-17 14:15:51.475[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-17 14:15:51.503[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-17 14:15:51.541[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started LogbackDemoApplication in 3.85 seconds (JVM running for 6.535)
+2022-11-17 14:17:30.954[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting LogbackDemoApplication on DESKTOP-T987IHU with PID 5168 (E:\github\myResource_02\start_demo_02\logback_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2022-11-17 14:17:30.956[main][org.springframework.boot.SpringApplication:651] INFO  - No active profile set, falling back to default profiles: default
+2022-11-17 14:17:33.037[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2022-11-17 14:17:33.053[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-17 14:17:33.054[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2022-11-17 14:17:33.055[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-11-17 14:17:33.221[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2022-11-17 14:17:33.221[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] INFO  - Root WebApplicationContext: initialization completed in 2105 ms
+2022-11-17 14:17:33.432[main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:181] INFO  - Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-17 14:17:33.622[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-17 14:17:33.649[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-17 14:17:33.692[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started LogbackDemoApplication in 4.06 seconds (JVM running for 6.988)
+2022-11-17 14:18:33.771[http-nio-8080-exec-1][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-17 14:18:33.772[http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet:525] INFO  - Initializing Servlet 'dispatcherServlet'
+2022-11-17 14:18:33.782[http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet:547] INFO  - Completed initialization in 9 ms
+2022-11-17 14:18:33.810[http-nio-8080-exec-1][com.lp.logback_demo.controller.LogbackController:21] INFO  - 项目路径=>[E:\github\myResource_02\start_demo_02]
+2022-11-17 14:19:51.966[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting LogbackDemoApplication on DESKTOP-T987IHU with PID 14820 (E:\github\myResource_02\start_demo_02\logback_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2022-11-17 14:19:51.970[main][org.springframework.boot.SpringApplication:651] INFO  - No active profile set, falling back to default profiles: default
+2022-11-17 14:19:53.873[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2022-11-17 14:19:53.882[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-17 14:19:53.883[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2022-11-17 14:19:53.883[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-11-17 14:19:53.997[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2022-11-17 14:19:53.997[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] INFO  - Root WebApplicationContext: initialization completed in 1910 ms
+2022-11-17 14:19:54.234[main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:181] INFO  - Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-17 14:19:54.444[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-17 14:19:54.472[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-17 14:19:54.512[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started LogbackDemoApplication in 3.973 seconds (JVM running for 6.868)
+2022-11-17 14:21:30.890[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting LogbackDemoApplication on DESKTOP-T987IHU with PID 10984 (E:\github\myResource_02\start_demo_02\logback_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2022-11-17 14:21:30.892[main][org.springframework.boot.SpringApplication:651] INFO  - No active profile set, falling back to default profiles: default
+2022-11-17 14:21:32.995[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2022-11-17 14:21:33.010[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-17 14:21:33.012[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2022-11-17 14:21:33.013[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-11-17 14:21:33.171[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2022-11-17 14:21:33.173[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] INFO  - Root WebApplicationContext: initialization completed in 2148 ms
+2022-11-17 14:21:33.435[main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:181] INFO  - Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-17 14:21:33.597[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-17 14:21:33.621[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-17 14:21:33.651[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started LogbackDemoApplication in 4.061 seconds (JVM running for 6.816)
+2022-11-17 14:21:53.381[http-nio-8080-exec-1][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-17 14:21:53.381[http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet:525] INFO  - Initializing Servlet 'dispatcherServlet'
+2022-11-17 14:21:53.390[http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet:547] INFO  - Completed initialization in 8 ms
+2022-11-17 14:21:53.418[http-nio-8080-exec-1][com.lp.logback_demo.controller.LogbackController:21] INFO  - 项目路径=>[E:\github\myResource_02\start_demo_02]
+2022-11-17 14:25:55.407[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting LogbackDemoApplication on DESKTOP-T987IHU with PID 2988 (E:\github\myResource_02\start_demo_02\logback_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2022-11-17 14:25:55.410[main][org.springframework.boot.SpringApplication:651] INFO  - No active profile set, falling back to default profiles: default
+2022-11-17 14:25:57.632[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2022-11-17 14:25:57.646[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-17 14:25:57.647[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2022-11-17 14:25:57.648[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-11-17 14:25:57.818[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2022-11-17 14:25:57.818[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] INFO  - Root WebApplicationContext: initialization completed in 2238 ms
+2022-11-17 14:25:58.141[main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:181] INFO  - Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-17 14:25:58.372[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2022-11-17 14:25:58.405[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-17 14:25:58.452[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started LogbackDemoApplication in 4.359 seconds (JVM running for 6.989)
+2022-11-17 14:25:59.804[http-nio-8080-exec-1][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-17 14:25:59.805[http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet:525] INFO  - Initializing Servlet 'dispatcherServlet'
+2022-11-17 14:25:59.815[http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet:547] INFO  - Completed initialization in 10 ms
+2022-11-17 14:25:59.868[http-nio-8080-exec-1][com.lp.logback_demo.controller.LogbackController:21] INFO  - 项目路径=>[E:\github\myResource_02\start_demo_02]

@@ -48,8 +48,8 @@ public class LogUtil {
 	}
 
 	/**
-	 * 修改日志等级（修改的是写入文件的等级）
-	 * @param level
+	 * 修改全局日志等级
+	 * @param level 日志等级
 	 */
 	public static void chgLogLevel(String level) {
 		LoggerContext loggerContext = (LoggerContext) LoggerFactory.getILoggerFactory();
@@ -58,10 +58,10 @@ public class LogUtil {
 	}
 
 	/**
-	 * 修改日志等级
+	 * 修改指定日志等级
 	 * 
-	 * @param logClass
-	 * @param logLevel
+	 * @param logClass 类名
+	 * @param logLevel 日志等级
 	 */
 	public static void chgLogLevel(String logClass, String logLevel) {
 		LoggerContext loggerContext = (LoggerContext) LoggerFactory.getILoggerFactory();
@@ -72,7 +72,7 @@ public class LogUtil {
 	}
 
 	/**
-	 * 关闭日志
+	 * 关闭全局日志
 	 */
 	public static String logOff() {
 		chgLogLevel("OFF");
@@ -82,7 +82,7 @@ public class LogUtil {
 	}
 
 	/**
-	 * 日志DEBUG等级
+	 * 设置全局日志为DEBUG
 	 */
 	public static String logDebug() {
 		chgLogLevel("DEBUG");
@@ -90,7 +90,7 @@ public class LogUtil {
 	}
 
 	/**
-	 * 日志INFO等级
+	 * 设置全局日志为INFO
 	 */
 	public static String logInfo() {
 		chgLogLevel("INFO");
@@ -98,7 +98,7 @@ public class LogUtil {
 	}
 
 	/**
-	 * 日志ERROR等级
+	 * 设置全局日志为ERROR
 	 */
 	public static String logError() {
 		chgLogLevel("ERROR");

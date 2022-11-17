@@ -1,1 +1,5 @@
-2022-11-16 14:59:25.769 [http-nio-8080-exec-3] ERROR com.lp.logback_demo.controller.LogbackController - 项目路径=>[E:\github\myResource_02\start_demo_02]
+2022-11-17 14:09:05.929[http-nio-8080-exec-1][com.lp.logback_demo.controller.LogbackController:22] ERROR - 项目路径=>[E:\github\myResource_02\start_demo_02]
+2022-11-17 14:09:18.442[http-nio-8080-exec-2][com.lp.logback_demo.controller.LogbackController:22] ERROR - 项目路径=>[E:\github\myResource_02\start_demo_02]
+2022-11-17 14:18:33.812[http-nio-8080-exec-1][com.lp.logback_demo.controller.LogbackController:22] ERROR - 项目路径=>[E:\github\myResource_02\start_demo_02]
+2022-11-17 14:21:53.420[http-nio-8080-exec-1][com.lp.logback_demo.controller.LogbackController:22] ERROR - 项目路径=>[E:\github\myResource_02\start_demo_02]
+2022-11-17 14:25:59.869[http-nio-8080-exec-1][com.lp.logback_demo.controller.LogbackController:22] ERROR - 项目路径=>[E:\github\myResource_02\start_demo_02]
