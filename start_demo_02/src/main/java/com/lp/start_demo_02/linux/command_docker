@@ -1,0 +1,39 @@
+# docker环境相关
+安装docker
+    yum install docker
+启动docker
+    systemctl start docker
+关闭docker
+    systemctl stop docker
+重启docker
+    systemctl restart docker
+查看docker版本
+    docker -v
+查看docker状态
+    systemctl status docker
+查看docker信息
+    dockers info
+
+# docker功能相关
+查看所有docker镜像
+    docker images
+查看所有镜像的id
+    docker images -q
+从网络中查找镜像
+    docker search 镜像名称
+从网络中拉取镜像
+    docker pull 镜像名称
+    例如：拉取centos版本7
+        docker pull centos:7
+根据镜像id删除镜像
+    docker rmi 镜像id
+删除所有的镜像
+    docker rmi "docker images"
+查看所有正在运行的镜像
+    docker ps -a
+查看最近一次正在运行的镜像
+    docker ps -l
+查看停止的镜像
+docker ps -f status=exited
+
+
