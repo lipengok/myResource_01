@@ -9,15 +9,14 @@ import org.springframework.boot.test.context.SpringBootTest;
 class RabbitmqDemoApplicationTests {
 
     @Autowired
-    RabbitTemplate rabbitTemplate;
+    private RabbitTemplate rabbitTemplate;
 
     @Test
     void contextLoads() {
     }
 
-
     @Test
-    void mqServer(){
-        rabbitTemplate.convertAndSend("WorkExchange", "WorkRouting", "rabbitmq_demo");
+    public void testSend(){
+        rabbitTemplate.convertAndSend("itcast","我要红包");
     }
 }

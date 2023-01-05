@@ -1,5 +1,8 @@
 package com.lp.start_demo_02;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @Author lipeng
  * @Date 2022/8/26 14:04
@@ -144,5 +147,19 @@ public class ByteDemo {
 
     private static int base10To2(int num) {
         return num & 0xff;
+    }
+
+    /**
+     * 位图法
+     * 说明：所谓bitmap，就是用每一位来存放某种状态。
+     * 适用于大规模数据，但数据状态又不是很多的情况。通常是用来 “判断某个数据存不存在”。
+     */
+    public static void wei1(){
+        int[] i1 = {1234, 2345};
+
+        // 将1234的作为key，状态为1：存在，放到内存中。
+        Map map = new HashMap<Integer, Boolean>();
+        map.put(1234, 1);
+        map.put(2345, 1);
     }
 }
