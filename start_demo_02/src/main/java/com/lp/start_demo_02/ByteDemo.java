@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 字节处理
  * @Author lipeng
  * @Date 2022/8/26 14:04
  * @Version 1.0
@@ -41,7 +42,7 @@ public class ByteDemo {
         return num & 22;
     }
 
-    // 0：二进制，1：8进制，2：16进制
+    // 0：2进制，1：8进制，2：16进制
     private static int baseNumTo10(int num, int type) {
         int res = 0;
         switch (type) {

@@ -1,18 +1,9 @@
 package com.lp.start_demo_02;
 
-import com.sun.org.apache.bcel.internal.classfile.Code;
-import org.apache.catalina.util.Strftime;
 import org.apache.tomcat.util.codec.binary.Base64;
-import org.bouncycastle.crypto.agreement.DHStandardGroups;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
-
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
@@ -22,6 +13,9 @@ import java.io.UnsupportedEncodingException;
 import java.security.Key;
 import java.security.Security;
 
+/**
+ * 加密/解密
+ */
 public class EncryptDemo {
 
     private static final String src = "待加密的数据";
