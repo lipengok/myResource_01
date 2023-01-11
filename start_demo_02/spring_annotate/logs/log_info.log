@@ -1,0 +1,50 @@
+2023-01-11 13:36:42.617[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting SpringAnnotateApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 4884 (E:\github\myResource_02\start_demo_02\spring_annotate\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2023-01-11 13:36:42.623[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
+2023-01-11 13:36:45.141[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2023-01-11 13:36:45.151[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-01-11 13:36:45.154[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2023-01-11 13:36:45.154[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-11 13:36:45.317[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2023-01-11 13:36:45.318[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 2552 ms
+2023-01-11 13:36:45.946[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2023-01-11 13:36:45.968[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-11 13:36:46.003[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started SpringAnnotateApplication in 5.749 seconds (JVM running for 9.335)
+2023-01-11 13:36:46.007[main][com.lp.spring_annotate.SpringAnnotateApplication:13] INFO  - 项目初始化完成
+2023-01-11 13:37:26.492[http-nio-8080-exec-1][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-11 13:37:26.492[http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet:525] INFO  - Initializing Servlet 'dispatcherServlet'
+2023-01-11 13:37:26.494[http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet:547] INFO  - Completed initialization in 2 ms
+2023-01-11 13:37:26.525[http-nio-8080-exec-1][com.lp.spring_annotate.aspect.LogAspect:32] INFO  - 获取所有的型号
+2023-01-11 13:42:25.357[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting SpringAnnotateApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 2420 (E:\github\myResource_02\start_demo_02\spring_annotate\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2023-01-11 13:42:25.382[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
+2023-01-11 13:42:27.749[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2023-01-11 13:42:27.760[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-01-11 13:42:27.761[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2023-01-11 13:42:27.761[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-11 13:42:27.937[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2023-01-11 13:42:27.938[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 2385 ms
+2023-01-11 13:42:28.469[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2023-01-11 13:42:28.490[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-11 13:42:28.518[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started SpringAnnotateApplication in 4.676 seconds (JVM running for 7.402)
+2023-01-11 13:42:28.522[main][com.lp.spring_annotate.SpringAnnotateApplication:13] INFO  - 项目初始化完成
+2023-01-11 13:42:33.186[http-nio-8080-exec-2][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-11 13:42:33.186[http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet:525] INFO  - Initializing Servlet 'dispatcherServlet'
+2023-01-11 13:42:33.188[http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet:547] INFO  - Completed initialization in 1 ms
+2023-01-11 13:42:33.220[http-nio-8080-exec-2][com.lp.spring_annotate.aspect.LogAspect:32] INFO  - 获取所有的型号
+2023-01-11 13:42:33.235[http-nio-8080-exec-2][com.lp.spring_annotate.controller.LogDemoController:28] INFO  - 查询到的型号如下：[{}][k9s, k10s]
+2023-01-11 13:43:12.552[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting SpringAnnotateApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 14304 (E:\github\myResource_02\start_demo_02\spring_annotate\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2023-01-11 13:43:12.561[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
+2023-01-11 13:43:14.757[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2023-01-11 13:43:14.766[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-01-11 13:43:14.767[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2023-01-11 13:43:14.767[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-11 13:43:14.916[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2023-01-11 13:43:14.916[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 2208 ms
+2023-01-11 13:43:15.478[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2023-01-11 13:43:15.498[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-11 13:43:15.531[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started SpringAnnotateApplication in 4.515 seconds (JVM running for 7.344)
+2023-01-11 13:43:15.535[main][com.lp.spring_annotate.SpringAnnotateApplication:13] INFO  - 项目初始化完成
+2023-01-11 13:43:25.305[http-nio-8080-exec-1][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-11 13:43:25.306[http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet:525] INFO  - Initializing Servlet 'dispatcherServlet'
+2023-01-11 13:43:25.309[http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet:547] INFO  - Completed initialization in 3 ms
+2023-01-11 13:43:25.341[http-nio-8080-exec-1][com.lp.spring_annotate.aspect.LogAspect:32] INFO  - 获取所有的型号
+2023-01-11 13:43:25.353[http-nio-8080-exec-1][com.lp.spring_annotate.controller.LogDemoController:28] INFO  - 查询到的型号如下：[[k9s, k10s]]
