@@ -38,7 +38,11 @@ public class RequestWrapper extends HttpServletRequestWrapper {
         return new BufferedReader(new InputStreamReader(getInputStream()));
     }
 
-    //把保存好的InputStream，传下去
+    /**
+     * 把保存好的InputStream，传下去
+     * InputStream只能被读取一次，需要复制一份传给springboot
+     */
+
     @Override
     public ServletInputStream getInputStream() throws IOException {
 

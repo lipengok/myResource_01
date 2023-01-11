@@ -1,10 +1,10 @@
-package com.lp.springboottransactional;
+package com.lp.spring_annotate;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringbootTransactionalApplicationTests {
+class SpringAnnotateApplicationTests {
 
     @Test
     void contextLoads() {
