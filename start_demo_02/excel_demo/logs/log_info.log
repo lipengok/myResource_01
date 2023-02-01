@@ -1,0 +1,87 @@
+2023-02-01 10:10:37.815[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting ExcelDemoApplication on DESKTOP-T987IHU with PID 5364 (E:\github\myResource_02\start_demo_02\excel_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2023-02-01 10:10:37.818[main][org.springframework.boot.SpringApplication:651] INFO  - No active profile set, falling back to default profiles: default
+2023-02-01 10:10:40.795[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2023-02-01 10:10:40.811[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-02-01 10:10:40.812[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2023-02-01 10:10:40.814[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-02-01 10:10:41.021[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2023-02-01 10:10:41.022[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] INFO  - Root WebApplicationContext: initialization completed in 2933 ms
+2023-02-01 10:10:41.206[main][com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:56] INFO  - Init DruidDataSource
+2023-02-01 10:10:41.431[main][com.alibaba.druid.pool.DruidDataSource:1002] INFO  - {dataSource-1} inited
+2023-02-01 10:10:45.511[main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:181] INFO  - Initializing ExecutorService 'applicationTaskExecutor'
+2023-02-01 10:10:45.913[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2023-02-01 10:10:45.939[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-01 10:10:45.972[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started ExcelDemoApplication in 10.022 seconds (JVM running for 14.005)
+2023-02-01 10:12:09.634[http-nio-8080-exec-2][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-01 10:12:09.634[http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet:525] INFO  - Initializing Servlet 'dispatcherServlet'
+2023-02-01 10:12:09.642[http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet:547] INFO  - Completed initialization in 8 ms
+2023-02-01 10:35:21.294[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting ExcelDemoApplication on DESKTOP-T987IHU with PID 8032 (E:\github\myResource_02\start_demo_02\excel_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2023-02-01 10:35:21.308[main][org.springframework.boot.SpringApplication:651] INFO  - No active profile set, falling back to default profiles: default
+2023-02-01 10:35:23.980[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2023-02-01 10:35:23.995[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-02-01 10:35:23.996[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2023-02-01 10:35:23.996[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-02-01 10:35:24.118[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2023-02-01 10:35:24.119[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] INFO  - Root WebApplicationContext: initialization completed in 2664 ms
+2023-02-01 10:35:24.276[main][com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:56] INFO  - Init DruidDataSource
+2023-02-01 10:35:24.449[main][com.alibaba.druid.pool.DruidDataSource:1002] INFO  - {dataSource-1} inited
+2023-02-01 10:35:27.755[main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:181] INFO  - Initializing ExecutorService 'applicationTaskExecutor'
+2023-02-01 10:35:28.077[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2023-02-01 10:35:28.100[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-01 10:35:28.121[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started ExcelDemoApplication in 8.257 seconds (JVM running for 11.181)
+2023-02-01 10:35:28.124[main][com.lp.excel_demo.ExcelDemoApplication:13] INFO  - 项目初始化完成
+2023-02-01 10:36:02.954[http-nio-8080-exec-2][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-01 10:36:02.955[http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet:525] INFO  - Initializing Servlet 'dispatcherServlet'
+2023-02-01 10:36:02.963[http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet:547] INFO  - Completed initialization in 8 ms
+2023-02-01 10:36:04.020[http-nio-8080-exec-2][com.alibaba.excel.write.metadata.holder.WriteWorkbookHolder:294] INFO  - create new style:com.alibaba.excel.write.metadata.style.WriteCellStyle@c2a8e39a,null
+2023-02-01 10:36:04.040[http-nio-8080-exec-2][com.alibaba.excel.util.StyleUtil:141] INFO  - create new font:com.alibaba.excel.write.metadata.style.WriteFont@70da9df,null
+2023-02-01 10:36:04.103[http-nio-8080-exec-2][com.alibaba.excel.write.metadata.holder.WriteWorkbookHolder:294] INFO  - create new style:com.alibaba.excel.write.metadata.style.WriteCellStyle@ec27b26f,null
+2023-02-01 10:36:04.104[http-nio-8080-exec-2][com.alibaba.excel.util.StyleUtil:141] INFO  - create new font:com.alibaba.excel.write.metadata.style.WriteFont@7013316,null
+2023-02-01 10:36:04.337[http-nio-8080-exec-2][com.lp.excel_demo.excel.exp.ExcelExport:54] INFO  - 下载31条记录到文件userList
+2023-02-01 10:36:33.641[http-nio-8080-exec-4][com.alibaba.excel.write.metadata.holder.WriteWorkbookHolder:294] INFO  - create new style:com.alibaba.excel.write.metadata.style.WriteCellStyle@c2a8e39a,null
+2023-02-01 10:36:33.643[http-nio-8080-exec-4][com.alibaba.excel.util.StyleUtil:141] INFO  - create new font:com.alibaba.excel.write.metadata.style.WriteFont@70da9df,null
+2023-02-01 10:36:33.645[http-nio-8080-exec-4][com.alibaba.excel.write.metadata.holder.WriteWorkbookHolder:294] INFO  - create new style:com.alibaba.excel.write.metadata.style.WriteCellStyle@ec27b26f,null
+2023-02-01 10:36:33.646[http-nio-8080-exec-4][com.alibaba.excel.util.StyleUtil:141] INFO  - create new font:com.alibaba.excel.write.metadata.style.WriteFont@7013316,null
+2023-02-01 10:36:33.761[http-nio-8080-exec-4][com.lp.excel_demo.excel.exp.ExcelExport:54] INFO  - 下载31条记录到文件userList
+2023-02-01 10:37:58.377[http-nio-8080-exec-10][com.alibaba.excel.write.metadata.holder.WriteWorkbookHolder:294] INFO  - create new style:com.alibaba.excel.write.metadata.style.WriteCellStyle@c2a8e39a,null
+2023-02-01 10:37:58.380[http-nio-8080-exec-10][com.alibaba.excel.util.StyleUtil:141] INFO  - create new font:com.alibaba.excel.write.metadata.style.WriteFont@70da9df,null
+2023-02-01 10:37:58.384[http-nio-8080-exec-10][com.alibaba.excel.write.metadata.holder.WriteWorkbookHolder:294] INFO  - create new style:com.alibaba.excel.write.metadata.style.WriteCellStyle@ec27b26f,null
+2023-02-01 10:37:58.385[http-nio-8080-exec-10][com.alibaba.excel.util.StyleUtil:141] INFO  - create new font:com.alibaba.excel.write.metadata.style.WriteFont@7013316,null
+2023-02-01 10:37:58.508[http-nio-8080-exec-10][com.lp.excel_demo.excel.exp.ExcelExport:54] INFO  - 下载31条记录到文件userList
+2023-02-01 14:24:01.527[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting ExcelDemoApplication on DESKTOP-T987IHU with PID 12316 (E:\github\myResource_02\start_demo_02\excel_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2023-02-01 14:24:01.530[main][org.springframework.boot.SpringApplication:651] INFO  - No active profile set, falling back to default profiles: default
+2023-02-01 14:24:03.809[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2023-02-01 14:24:03.820[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-02-01 14:24:03.821[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2023-02-01 14:24:03.821[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-02-01 14:24:03.947[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2023-02-01 14:24:03.947[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] INFO  - Root WebApplicationContext: initialization completed in 2234 ms
+2023-02-01 14:24:04.078[main][com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:56] INFO  - Init DruidDataSource
+2023-02-01 14:24:04.203[main][com.alibaba.druid.pool.DruidDataSource:1002] INFO  - {dataSource-1} inited
+2023-02-01 14:24:07.967[main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:181] INFO  - Initializing ExecutorService 'applicationTaskExecutor'
+2023-02-01 14:24:08.367[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2023-02-01 14:24:08.408[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-01 14:24:08.432[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started ExcelDemoApplication in 8.789 seconds (JVM running for 13.128)
+2023-02-01 14:24:08.435[main][com.lp.excel_demo.ExcelDemoApplication:15] INFO  - 项目初始化完成
+2023-02-01 14:27:25.678[http-nio-8080-exec-1][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-01 14:27:25.679[http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet:525] INFO  - Initializing Servlet 'dispatcherServlet'
+2023-02-01 14:27:25.689[http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet:547] INFO  - Completed initialization in 10 ms
+2023-02-01 14:55:47.946[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting ExcelDemoApplication on DESKTOP-T987IHU with PID 9528 (E:\github\myResource_02\start_demo_02\excel_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2023-02-01 14:55:47.952[main][org.springframework.boot.SpringApplication:651] INFO  - No active profile set, falling back to default profiles: default
+2023-02-01 14:55:50.846[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2023-02-01 14:55:50.855[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-02-01 14:55:50.856[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2023-02-01 14:55:50.856[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-02-01 14:55:50.968[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2023-02-01 14:55:50.969[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] INFO  - Root WebApplicationContext: initialization completed in 2662 ms
+2023-02-01 14:55:51.082[main][com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure:56] INFO  - Init DruidDataSource
+2023-02-01 14:55:51.211[main][com.alibaba.druid.pool.DruidDataSource:1002] INFO  - {dataSource-1} inited
+2023-02-01 14:55:55.236[main][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport:181] INFO  - Initializing ExecutorService 'applicationTaskExecutor'
+2023-02-01 14:55:55.580[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2023-02-01 14:55:55.605[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-01 14:55:55.626[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started ExcelDemoApplication in 9.264 seconds (JVM running for 12.741)
+2023-02-01 14:55:55.629[main][com.lp.excel_demo.ExcelDemoApplication:15] INFO  - 项目初始化完成
+2023-02-01 14:57:49.129[http-nio-8080-exec-2][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-01 14:57:49.129[http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet:525] INFO  - Initializing Servlet 'dispatcherServlet'
+2023-02-01 14:57:49.141[http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet:547] INFO  - Completed initialization in 12 ms
+2023-02-01 14:57:50.124[http-nio-8080-exec-2][com.lp.excel_demo.excel.imp.listener.ExcelImportListener:44] INFO  - 完成最后一批Excel记录的导入，条数为：2

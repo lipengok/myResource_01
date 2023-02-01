@@ -20,6 +20,8 @@ public class SpringJpaApplication {
     public static void main(String[] args) {
         SpringApplication.run(SpringJpaApplication.class, args);
         log.info("项目初始化完成");
+        log.error("项目初始化完成");
+        log.warn("项目初始化完成");
     }
 
 }

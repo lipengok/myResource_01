@@ -10,4 +10,4 @@ import org.apache.ibatis.annotations.Mapper;
  * @Version 1.0
  */
 @Mapper
-public interface UserMapper extends BaseMapper<User> {}
+public interface UserMapper extends BaseMapper<User>, BatchInsertMapper<User>{}

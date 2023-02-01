@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lp.excel_demo.mapper.BatchInsertMapper">
+    <insert id="batchInsert" parameterType="list">
+        insert into user
+        (id, name, psw,  photo, information, school)
+        values
+        <foreach collection="list" item="item" index="index" separator=",">
+            (
+            #{item.id},
+            #{item.name},
+            #{item.psw},
+            #{item.photo},
+            #{item.information},
+            #{item.school}
+            )
+        </foreach>
+    </insert>
+</mapper>
