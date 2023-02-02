@@ -6,7 +6,6 @@ import com.lp.excel_demo.excel.imp.listener.ExcelImportListener;
 import com.lp.excel_demo.mapper.BatchInsertMapper;
 import com.lp.excel_demo.mapper.UserMapper;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 

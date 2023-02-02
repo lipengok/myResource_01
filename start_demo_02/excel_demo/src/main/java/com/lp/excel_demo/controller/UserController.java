@@ -56,9 +56,8 @@ public class UserController {
     }
 
     @GetMapping("/expAll")
-    public ResponseTmp expAll(HttpServletResponse response){
-        List<User> list = userService.list();
+    public void expAll(HttpServletResponse response){
+        List<User> list = userService.listEncryptPwd();
         excelExport.export(response,"userList", list, User.class);
-        return new ResponseTmp(MsgEnum.COMMON_SUCCESS_MSG.value(), CodeEnum.COMMON_SUCCESS_CODE.value(), "ok");
     }
 }

@@ -77,4 +77,5 @@ public class ExcelExport {
         contentWriteCellStyle.setHorizontalAlignment(HorizontalAlignment.CENTER);
         return new HorizontalCellStyleStrategy(headWriteCellStyle, contentWriteCellStyle);
     }
+
 }
