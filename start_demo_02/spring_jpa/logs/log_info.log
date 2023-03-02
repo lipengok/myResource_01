@@ -1,54 +1,21 @@
-2023-01-30 09:41:54.366[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting SpringJpaApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 10624 (E:\github\myResource_02\start_demo_02\spring_jpa\target\classes started by TY in E:\github\myResource_02\start_demo_02)
-2023-01-30 09:41:54.680[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
-2023-01-30 09:41:55.863[main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:262] INFO  - Multiple Spring Data modules found, entering strict repository configuration mode
-2023-01-30 09:41:55.863[main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-01-30 09:41:55.957[main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] INFO  - Finished Spring Data repository scanning in 71 ms. Found 2 JPA repository interfaces.
-2023-01-30 09:41:56.223[main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:262] INFO  - Multiple Spring Data modules found, entering strict repository configuration mode
-2023-01-30 09:41:56.223[main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] INFO  - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2023-01-30 09:41:56.239[main][org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport:349] INFO  - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.lp.spring_jpa.jpa.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2023-01-30 09:41:56.239[main][org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport:349] INFO  - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.lp.spring_jpa.jpa.repository.UserRepository2; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2023-01-30 09:41:56.239[main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] INFO  - Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
-2023-01-30 09:41:56.966[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
-2023-01-30 09:41:56.977[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
-2023-01-30 09:41:56.978[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
-2023-01-30 09:41:56.979[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.70]
-2023-01-30 09:41:57.241[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
-2023-01-30 09:41:57.241[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 2313 ms
-2023-01-30 09:41:57.569[main][org.hibernate.Version:44] INFO  - HHH000412: Hibernate ORM core version 5.6.14.Final
-2023-01-30 09:41:57.850[main][org.hibernate.annotations.common.reflection.java.JavaReflectionManager:56] INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-01-30 09:41:58.050[main][com.zaxxer.hikari.HikariDataSource:110] INFO  - defaultDataSource - Starting...
-2023-01-30 09:41:58.234[main][com.zaxxer.hikari.HikariDataSource:123] INFO  - defaultDataSource - Start completed.
-2023-01-30 09:41:58.261[main][org.hibernate.dialect.Dialect:175] INFO  - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
-2023-01-30 09:41:59.093[main][org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-01-30 09:41:59.109[main][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean:437] INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-01-30 09:42:00.346[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
-2023-01-30 09:42:00.368[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
-2023-01-30 09:42:00.389[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started SpringJpaApplication in 7.698 seconds (JVM running for 10.874)
-2023-01-30 09:42:00.393[main][com.lp.spring_jpa.SpringJpaApplication:22] INFO  - 项目初始化完成
-2023-01-30 09:44:49.024[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting SpringJpaApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 6852 (E:\github\myResource_02\start_demo_02\spring_jpa\target\classes started by TY in E:\github\myResource_02\start_demo_02)
-2023-01-30 09:44:49.024[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
-2023-01-30 09:44:50.409[main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:262] INFO  - Multiple Spring Data modules found, entering strict repository configuration mode
-2023-01-30 09:44:50.410[main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-01-30 09:44:50.495[main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] INFO  - Finished Spring Data repository scanning in 62 ms. Found 2 JPA repository interfaces.
-2023-01-30 09:44:50.782[main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:262] INFO  - Multiple Spring Data modules found, entering strict repository configuration mode
-2023-01-30 09:44:50.783[main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] INFO  - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2023-01-30 09:44:50.791[main][org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport:349] INFO  - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.lp.spring_jpa.jpa.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2023-01-30 09:44:50.792[main][org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport:349] INFO  - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.lp.spring_jpa.jpa.repository.UserRepository2; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2023-01-30 09:44:50.793[main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] INFO  - Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
-2023-01-30 09:44:51.563[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
-2023-01-30 09:44:51.576[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
-2023-01-30 09:44:51.578[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
-2023-01-30 09:44:51.578[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.70]
-2023-01-30 09:44:51.815[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
-2023-01-30 09:44:51.817[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 2521 ms
-2023-01-30 09:44:52.106[main][org.hibernate.Version:44] INFO  - HHH000412: Hibernate ORM core version 5.6.14.Final
-2023-01-30 09:44:52.346[main][org.hibernate.annotations.common.reflection.java.JavaReflectionManager:56] INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-01-30 09:44:52.515[main][com.zaxxer.hikari.HikariDataSource:110] INFO  - defaultDataSource - Starting...
-2023-01-30 09:44:52.669[main][com.zaxxer.hikari.HikariDataSource:123] INFO  - defaultDataSource - Start completed.
-2023-01-30 09:44:52.689[main][org.hibernate.dialect.Dialect:175] INFO  - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
-2023-01-30 09:44:53.427[main][org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-01-30 09:44:53.443[main][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean:437] INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-01-30 09:44:54.444[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
-2023-01-30 09:44:54.459[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
-2023-01-30 09:44:54.475[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started SpringJpaApplication in 6.84 seconds (JVM running for 9.69)
-2023-01-30 09:44:54.475[main][com.lp.spring_jpa.SpringJpaApplication:22] INFO  - 项目初始化完成
+2023-03-01 10:49:45.849[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting SpringJpaApplicationTests using Java 1.8.0_281 on DESKTOP-T987IHU with PID 15500 (started by TY in E:\github\myResource_02\start_demo_02\spring_jpa)
+2023-03-01 10:49:45.885[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
+2023-03-01 10:49:47.850[main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:262] INFO  - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-01 10:49:47.851[main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-01 10:49:48.109[main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] INFO  - Finished Spring Data repository scanning in 232 ms. Found 2 JPA repository interfaces.
+2023-03-01 10:49:48.793[main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:262] INFO  - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-01 10:49:48.796[main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] INFO  - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-03-01 10:49:48.837[main][org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport:349] INFO  - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.lp.spring_jpa.jpa.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-03-01 10:49:48.839[main][org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport:349] INFO  - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.lp.spring_jpa.jpa.repository.UserRepository2; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-03-01 10:49:48.840[main][org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] INFO  - Finished Spring Data repository scanning in 39 ms. Found 0 JDBC repository interfaces.
+2023-03-01 10:49:50.463[main][org.hibernate.Version:44] INFO  - HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-01 10:49:50.894[main][org.hibernate.annotations.common.reflection.java.JavaReflectionManager:56] INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-01 10:49:52.963[main][com.zaxxer.hikari.HikariDataSource:110] INFO  - defaultDataSource - Starting...
+2023-03-01 10:49:53.294[main][com.zaxxer.hikari.HikariDataSource:123] INFO  - defaultDataSource - Start completed.
+2023-03-01 10:49:53.355[main][org.hibernate.dialect.Dialect:175] INFO  - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2023-03-01 10:49:55.032[main][org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-01 10:49:55.053[main][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean:437] INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-01 10:49:58.692[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started SpringJpaApplicationTests in 13.924 seconds (JVM running for 16.634)
+2023-03-01 10:49:59.021[SpringApplicationShutdownHook][org.springframework.orm.jpa.AbstractEntityManagerFactoryBean:651] INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-01 10:49:59.032[SpringApplicationShutdownHook][com.zaxxer.hikari.HikariDataSource:350] INFO  - defaultDataSource - Shutdown initiated...
+2023-03-01 10:49:59.066[SpringApplicationShutdownHook][com.zaxxer.hikari.HikariDataSource:352] INFO  - defaultDataSource - Shutdown completed.

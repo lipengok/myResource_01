@@ -35,6 +35,7 @@ public class UserController {
 
     /**
      * 将文件中的数据导入到数据库
+     *
      * @return
      */
     @PostMapping("/impAll")
@@ -44,20 +45,20 @@ public class UserController {
     }
 
     @PostMapping("/batchUsers")
-    public ResponseTmp batchInsert(@RequestBody List<User> list){
+    public ResponseTmp batchInsert(@RequestBody List<User> list) {
         userService.batchUsers(list);
         return new ResponseTmp(MsgEnum.COMMON_SUCCESS_MSG.value(), CodeEnum.COMMON_SUCCESS_CODE.value(), "ok");
     }
 
     @GetMapping("/findAll")
-    public ResponseTmp findAll(){
+    public ResponseTmp findAll() {
         List<User> list = userService.list();
         return new ResponseTmp(MsgEnum.COMMON_SUCCESS_MSG.value(), CodeEnum.COMMON_SUCCESS_CODE.value(), list);
     }
 
     @GetMapping("/expAll")
-    public void expAll(HttpServletResponse response){
+    public void expAll(HttpServletResponse response) {
         List<User> list = userService.listEncryptPwd();
-        excelExport.export(response,"userList", list, User.class);
+        excelExport.export(response, "userList", list, User.class);
     }
 }

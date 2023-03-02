@@ -1,0 +1,13 @@
+2023-03-01 10:55:38.509[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting PayDemoApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 2320 (E:\github\myResource_02\start_demo_02\pay_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2023-03-01 10:55:38.514[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
+2023-03-01 10:55:40.876[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2023-03-01 10:55:40.892[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-01 10:55:40.893[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2023-03-01 10:55:40.913[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-01 10:55:41.120[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2023-03-01 10:55:41.121[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 2166 ms
+2023-03-01 10:55:41.393[main][org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:53] INFO  - Adding welcome page: class path resource [static/index.html]
+2023-03-01 10:55:41.569[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2023-03-01 10:55:41.593[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-01 10:55:41.639[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started PayDemoApplication in 4.74 seconds (JVM running for 7.582)
+2023-03-01 10:55:41.644[main][com.lp.pay_demo.PayDemoApplication:13] INFO  - 项目初始化完成
