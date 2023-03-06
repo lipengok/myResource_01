@@ -2,3 +2,4 @@ JPA与mybatis的取舍
 1，应对较高阶的sql用mybatis。/
 
 springdata jpa底层实现默认是hibernate
+
