@@ -1,0 +1,67 @@
+2023-03-23 14:27:07.204[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting ConcurrentThreadApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 11992 (E:\github\myResource_02\start_demo_02\concurrent_thread\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2023-03-23 14:27:07.204[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
+2023-03-23 14:27:09.963[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2023-03-23 14:27:10.086[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-23 14:27:10.102[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2023-03-23 14:27:10.102[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-23 14:27:10.312[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2023-03-23 14:27:10.312[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 2999 ms
+2023-03-23 14:27:10.917[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2023-03-23 14:27:10.948[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-23 14:27:10.980[pool-2-thread-1][com.lp.concurrent_thread.thread.demo.vola.tickets.ConcurrentTicketsV:28] INFO  - ***************开始抢票事件***************
+2023-03-23 14:27:10.980[pool-2-thread-1][com.lp.concurrent_thread.thread.demo.vola.tickets.ConcurrentTicketsV:32] INFO  - 用户=>[jack]抢到了，第[1]票，余票[9]
+2023-03-23 14:27:10.980[pool-2-thread-2][com.lp.concurrent_thread.thread.demo.vola.tickets.ConcurrentTicketsV:28] INFO  - ***************开始抢票事件***************
+2023-03-23 14:27:10.980[pool-2-thread-2][com.lp.concurrent_thread.thread.demo.vola.tickets.ConcurrentTicketsV:32] INFO  - 用户=>[tom]抢到了，第[2]票，余票[8]
+2023-03-23 14:27:10.980[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started ConcurrentThreadApplication in 5.217 seconds (JVM running for 8.163)
+2023-03-23 14:27:11.090[pool-2-thread-2][com.lp.concurrent_thread.thread.demo.vola.tickets.ConcurrentTicketsV:39] INFO  - 仓库中票已经没了
+2023-03-23 14:27:11.090[pool-2-thread-1][com.lp.concurrent_thread.thread.demo.vola.tickets.ConcurrentTicketsV:39] INFO  - 仓库中票已经没了
+2023-03-23 14:27:11.090[pool-2-thread-2][com.lp.concurrent_thread.thread.demo.vola.tickets.ConcurrentTicketsV:32] INFO  - 用户=>[tom]抢到了，第[3]票，余票[7]
+2023-03-23 14:27:11.090[pool-2-thread-1][com.lp.concurrent_thread.thread.demo.vola.tickets.ConcurrentTicketsV:32] INFO  - 用户=>[jack]抢到了，第[4]票，余票[6]
+2023-03-23 14:27:11.199[pool-2-thread-2][com.lp.concurrent_thread.thread.demo.vola.tickets.ConcurrentTicketsV:39] INFO  - 仓库中票已经没了
+2023-03-23 14:27:11.199[pool-2-thread-2][com.lp.concurrent_thread.thread.demo.vola.tickets.ConcurrentTicketsV:32] INFO  - 用户=>[tom]抢到了，第[5]票，余票[5]
+2023-03-23 14:27:11.199[pool-2-thread-1][com.lp.concurrent_thread.thread.demo.vola.tickets.ConcurrentTicketsV:39] INFO  - 仓库中票已经没了
+2023-03-23 14:27:11.199[pool-2-thread-1][com.lp.concurrent_thread.thread.demo.vola.tickets.ConcurrentTicketsV:32] INFO  - 用户=>[jack]抢到了，第[6]票，余票[4]
+2023-03-23 14:27:11.308[pool-2-thread-2][com.lp.concurrent_thread.thread.demo.vola.tickets.ConcurrentTicketsV:39] INFO  - 仓库中票已经没了
+2023-03-23 14:27:11.308[pool-2-thread-1][com.lp.concurrent_thread.thread.demo.vola.tickets.ConcurrentTicketsV:39] INFO  - 仓库中票已经没了
+2023-03-23 14:27:11.308[pool-2-thread-2][com.lp.concurrent_thread.thread.demo.vola.tickets.ConcurrentTicketsV:32] INFO  - 用户=>[tom]抢到了，第[7]票，余票[3]
+2023-03-23 14:27:11.308[pool-2-thread-1][com.lp.concurrent_thread.thread.demo.vola.tickets.ConcurrentTicketsV:32] INFO  - 用户=>[jack]抢到了，第[8]票，余票[2]
+2023-03-23 14:27:11.418[pool-2-thread-2][com.lp.concurrent_thread.thread.demo.vola.tickets.ConcurrentTicketsV:39] INFO  - 仓库中票已经没了
+2023-03-23 14:27:11.418[pool-2-thread-1][com.lp.concurrent_thread.thread.demo.vola.tickets.ConcurrentTicketsV:39] INFO  - 仓库中票已经没了
+2023-03-23 14:27:11.418[pool-2-thread-2][com.lp.concurrent_thread.thread.demo.vola.tickets.ConcurrentTicketsV:32] INFO  - 用户=>[tom]抢到了，第[9]票，余票[1]
+2023-03-23 14:27:11.418[pool-2-thread-1][com.lp.concurrent_thread.thread.demo.vola.tickets.ConcurrentTicketsV:32] INFO  - 用户=>[jack]抢到了，第[10]票，余票[0]
+2023-03-23 14:27:11.527[pool-2-thread-1][com.lp.concurrent_thread.thread.demo.vola.tickets.ConcurrentTicketsV:39] INFO  - 仓库中票已经没了
+2023-03-23 14:27:11.527[pool-2-thread-2][com.lp.concurrent_thread.thread.demo.vola.tickets.ConcurrentTicketsV:39] INFO  - 仓库中票已经没了
+2023-03-23 14:51:26.437[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting ConcurrentThreadApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 9716 (E:\github\myResource_02\start_demo_02\concurrent_thread\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2023-03-23 14:51:26.443[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
+2023-03-23 14:51:28.369[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2023-03-23 14:51:28.385[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-23 14:51:28.385[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2023-03-23 14:51:28.385[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-23 14:51:28.572[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2023-03-23 14:51:28.572[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 1944 ms
+2023-03-23 14:51:29.012[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2023-03-23 14:51:29.028[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-23 14:51:29.059[main][com.lp.concurrent_thread.init.SysInit:35] INFO  - lock.........
+2023-03-23 14:51:29.059[pool-2-thread-1][com.lp.concurrent_thread.thread.demo.lock.tickets.ConcurrentTicketsL:35] INFO  - ***************开始抢票事件***************
+2023-03-23 14:51:29.059[pool-2-thread-2][com.lp.concurrent_thread.thread.demo.lock.tickets.ConcurrentTicketsL:35] INFO  - ***************开始抢票事件***************
+2023-03-23 14:51:29.059[pool-2-thread-2][com.lp.concurrent_thread.thread.demo.lock.tickets.ConcurrentTicketsL:41] INFO  - 用户=>[tom]抢到了，第[2]票，余票[8]
+2023-03-23 14:51:29.059[pool-2-thread-1][com.lp.concurrent_thread.thread.demo.lock.tickets.ConcurrentTicketsL:41] INFO  - 用户=>[jack]抢到了，第[1]票，余票[9]
+2023-03-23 14:51:29.075[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started ConcurrentThreadApplication in 3.749 seconds (JVM running for 6.343)
+2023-03-23 14:51:29.168[pool-2-thread-1][com.lp.concurrent_thread.thread.demo.lock.tickets.ConcurrentTicketsL:47] INFO  - 仓库中票已经没了
+2023-03-23 14:51:29.168[pool-2-thread-2][com.lp.concurrent_thread.thread.demo.lock.tickets.ConcurrentTicketsL:47] INFO  - 仓库中票已经没了
+2023-03-23 14:51:29.168[pool-2-thread-1][com.lp.concurrent_thread.thread.demo.lock.tickets.ConcurrentTicketsL:41] INFO  - 用户=>[jack]抢到了，第[3]票，余票[7]
+2023-03-23 14:51:29.168[pool-2-thread-2][com.lp.concurrent_thread.thread.demo.lock.tickets.ConcurrentTicketsL:41] INFO  - 用户=>[tom]抢到了，第[4]票，余票[6]
+2023-03-23 14:51:29.278[pool-2-thread-2][com.lp.concurrent_thread.thread.demo.lock.tickets.ConcurrentTicketsL:47] INFO  - 仓库中票已经没了
+2023-03-23 14:51:29.278[pool-2-thread-2][com.lp.concurrent_thread.thread.demo.lock.tickets.ConcurrentTicketsL:41] INFO  - 用户=>[tom]抢到了，第[5]票，余票[5]
+2023-03-23 14:51:29.278[pool-2-thread-1][com.lp.concurrent_thread.thread.demo.lock.tickets.ConcurrentTicketsL:47] INFO  - 仓库中票已经没了
+2023-03-23 14:51:29.278[pool-2-thread-1][com.lp.concurrent_thread.thread.demo.lock.tickets.ConcurrentTicketsL:41] INFO  - 用户=>[jack]抢到了，第[6]票，余票[4]
+2023-03-23 14:51:29.387[pool-2-thread-2][com.lp.concurrent_thread.thread.demo.lock.tickets.ConcurrentTicketsL:47] INFO  - 仓库中票已经没了
+2023-03-23 14:51:29.387[pool-2-thread-1][com.lp.concurrent_thread.thread.demo.lock.tickets.ConcurrentTicketsL:47] INFO  - 仓库中票已经没了
+2023-03-23 14:51:29.387[pool-2-thread-2][com.lp.concurrent_thread.thread.demo.lock.tickets.ConcurrentTicketsL:41] INFO  - 用户=>[tom]抢到了，第[7]票，余票[3]
+2023-03-23 14:51:29.387[pool-2-thread-1][com.lp.concurrent_thread.thread.demo.lock.tickets.ConcurrentTicketsL:41] INFO  - 用户=>[jack]抢到了，第[8]票，余票[2]
+2023-03-23 14:51:29.497[pool-2-thread-1][com.lp.concurrent_thread.thread.demo.lock.tickets.ConcurrentTicketsL:47] INFO  - 仓库中票已经没了
+2023-03-23 14:51:29.497[pool-2-thread-2][com.lp.concurrent_thread.thread.demo.lock.tickets.ConcurrentTicketsL:47] INFO  - 仓库中票已经没了
+2023-03-23 14:51:29.497[pool-2-thread-1][com.lp.concurrent_thread.thread.demo.lock.tickets.ConcurrentTicketsL:41] INFO  - 用户=>[jack]抢到了，第[9]票，余票[1]
+2023-03-23 14:51:29.497[pool-2-thread-2][com.lp.concurrent_thread.thread.demo.lock.tickets.ConcurrentTicketsL:41] INFO  - 用户=>[tom]抢到了，第[10]票，余票[0]
+2023-03-23 14:51:29.606[pool-2-thread-2][com.lp.concurrent_thread.thread.demo.lock.tickets.ConcurrentTicketsL:47] INFO  - 仓库中票已经没了
+2023-03-23 14:51:29.606[pool-2-thread-1][com.lp.concurrent_thread.thread.demo.lock.tickets.ConcurrentTicketsL:47] INFO  - 仓库中票已经没了

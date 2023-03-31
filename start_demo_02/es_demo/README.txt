@@ -1,3 +1,10 @@
+目录：
+1，log4j日志的配置。
+//todo
+2，elasticsearch的基本增删改查。
+3，es联合数据库，实现数据库在新增的时候，将索引添加到es里面。
+
+
 #ES相关的url操作
 1，获取所有的index
 GET http://localhost:9200/_cat/indices?v&pretty
