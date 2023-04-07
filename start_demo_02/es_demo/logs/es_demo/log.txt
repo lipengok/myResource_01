@@ -1,0 +1,2 @@
+[INFO ] 2023-04-04 15:39:29,400(1) --> [main] com.lp.es_demo.es.init.EsInit.onApplicationEvent(EsInit.java:63): ES初始化结束  
+[INFO ] 2023-04-04 15:41:56,908(0) --> [main] com.lp.es_demo.es.init.EsInit.onApplicationEvent(EsInit.java:63): ES初始化结束  

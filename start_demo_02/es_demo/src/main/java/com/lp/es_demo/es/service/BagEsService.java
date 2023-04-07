@@ -1,7 +1,7 @@
 package com.lp.es_demo.es.service;
 
 import com.lp.es_demo.entity.Bag;
-import com.lp.es_demo.es.repository.BagEsRepository;
+import com.lp.es_demo.es.repository.BagDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,12 +14,27 @@ import org.springframework.stereotype.Service;
 public class BagEsService {
 
     @Autowired
-    BagEsRepository bagEsRepository;
+    BagDao bagDao;
 
+    /**
+     * 添加Bag到es
+     *
+     * @param bag
+     * @throws Exception
+     */
     public void add(Bag bag) throws Exception {
         if (null == bag){
             throw new Exception("bag不为空");
         }
-        bagEsRepository.save(bag);
+        bagDao.save(bag);
+    }
+
+    /**
+     * 查询所有的内容
+     *
+     * @return
+     */
+    public Iterable<Bag> list(){
+        return bagDao.findAll();
     }
 }

@@ -1,16 +1,23 @@
-package com.lp.es_demo.entity;
+package com.lp.es_demo2.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 
 /**
+ *
+ * shards表示分片数量，其中副本replicas
+ *
  * @Author lipeng
  * @Date 2022/7/19 13:46
  * @Version 1.0
  */
 @Data
-@Document(indexName = "bag",type = "_doc", shards = 1, replicas = 0)
+@NoArgsConstructor
+@AllArgsConstructor
+@Document(indexName = "bag", type = "_doc", shards = 1, replicas = 0)
 public class Bag {
 
     @Id

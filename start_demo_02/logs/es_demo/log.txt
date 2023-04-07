@@ -1,0 +1,16 @@
+[INFO ] 2023-04-07 09:27:29,619(0) --> [main] com.lp.es_demo.es.init.EsInit.onApplicationEvent(EsInit.java:58): ES初始化结束  
+[INFO ] 2023-04-07 09:27:29,634(15) --> [main] com.lp.es_demo.EsDemoApplication.main(EsDemoApplication.java:15): spring容器初始化完成  
+[INFO ] 2023-04-07 10:02:27,547(0) --> [main] com.lp.es_demo.es.init.EsInit.onApplicationEvent(EsInit.java:58): ES初始化结束  
+[INFO ] 2023-04-07 10:02:27,557(10) --> [main] com.lp.es_demo.EsDemoApplication.main(EsDemoApplication.java:15): spring容器初始化完成  
+[INFO ] 2023-04-07 11:07:17,740(0) --> [main] com.lp.es_demo.es.init.EsInit.onApplicationEvent(EsInit.java:58): ES初始化结束  
+[INFO ] 2023-04-07 11:07:17,756(16) --> [main] com.lp.es_demo.EsDemoApplication.main(EsDemoApplication.java:15): spring容器初始化完成  
+[INFO ] 2023-04-07 11:08:07,132(0) --> [main] com.lp.es_demo.es.init.EsInit.onApplicationEvent(EsInit.java:58): ES初始化结束  
+[INFO ] 2023-04-07 11:08:07,157(25) --> [main] com.lp.es_demo.EsDemoApplication.main(EsDemoApplication.java:15): spring容器初始化完成  
+[INFO ] 2023-04-07 11:23:50,369(0) --> [main] com.lp.es_demo.es.init.EsInit.onApplicationEvent(EsInit.java:58): ES初始化结束  
+[INFO ] 2023-04-07 11:23:50,377(8) --> [main] com.lp.es_demo.EsDemoApplication.main(EsDemoApplication.java:15): spring容器初始化完成  
+[INFO ] 2023-04-07 11:26:14,863(0) --> [main] com.lp.es_demo.es.init.EsInit.onApplicationEvent(EsInit.java:58): ES初始化结束  
+[INFO ] 2023-04-07 11:26:14,875(12) --> [main] com.lp.es_demo.EsDemoApplication.main(EsDemoApplication.java:15): spring容器初始化完成  
+[INFO ] 2023-04-07 15:44:14,643(0) --> [main] com.lp.es_demo.es.init.EsInit.onApplicationEvent(EsInit.java:46): ES初始化结束  
+[INFO ] 2023-04-07 15:44:14,672(29) --> [main] com.lp.es_demo.EsDemoApplication.main(EsDemoApplication.java:15): spring容器初始化完成  
+[INFO ] 2023-04-07 15:48:52,662(0) --> [main] com.lp.es_demo.es.init.EsInit.onApplicationEvent(EsInit.java:46): ES初始化结束  
+[INFO ] 2023-04-07 15:48:52,692(30) --> [main] com.lp.es_demo.EsDemoApplication.main(EsDemoApplication.java:15): spring容器初始化完成  

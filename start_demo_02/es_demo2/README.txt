@@ -3,15 +3,6 @@
 2，elasticsearch的基本增删改查。
 3，es联合数据库，实现数据库在新增的时候，将索引添加到es里面。
 
-这里会遇到问题：
-1，A bean with that name has already been defined in null and overriding is disabled
-问题来源：数据库和es同时注册了相同的bean的name。
-问题正确解决：这时候需要通过下面两个注解指定不同的repository路径
-@EnableJpaRepositories(basePackages = "com.mall.market.repository.jpa")
-@EnableElasticsearchRepositories(basePackages = "com.mall.market.repository.es")
-原文链接：https://blog.csdn.net/lidai352710967/article/details/96307151
-本次实验解决：不使用spring-mysql-data，避免冲突。
-
 spring boot和es的版本对应
 spring-data-elasticsearch   spring-boot     elasticsearch
 4.2.x                       2.4.x           7.12.0
