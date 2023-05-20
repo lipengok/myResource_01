@@ -4,6 +4,7 @@ import com.lp.scheduled_tasks_demo.schedule.quartz.MyJob;
 import lombok.SneakyThrows;
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
+import org.springframework.context.annotation.Configuration;
 
 import java.util.Date;
 
@@ -12,10 +13,9 @@ import java.util.Date;
  * @Date 2022/11/4 11:03
  * @Version 1.0
  */
-public class QuartzThread implements Runnable {
-    @SneakyThrows
-    @Override
-    public void run() {
+@Configuration
+public class QuartzThread{
+    public void run() throws SchedulerException {
         // 1，创建调度器工厂
         SchedulerFactory schedulerFactory = new StdSchedulerFactory();
         // 2，调度器工厂创建调度器
@@ -35,7 +35,10 @@ public class QuartzThread implements Runnable {
                 // 任务id
                 .withIdentity("test", "testGroup")
                 // 触发规则(cron)
-                .withSchedule(CronScheduleBuilder.cronSchedule(ParamGlobe.quartzCron))
+                // .withSchedule(CronScheduleBuilder.cronSchedule(ParamGlobe.quartzCron))
+                .withSchedule(SimpleScheduleBuilder.simpleSchedule()//创建简单Schedule
+                        .withIntervalInSeconds(10)//间隔时间为10秒
+                        .repeatForever())//一直重复
                 .build();
         // 5，将触发器绑定到调度器
         scheduler.scheduleJob(jobDetail, trigger);

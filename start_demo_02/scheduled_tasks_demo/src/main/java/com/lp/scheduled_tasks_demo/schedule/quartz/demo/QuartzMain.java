@@ -1,5 +1,7 @@
 package com.lp.scheduled_tasks_demo.schedule.quartz.demo;
 
+import org.quartz.SchedulerException;
+
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
@@ -10,20 +12,20 @@ import java.time.format.DateTimeFormatter;
  */
 public class QuartzMain {
 
-    public void work(String cron){
+    public void work(String cron) throws SchedulerException {
         ParamGlobe.quartzCron = cron;
         QuartzThread thread = new QuartzThread();
         thread.run();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SchedulerException {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
         LocalTime localTime = LocalTime.parse("11:43:00", formatter);
         int hour = localTime.getHour();
         int min = localTime.getMinute();
         int sec = localTime.getSecond();
         QuartzMain quartzMain = new QuartzMain();
-        String rule=String.format("%d,%d %d %d * * ?", sec,sec+30,min,hour);
+        String rule=String.format("%d/%d %d %d * * ?", sec,3,min,hour);
         quartzMain.work(rule);
     }
 }

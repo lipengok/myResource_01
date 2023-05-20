@@ -3,6 +3,7 @@ package com.lp.start_demo_02;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.*;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -19,7 +20,22 @@ public class DateDemo {
         // System.out.println(str);
 
         // localdate-plusdate
-        plusDaysDemo();
+        // plusDaysDemo();
+
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(new Date());
+        int yd = calendar.get(Calendar.DAY_OF_YEAR);
+        int md = calendar.get(Calendar.DAY_OF_MONTH);
+        System.out.println("yd"+yd);
+        System.out.println("md"+md);
+
+        calendar.add(Calendar.DAY_OF_MONTH, 12);
+        md = calendar.get(Calendar.DAY_OF_MONTH);
+        System.out.println("md"+md);
+
+        calendar.set(Calendar.DAY_OF_MONTH, 1);
+        md = calendar.get(Calendar.DAY_OF_MONTH);
+        System.out.println("md"+md);
     }
 
     private static final String PATTERN = "yyyy-MM-dd hh:mm:ss";

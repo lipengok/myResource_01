@@ -8,6 +8,7 @@ public class ScheduledTasksDemoApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ScheduledTasksDemoApplication.class, args);
+
     }
 
 }

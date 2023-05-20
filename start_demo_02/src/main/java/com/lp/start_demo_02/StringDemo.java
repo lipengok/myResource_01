@@ -26,6 +26,13 @@ public class StringDemo {
 //        }
 //        System.out.println(str.toString());
 
+        // substring,indexOf用法
+//        String str = "TMP_MP_DAY_READ";
+//        System.out.println(str.substring(str.indexOf("_")+1));
+
+        String str = "2004-10201-000";
+        System.out.println(str.split("-")[0]);
+
     }
 
 

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<items>
+
+    <item dataItemId="0010-10201-200" dataItemName="15分钟冻结正向有功电能"></item>
+    <item dataItemId="0020-10201-200" dataItemName="15分钟冻结反向有功电能"></item>
+
+</items>

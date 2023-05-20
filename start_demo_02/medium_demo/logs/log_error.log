@@ -1,0 +1,25 @@
+2023-04-17 09:22:15.642[main][org.springframework.boot.SpringApplication:821] ERROR - Application run failed
+java.lang.ExceptionInInitializerError: null
+	at com.lp.medium_demo.vedio.fx.vedio_init.VedioInit.onApplicationEvent(VedioInit.java:24)
+	at com.lp.medium_demo.vedio.fx.vedio_init.VedioInit.onApplicationEvent(VedioInit.java:17)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:938)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.lp.medium_demo.MediumDemoApplication.main(MediumDemoApplication.java:12)
+Caused by: java.lang.IllegalStateException: Toolkit not initialized
+	at com.sun.javafx.application.PlatformImpl.runLater(PlatformImpl.java:273)
+	at com.sun.javafx.application.PlatformImpl.runLater(PlatformImpl.java:268)
+	at com.sun.javafx.application.PlatformImpl.setPlatformUserAgentStylesheet(PlatformImpl.java:550)
+	at com.sun.javafx.application.PlatformImpl.setDefaultPlatformUserAgentStylesheet(PlatformImpl.java:512)
+	at javafx.scene.control.Control.<clinit>(Control.java:87)
+	... 16 common frames omitted
