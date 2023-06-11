@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<items>
+
+    <item id="1">
+        <dataItemId>
+            0010-10201-200
+        </dataItemId>
+        <dataItemName>
+            15分钟冻结正向有功电能
+        </dataItemName>
+    </item>
+
+    <item id="2">
+        <dataItemId>
+            0020-10201-200
+        </dataItemId>
+        <dataItemName>
+            15分钟冻结反向有功电能
+        </dataItemName>
+    </item>
+    <item id="3">
+        <dataItemId>
+            0010-10201-200
+        </dataItemId>
+        <dataItemName>
+            15分钟冻结正向有功电能
+        </dataItemName>
+    </item>
+
+    <item id="4">
+        <dataItemId>
+            0020-10201-200
+        </dataItemId>
+        <dataItemName>
+            15分钟冻结反向有功电能
+        </dataItemName>
+    </item>
+    <item id="5">
+        <dataItemId>
+            0010-10201-200
+        </dataItemId>
+        <dataItemName>
+            15分钟冻结正向有功电能
+        </dataItemName>
+    </item>
+
+    <item id="6">
+        <dataItemId>
+            0020-10201-200
+        </dataItemId>
+        <dataItemName>
+            15分钟冻结反向有功电能
+        </dataItemName>
+    </item>
+    <item id="7">
+        <dataItemId>
+            0010-10201-200
+        </dataItemId>
+        <dataItemName>
+            15分钟冻结正向有功电能
+        </dataItemName>
+    </item>
+
+    <item id="8">
+        <dataItemId>
+            0020-10201-200
+        </dataItemId>
+        <dataItemName>
+            15分钟冻结反向有功电能
+        </dataItemName>
+    </item>
+
+</items>

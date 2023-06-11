@@ -1,0 +1,129 @@
+1，关键教程
+	1，Oracle w3cschool教程：https://www.w3cschool.cn/oraclejc/
+	
+2，SQL练习
+	-- 创建表
+	CREATE TABLE test_user
+	(
+		"id"          NUMBER(10) NOT NULL PRIMARY KEY,
+		"name"        varchar(255),
+		"psw"         varchar(255),
+		"photo"       varchar(255),
+		"information" varchar(255),
+		"school"      varchar(255)
+	);
+
+	-- 为表插入数据（ 注意：增删改的时候需要“提交操作” ）
+	insert into test_user
+	values(1, 'lp', '131421', 'www.baidu.com', 'information demo', 'bb_univercity');
+	insert into test_user
+	values(2, 'tom', '131421', 'www.baidu.com', 'information demo', 'bb_univercity');
+	insert into test_user
+	values(3, 'xu', '131421', 'www.baidu.com', 'information demo', 'bb_univercity');
+	insert into test_user
+	values(4, 'jack', '131421', 'www.baidu.com', 'information demo', 'ah_univercity');
+	insert into test_user
+	values(5, 'su', '131421', 'www.baidu.com', 'information demo', 'ah_univercity');
+	insert into test_user
+	values(6, 'sa', '131421', 'www.baidu.com', 'information demo', 'ty_univercity');
+	insert into test_user
+	values(7, 'ka', '131421', 'www.baidu.com', 'information demo', 'xx_univercity');
+	insert into test_user
+	values(8, 'mi', '131421', 'www.baidu.com', 'information demo', 'xx_univercity');
+	insert into test_user
+	values(9, 'salt', '131421', 'www.baidu.com', 'information demo', 'ty_univercity');
+	insert into test_user
+	values(10, 'lp', '131421', 'www.baidu.com', 'information demo', 'bb_univercity');
+	insert into test_user
+	values(11, 'lp', '131421', 'www.baidu.com', 'information demo', 'bb_univercity');
+	insert into test_user
+	values(12, 'tom', '131421', 'www.baidu.com', 'information demo', 'bb_univercity');
+	insert into test_user
+	values(13, 'xu', '131421', 'www.baidu.com', 'information demo', 'bb_univercity');
+	insert into test_user
+	values(14, 'jack', '131421', 'www.baidu.com', 'information demo', 'ah_univercity');
+	insert into test_user
+	values(15, 'su', '131421', 'www.baidu.com', 'information demo', 'ah_univercity');
+	insert into test_user
+	values(16, 'sa', '131421', 'www.baidu.com', 'information demo', 'ty_univercity');
+	insert into test_user
+	values(17, 'ka', '131421', 'www.baidu.com', 'information demo', 'xx_univercity');
+	insert into test_user
+	values(18, 'mi', '131421', 'www.baidu.com', 'information demo', 'xx_univercity');
+	insert into test_user
+	values(19, 'salt', '131421', 'www.baidu.com', 'information demo', 'ty_univercity');
+	commit;
+
+
+	-- 清空表
+	truncate table test_user;
+
+
+	-- 查询表（注意：Oracle字段用双引号，字符串用双引号）
+	select *
+	from test_user;
+
+	-- 分组（只能获取聚合运算后的数据，不能获取单个字段的值）
+	select "school",count(*)
+	from test_user
+	group by "school";
+
+	-- 去重（获取去重之后的所有的字段）
+	select distinct "school"
+	from test_user;
+
+	-- where
+	-- where - =
+	select count("id")
+	from test_user
+	where "school"='ah_univercity';
+	-- where - !=
+	select count("id")
+	from test_user
+	where "school"!='ah_univercity';
+	-- where - >
+	select "name", "school"
+	from test_user
+	where "id">10;
+	-- where - <
+	select "name", "school"
+	from test_user
+	where "id"<10;
+	-- where - >=
+	select "name", "school"
+	from test_user
+	where "id">=10;
+	-- where - <=
+	select "name", "school"
+	from test_user
+	where "id"<=10;
+	-- where - in
+	select "id","name", "school"
+	from test_user
+	where ROWNUM in (1,2,3);
+	-- where - not in
+	select "id","name", "school"
+	from test_user
+	where "id"  not in (1,2,3);
+	-- where - between
+	select "id","name", "school"
+	from test_user
+	where "id" between 3 and 10;
+	-- where - between（注意：ROWNUM使用between的话必须从0开始）
+	select "id","name", "school"
+	from test_user
+	where ROWNUM between 0 and 10;
+	-- where - like
+	select "id","name", "school"
+	from test_user
+	where "name" like '%u%';
+	select "id","name", "school"
+	from test_user
+	where "name" like 'u_';
+
+
+
+
+
+
+

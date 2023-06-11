@@ -28,6 +28,7 @@ public class ArrayBlokSimpleProThread {
 
         try {
             ComGlobe.arrayBlockingQueue.add(model);
+            // log.debug("当前任务数[{}]", ComGlobe.arrayBlockingQueue.size());
         }catch (Exception e){
             log.error("任务入到任务队列失败，失败信息=>[{}]", e.getMessage());
         }

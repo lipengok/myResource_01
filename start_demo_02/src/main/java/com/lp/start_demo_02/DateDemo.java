@@ -22,20 +22,50 @@ public class DateDemo {
         // localdate-plusdate
         // plusDaysDemo();
 
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTime(new Date());
-        int yd = calendar.get(Calendar.DAY_OF_YEAR);
-        int md = calendar.get(Calendar.DAY_OF_MONTH);
-        System.out.println("yd"+yd);
-        System.out.println("md"+md);
+//        Calendar calendar = Calendar.getInstance();
+//        calendar.setTime(new Date());
+//        int yd = calendar.get(Calendar.DAY_OF_YEAR);
+//        int md = calendar.get(Calendar.DAY_OF_MONTH);
+//        System.out.println("yd"+yd);
+//        System.out.println("md"+md);
+//
+//        calendar.add(Calendar.DAY_OF_MONTH, 12);
+//        md = calendar.get(Calendar.DAY_OF_MONTH);
+//        System.out.println("md"+md);
+//
+//        calendar.set(Calendar.DAY_OF_MONTH, 1);
+//        md = calendar.get(Calendar.DAY_OF_MONTH);
+//        System.out.println("md"+md);
 
-        calendar.add(Calendar.DAY_OF_MONTH, 12);
-        md = calendar.get(Calendar.DAY_OF_MONTH);
-        System.out.println("md"+md);
 
-        calendar.set(Calendar.DAY_OF_MONTH, 1);
-        md = calendar.get(Calendar.DAY_OF_MONTH);
-        System.out.println("md"+md);
+        Date start = new Date();
+        // 2023-05-19 00:00:00
+        start.setTime(1684425600);
+
+        Date end = new Date();
+        // 2023-05-25 00:00:00
+        end.setTime(1684944000);
+
+        System.out.println(getPoint(start, end, (short)96));
+
+        System.out.println((1684944000000L-1684425600000L) / (96 * 1000));
+    }
+
+    public static short getPoint(Date startTime, Date endTime, short freezeCycleNum) {
+        Calendar startCalTime = Calendar.getInstance();
+        startCalTime.setTime(startTime);
+        startCalTime.set(Calendar.MILLISECOND, 0);
+        startCalTime.set(Calendar.SECOND, 0);
+
+        Calendar endCalTime = Calendar.getInstance();
+        endCalTime.setTime(endTime);
+        endCalTime.set(Calendar.MILLISECOND, 0);
+        endCalTime.set(Calendar.SECOND, 0);
+
+        short pointNum = (short) ((endCalTime.getTimeInMillis() - startCalTime.getTimeInMillis())
+                / (freezeCycleNum * 1000));
+        return pointNum;
+
     }
 
     private static final String PATTERN = "yyyy-MM-dd hh:mm:ss";

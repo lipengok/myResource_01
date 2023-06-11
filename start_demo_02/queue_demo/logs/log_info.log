@@ -1,227 +1,158 @@
-2023-05-19 14:08:48.177[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting QueueDemoApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 3980 (E:\github\myResource_02\start_demo_02\queue_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
-2023-05-19 14:08:48.183[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
-2023-05-19 14:08:50.695[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
-2023-05-19 14:08:50.697[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2023-05-19 14:08:50.699[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
-2023-05-19 14:08:50.700[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
-2023-05-19 14:08:50.700[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2023-05-19 14:08:50.743[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
-2023-05-19 14:08:50.761[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
-2023-05-19 14:08:50.763[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
-2023-05-19 14:08:50.763[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.74]
-2023-05-19 14:08:51.038[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
-2023-05-19 14:08:51.038[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 2745 ms
-2023-05-19 14:08:51.490[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
-2023-05-19 14:08:51.511[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
-2023-05-19 14:08:51.542[main][com.lp.queue_demo.init.SysInit:33] INFO  - 开始初始化配置
-2023-05-19 14:08:51.542[main][com.lp.queue_demo.init.SysInit:36] INFO  - 开始基础配置
-2023-05-19 14:08:51.543[main][com.lp.queue_demo.init.SysInit:39] INFO  - 基础配置完成
-2023-05-19 14:08:51.543[main][com.lp.queue_demo.init.SysInit:41] INFO  - 初始化配置完成
-2023-05-19 14:08:51.549[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started QueueDemoApplication in 5.053 seconds (JVM running for 10.218)
-2023-05-19 16:12:56.452[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting QueueDemoApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 16620 (E:\github\myResource_02\start_demo_02\queue_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
-2023-05-19 16:12:56.459[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
-2023-05-19 16:12:58.757[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
-2023-05-19 16:12:58.759[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2023-05-19 16:12:58.759[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
-2023-05-19 16:12:58.760[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
-2023-05-19 16:12:58.760[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2023-05-19 16:12:58.773[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
-2023-05-19 16:12:58.790[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
-2023-05-19 16:12:58.791[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
-2023-05-19 16:12:58.791[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.74]
-2023-05-19 16:12:59.120[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
-2023-05-19 16:12:59.122[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 2526 ms
-2023-05-19 16:12:59.762[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
-2023-05-19 16:12:59.789[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
-2023-05-19 16:12:59.826[main][com.lp.queue_demo.init.SysInit:33] INFO  - 开始初始化配置
-2023-05-19 16:12:59.827[main][com.lp.queue_demo.init.SysInit:36] INFO  - 开始基础配置
-2023-05-19 16:12:59.829[main][com.lp.queue_demo.init.SysInit:39] INFO  - 基础配置完成
-2023-05-19 16:12:59.829[main][com.lp.queue_demo.init.SysInit:41] INFO  - 初始化配置完成
-2023-05-19 16:12:59.835[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started QueueDemoApplication in 5.022 seconds (JVM running for 7.643)
-2023-05-19 16:17:57.014[http-nio-8080-exec-1][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-05-19 16:17:57.015[http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet:525] INFO  - Initializing Servlet 'dispatcherServlet'
-2023-05-19 16:17:57.019[http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet:547] INFO  - Completed initialization in 4 ms
-2023-05-19 16:19:52.871[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting QueueDemoApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 4732 (E:\github\myResource_02\start_demo_02\queue_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
-2023-05-19 16:19:52.884[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
-2023-05-19 16:19:55.292[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
-2023-05-19 16:19:55.295[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2023-05-19 16:19:55.296[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
-2023-05-19 16:19:55.296[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
-2023-05-19 16:19:55.297[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2023-05-19 16:19:55.305[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
-2023-05-19 16:19:55.323[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
-2023-05-19 16:19:55.325[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
-2023-05-19 16:19:55.326[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.74]
-2023-05-19 16:19:55.599[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
-2023-05-19 16:19:55.600[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 2589 ms
-2023-05-19 16:19:56.384[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
-2023-05-19 16:19:56.409[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
-2023-05-19 16:19:56.442[main][com.lp.queue_demo.init.SysInit:33] INFO  - 开始初始化配置
-2023-05-19 16:19:56.443[main][com.lp.queue_demo.init.SysInit:36] INFO  - 开始基础配置
-2023-05-19 16:19:56.444[main][com.lp.queue_demo.init.SysInit:39] INFO  - 基础配置完成
-2023-05-19 16:19:56.444[main][com.lp.queue_demo.init.SysInit:41] INFO  - 初始化配置完成
-2023-05-19 16:19:56.450[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started QueueDemoApplication in 5.013 seconds (JVM running for 7.904)
-2023-05-19 16:20:01.469[http-nio-8080-exec-1][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-05-19 16:20:01.470[http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet:525] INFO  - Initializing Servlet 'dispatcherServlet'
-2023-05-19 16:20:01.473[http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet:547] INFO  - Completed initialization in 3 ms
-2023-05-19 16:22:48.600[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting QueueDemoApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 17328 (E:\github\myResource_02\start_demo_02\queue_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
-2023-05-19 16:22:48.611[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
-2023-05-19 16:22:51.286[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
-2023-05-19 16:22:51.289[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2023-05-19 16:22:51.290[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
-2023-05-19 16:22:51.291[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
-2023-05-19 16:22:51.293[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2023-05-19 16:22:51.301[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
-2023-05-19 16:22:51.327[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
-2023-05-19 16:22:51.329[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
-2023-05-19 16:22:51.329[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.74]
-2023-05-19 16:22:51.703[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
-2023-05-19 16:22:51.705[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 2908 ms
-2023-05-19 16:22:52.481[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
-2023-05-19 16:22:52.514[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
-2023-05-19 16:22:52.558[main][com.lp.queue_demo.init.SysInit:33] INFO  - 开始初始化配置
-2023-05-19 16:22:52.559[main][com.lp.queue_demo.init.SysInit:36] INFO  - 开始基础配置
-2023-05-19 16:22:52.560[main][com.lp.queue_demo.init.SysInit:39] INFO  - 基础配置完成
-2023-05-19 16:22:52.560[main][com.lp.queue_demo.init.SysInit:41] INFO  - 初始化配置完成
-2023-05-19 16:22:52.567[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started QueueDemoApplication in 5.701 seconds (JVM running for 8.677)
-2023-05-19 16:23:02.346[http-nio-8080-exec-1][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-05-19 16:23:02.346[http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet:525] INFO  - Initializing Servlet 'dispatcherServlet'
-2023-05-19 16:23:02.349[http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet:547] INFO  - Completed initialization in 2 ms
-2023-05-19 16:25:16.929[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting QueueDemoApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 5580 (E:\github\myResource_02\start_demo_02\queue_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
-2023-05-19 16:25:16.934[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
-2023-05-19 16:25:19.028[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
-2023-05-19 16:25:19.030[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2023-05-19 16:25:19.031[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
-2023-05-19 16:25:19.032[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
-2023-05-19 16:25:19.033[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2023-05-19 16:25:19.042[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
-2023-05-19 16:25:19.056[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
-2023-05-19 16:25:19.058[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
-2023-05-19 16:25:19.059[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.74]
-2023-05-19 16:25:19.400[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
-2023-05-19 16:25:19.401[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 2390 ms
-2023-05-19 16:25:20.231[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
-2023-05-19 16:25:20.275[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
-2023-05-19 16:25:20.320[main][com.lp.queue_demo.init.SysInit:33] INFO  - 开始初始化配置
-2023-05-19 16:25:20.321[main][com.lp.queue_demo.init.SysInit:36] INFO  - 开始基础配置
-2023-05-19 16:25:20.322[main][com.lp.queue_demo.init.SysInit:39] INFO  - 基础配置完成
-2023-05-19 16:25:20.322[main][com.lp.queue_demo.init.SysInit:41] INFO  - 初始化配置完成
-2023-05-19 16:25:20.331[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started QueueDemoApplication in 4.941 seconds (JVM running for 7.654)
-2023-05-19 16:26:11.609[http-nio-8080-exec-6][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-05-19 16:26:11.609[http-nio-8080-exec-6][org.springframework.web.servlet.FrameworkServlet:525] INFO  - Initializing Servlet 'dispatcherServlet'
-2023-05-19 16:26:11.613[http-nio-8080-exec-6][org.springframework.web.servlet.FrameworkServlet:547] INFO  - Completed initialization in 4 ms
-2023-05-19 16:27:55.648[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting QueueDemoApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 9104 (E:\github\myResource_02\start_demo_02\queue_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
-2023-05-19 16:27:55.655[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
-2023-05-19 16:27:58.671[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
-2023-05-19 16:27:58.674[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2023-05-19 16:27:58.675[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
-2023-05-19 16:27:58.676[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
-2023-05-19 16:27:58.676[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2023-05-19 16:27:58.685[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
-2023-05-19 16:27:58.704[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
-2023-05-19 16:27:58.705[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
-2023-05-19 16:27:58.707[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.74]
-2023-05-19 16:27:59.063[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
-2023-05-19 16:27:59.064[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 3205 ms
-2023-05-19 16:27:59.772[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
-2023-05-19 16:27:59.814[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
-2023-05-19 16:27:59.862[main][com.lp.queue_demo.init.SysInit:33] INFO  - 开始初始化配置
-2023-05-19 16:27:59.862[main][com.lp.queue_demo.init.SysInit:36] INFO  - 开始基础配置
-2023-05-19 16:27:59.863[main][com.lp.queue_demo.init.SysInit:39] INFO  - 基础配置完成
-2023-05-19 16:27:59.863[main][com.lp.queue_demo.init.SysInit:41] INFO  - 初始化配置完成
-2023-05-19 16:27:59.873[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started QueueDemoApplication in 5.582 seconds (JVM running for 8.7)
-2023-05-19 16:28:11.500[http-nio-8080-exec-1][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-05-19 16:28:11.501[http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet:525] INFO  - Initializing Servlet 'dispatcherServlet'
-2023-05-19 16:28:11.505[http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet:547] INFO  - Completed initialization in 4 ms
-2023-05-19 16:30:04.274[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting QueueDemoApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 4040 (E:\github\myResource_02\start_demo_02\queue_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
-2023-05-19 16:30:04.291[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
-2023-05-19 16:30:06.982[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
-2023-05-19 16:30:06.985[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2023-05-19 16:30:06.985[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
-2023-05-19 16:30:06.986[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
-2023-05-19 16:30:06.986[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2023-05-19 16:30:06.993[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
-2023-05-19 16:30:07.007[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
-2023-05-19 16:30:07.009[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
-2023-05-19 16:30:07.009[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.74]
-2023-05-19 16:30:07.313[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
-2023-05-19 16:30:07.314[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 2809 ms
-2023-05-19 16:30:08.017[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
-2023-05-19 16:30:08.045[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
-2023-05-19 16:30:08.083[main][com.lp.queue_demo.init.SysInit:33] INFO  - 开始初始化配置
-2023-05-19 16:30:08.084[main][com.lp.queue_demo.init.SysInit:36] INFO  - 开始基础配置
-2023-05-19 16:30:08.086[main][com.lp.queue_demo.init.SysInit:39] INFO  - 基础配置完成
-2023-05-19 16:30:08.086[main][com.lp.queue_demo.init.SysInit:41] INFO  - 初始化配置完成
-2023-05-19 16:30:08.092[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started QueueDemoApplication in 5.624 seconds (JVM running for 8.585)
-2023-05-19 16:30:11.672[http-nio-8080-exec-2][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-05-19 16:30:11.672[http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet:525] INFO  - Initializing Servlet 'dispatcherServlet'
-2023-05-19 16:30:11.676[http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet:547] INFO  - Completed initialization in 4 ms
-2023-05-19 16:31:45.903[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting QueueDemoApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 1116 (E:\github\myResource_02\start_demo_02\queue_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
-2023-05-19 16:31:45.925[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
-2023-05-19 16:31:48.450[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
-2023-05-19 16:31:48.458[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2023-05-19 16:31:48.462[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
-2023-05-19 16:31:48.464[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
-2023-05-19 16:31:48.465[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2023-05-19 16:31:48.473[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
-2023-05-19 16:31:48.518[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
-2023-05-19 16:31:48.521[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
-2023-05-19 16:31:48.522[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.74]
-2023-05-19 16:31:48.995[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
-2023-05-19 16:31:48.997[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 2930 ms
-2023-05-19 16:31:49.828[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
-2023-05-19 16:31:49.859[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
-2023-05-19 16:31:49.906[main][com.lp.queue_demo.init.SysInit:33] INFO  - 开始初始化配置
-2023-05-19 16:31:49.907[main][com.lp.queue_demo.init.SysInit:36] INFO  - 开始基础配置
-2023-05-19 16:31:49.908[main][com.lp.queue_demo.init.SysInit:39] INFO  - 基础配置完成
-2023-05-19 16:31:49.909[main][com.lp.queue_demo.init.SysInit:41] INFO  - 初始化配置完成
-2023-05-19 16:31:49.918[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started QueueDemoApplication in 5.471 seconds (JVM running for 8.236)
-2023-05-19 16:31:54.105[http-nio-8080-exec-2][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-05-19 16:31:54.105[http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet:525] INFO  - Initializing Servlet 'dispatcherServlet'
-2023-05-19 16:31:54.108[http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet:547] INFO  - Completed initialization in 2 ms
-2023-05-19 16:39:03.821[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting QueueDemoApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 15744 (E:\github\myResource_02\start_demo_02\queue_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
-2023-05-19 16:39:03.837[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
-2023-05-19 16:39:06.658[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
-2023-05-19 16:39:06.662[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2023-05-19 16:39:06.663[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
-2023-05-19 16:39:06.663[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
-2023-05-19 16:39:06.663[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2023-05-19 16:39:06.670[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
-2023-05-19 16:39:06.712[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
-2023-05-19 16:39:06.714[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
-2023-05-19 16:39:06.714[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.74]
-2023-05-19 16:39:07.040[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
-2023-05-19 16:39:07.041[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 3016 ms
-2023-05-19 16:39:07.610[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
-2023-05-19 16:39:07.639[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
-2023-05-19 16:39:07.683[main][com.lp.queue_demo.init.SysInit:33] INFO  - 开始初始化配置
-2023-05-19 16:39:07.685[main][com.lp.queue_demo.init.SysInit:36] INFO  - 开始基础配置
-2023-05-19 16:39:07.687[main][com.lp.queue_demo.init.SysInit:39] INFO  - 基础配置完成
-2023-05-19 16:39:07.687[main][com.lp.queue_demo.init.SysInit:41] INFO  - 初始化配置完成
-2023-05-19 16:39:07.694[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started QueueDemoApplication in 5.469 seconds (JVM running for 8.246)
-2023-05-19 16:39:29.056[http-nio-8080-exec-2][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-05-19 16:39:29.057[http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet:525] INFO  - Initializing Servlet 'dispatcherServlet'
-2023-05-19 16:39:29.060[http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet:547] INFO  - Completed initialization in 3 ms
-2023-05-19 16:43:11.051[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting QueueDemoApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 6836 (E:\github\myResource_02\start_demo_02\queue_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
-2023-05-19 16:43:11.104[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
-2023-05-19 16:43:13.547[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
-2023-05-19 16:43:13.550[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-2023-05-19 16:43:13.551[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
-2023-05-19 16:43:13.551[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
-2023-05-19 16:43:13.552[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2023-05-19 16:43:13.560[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
-2023-05-19 16:43:13.576[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
-2023-05-19 16:43:13.577[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
-2023-05-19 16:43:13.577[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.74]
-2023-05-19 16:43:13.854[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
-2023-05-19 16:43:13.855[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 2585 ms
-2023-05-19 16:43:14.384[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
-2023-05-19 16:43:14.404[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
-2023-05-19 16:43:14.428[main][com.lp.queue_demo.init.SysInit:33] INFO  - 开始初始化配置
-2023-05-19 16:43:14.429[main][com.lp.queue_demo.init.SysInit:36] INFO  - 开始基础配置
-2023-05-19 16:43:14.429[main][com.lp.queue_demo.init.SysInit:39] INFO  - 基础配置完成
-2023-05-19 16:43:14.430[main][com.lp.queue_demo.init.SysInit:41] INFO  - 初始化配置完成
-2023-05-19 16:43:14.435[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started QueueDemoApplication in 5.015 seconds (JVM running for 7.683)
-2023-05-19 16:43:40.127[http-nio-8080-exec-1][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-05-19 16:43:40.128[http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet:525] INFO  - Initializing Servlet 'dispatcherServlet'
-2023-05-19 16:43:40.131[http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet:547] INFO  - Completed initialization in 3 ms
+2023-05-29 09:56:45.795[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting QueueDemoApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 15928 (E:\github\myResource_02\start_demo_02\queue_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2023-05-29 09:56:45.947[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
+2023-05-29 09:56:47.741[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2023-05-29 09:56:47.743[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2023-05-29 09:56:47.746[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2023-05-29 09:56:47.747[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2023-05-29 09:56:47.748[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-05-29 09:56:47.777[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2023-05-29 09:56:47.796[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-05-29 09:56:47.797[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2023-05-29 09:56:47.797[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-05-29 09:56:48.125[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2023-05-29 09:56:48.130[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 2037 ms
+2023-05-29 09:56:48.947[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2023-05-29 09:56:48.978[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-29 09:56:49.020[main][com.lp.queue_demo.init.SysInit:33] INFO  - 开始初始化配置
+2023-05-29 09:56:49.021[main][com.lp.queue_demo.init.SysInit:36] INFO  - 开始基础配置
+2023-05-29 09:56:49.022[main][com.lp.queue_demo.init.SysInit:39] INFO  - 基础配置完成
+2023-05-29 09:56:49.022[main][com.lp.queue_demo.init.SysInit:41] INFO  - 初始化配置完成
+2023-05-29 09:56:49.052[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started QueueDemoApplication in 4.482 seconds (JVM running for 10.919)
+2023-05-29 09:58:28.188[http-nio-8080-exec-2][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-29 09:58:28.189[http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet:525] INFO  - Initializing Servlet 'dispatcherServlet'
+2023-05-29 09:58:28.190[http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet:547] INFO  - Completed initialization in 1 ms
+2023-05-29 10:07:33.622[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting QueueDemoApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 4980 (E:\github\myResource_02\start_demo_02\queue_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2023-05-29 10:07:33.632[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
+2023-05-29 10:07:35.737[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2023-05-29 10:07:35.738[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2023-05-29 10:07:35.739[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2023-05-29 10:07:35.739[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2023-05-29 10:07:35.740[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-05-29 10:07:35.746[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2023-05-29 10:07:35.758[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-05-29 10:07:35.760[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2023-05-29 10:07:35.760[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-05-29 10:07:35.984[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2023-05-29 10:07:35.985[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 2201 ms
+2023-05-29 10:07:36.471[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2023-05-29 10:07:36.490[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-29 10:07:36.520[main][com.lp.queue_demo.init.SysInit:33] INFO  - 开始初始化配置
+2023-05-29 10:07:36.521[main][com.lp.queue_demo.init.SysInit:36] INFO  - 开始基础配置
+2023-05-29 10:07:36.522[main][com.lp.queue_demo.init.SysInit:39] INFO  - 基础配置完成
+2023-05-29 10:07:36.522[main][com.lp.queue_demo.init.SysInit:41] INFO  - 初始化配置完成
+2023-05-29 10:07:36.526[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started QueueDemoApplication in 4.673 seconds (JVM running for 7.091)
+2023-05-29 10:07:52.443[http-nio-8080-exec-1][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-29 10:07:52.443[http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet:525] INFO  - Initializing Servlet 'dispatcherServlet'
+2023-05-29 10:07:52.445[http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet:547] INFO  - Completed initialization in 2 ms
+2023-05-29 14:59:20.331[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting QueueDemoApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 2404 (E:\github\myResource_02\start_demo_02\queue_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2023-05-29 14:59:20.360[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
+2023-05-29 14:59:22.644[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2023-05-29 14:59:22.646[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2023-05-29 14:59:22.646[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2023-05-29 14:59:22.647[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2023-05-29 14:59:22.648[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-05-29 14:59:22.654[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2023-05-29 14:59:22.670[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-05-29 14:59:22.672[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2023-05-29 14:59:22.672[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-05-29 14:59:23.036[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2023-05-29 14:59:23.037[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 2492 ms
+2023-05-29 14:59:23.622[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2023-05-29 14:59:23.643[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-29 14:59:23.667[main][com.lp.queue_demo.init.SysInit:33] INFO  - 开始初始化配置
+2023-05-29 14:59:23.668[main][com.lp.queue_demo.init.SysInit:36] INFO  - 开始基础配置
+2023-05-29 14:59:23.669[main][com.lp.queue_demo.init.SysInit:39] INFO  - 基础配置完成
+2023-05-29 14:59:23.669[main][com.lp.queue_demo.init.SysInit:41] INFO  - 初始化配置完成
+2023-05-29 14:59:23.674[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started QueueDemoApplication in 5.177 seconds (JVM running for 8.044)
+2023-05-29 15:00:09.453[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting QueueDemoApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 3988 (E:\github\myResource_02\start_demo_02\queue_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2023-05-29 15:00:09.458[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
+2023-05-29 15:00:11.410[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2023-05-29 15:00:11.412[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2023-05-29 15:00:11.412[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2023-05-29 15:00:11.412[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2023-05-29 15:00:11.413[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-05-29 15:00:11.419[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2023-05-29 15:00:11.430[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-05-29 15:00:11.431[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2023-05-29 15:00:11.432[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-05-29 15:00:11.623[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2023-05-29 15:00:11.624[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 1980 ms
+2023-05-29 15:00:12.229[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2023-05-29 15:00:12.251[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-29 15:00:12.277[main][com.lp.queue_demo.init.SysInit:33] INFO  - 开始初始化配置
+2023-05-29 15:00:12.277[main][com.lp.queue_demo.init.SysInit:36] INFO  - 开始基础配置
+2023-05-29 15:00:12.278[main][com.lp.queue_demo.init.SysInit:39] INFO  - 基础配置完成
+2023-05-29 15:00:12.278[main][com.lp.queue_demo.init.SysInit:41] INFO  - 初始化配置完成
+2023-05-29 15:00:12.283[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started QueueDemoApplication in 4.243 seconds (JVM running for 6.62)
+2023-05-29 15:00:59.768[http-nio-8080-exec-2][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-29 15:00:59.768[http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet:525] INFO  - Initializing Servlet 'dispatcherServlet'
+2023-05-29 15:00:59.771[http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet:547] INFO  - Completed initialization in 3 ms
+2023-05-29 15:05:19.996[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting QueueDemoApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 1824 (E:\github\myResource_02\start_demo_02\queue_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2023-05-29 15:05:20.001[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
+2023-05-29 15:05:21.866[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2023-05-29 15:05:21.868[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2023-05-29 15:05:21.868[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2023-05-29 15:05:21.868[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2023-05-29 15:05:21.868[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-05-29 15:05:21.873[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2023-05-29 15:05:21.881[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-05-29 15:05:21.882[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2023-05-29 15:05:21.882[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-05-29 15:05:22.030[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2023-05-29 15:05:22.030[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 1788 ms
+2023-05-29 15:05:22.474[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2023-05-29 15:05:22.495[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-29 15:05:22.519[main][com.lp.queue_demo.init.SysInit:35] INFO  - 开始初始化配置
+2023-05-29 15:05:22.520[main][com.lp.queue_demo.init.SysInit:38] INFO  - 开始基础配置
+2023-05-29 15:05:22.521[main][com.lp.queue_demo.init.SysInit:41] INFO  - 基础配置完成
+2023-05-29 15:05:22.521[main][com.lp.queue_demo.init.SysInit:43] INFO  - 初始化配置完成
+2023-05-29 15:05:22.526[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started QueueDemoApplication in 3.919 seconds (JVM running for 6.185)
+2023-05-29 15:05:28.384[http-nio-8080-exec-2][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-29 15:05:28.384[http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet:525] INFO  - Initializing Servlet 'dispatcherServlet'
+2023-05-29 15:05:28.386[http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet:547] INFO  - Completed initialization in 2 ms
+2023-05-29 15:07:27.990[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting QueueDemoApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 10340 (E:\github\myResource_02\start_demo_02\queue_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2023-05-29 15:07:28.002[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
+2023-05-29 15:07:30.048[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2023-05-29 15:07:30.049[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2023-05-29 15:07:30.050[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2023-05-29 15:07:30.050[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2023-05-29 15:07:30.050[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-05-29 15:07:30.057[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2023-05-29 15:07:30.069[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-05-29 15:07:30.070[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2023-05-29 15:07:30.071[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-05-29 15:07:30.362[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2023-05-29 15:07:30.363[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 2223 ms
+2023-05-29 15:07:30.993[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2023-05-29 15:07:31.024[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-29 15:07:31.087[main][com.lp.queue_demo.init.SysInit:35] INFO  - 开始初始化配置
+2023-05-29 15:07:31.088[main][com.lp.queue_demo.init.SysInit:38] INFO  - 开始基础配置
+2023-05-29 15:07:31.090[main][com.lp.queue_demo.init.SysInit:41] INFO  - 基础配置完成
+2023-05-29 15:07:31.090[main][com.lp.queue_demo.init.SysInit:43] INFO  - 初始化配置完成
+2023-05-29 15:07:31.097[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started QueueDemoApplication in 4.507 seconds (JVM running for 6.762)
+2023-05-29 15:07:50.629[http-nio-8080-exec-1][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-29 15:07:50.630[http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet:525] INFO  - Initializing Servlet 'dispatcherServlet'
+2023-05-29 15:07:50.635[http-nio-8080-exec-1][org.springframework.web.servlet.FrameworkServlet:547] INFO  - Completed initialization in 4 ms
+2023-05-29 15:10:48.875[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting QueueDemoApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 15240 (E:\github\myResource_02\start_demo_02\queue_demo\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2023-05-29 15:10:48.881[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
+2023-05-29 15:10:50.948[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2023-05-29 15:10:50.949[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2023-05-29 15:10:50.950[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2023-05-29 15:10:50.950[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2023-05-29 15:10:50.950[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-05-29 15:10:50.955[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2023-05-29 15:10:50.966[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-05-29 15:10:50.966[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2023-05-29 15:10:50.967[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-05-29 15:10:51.149[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2023-05-29 15:10:51.150[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 2164 ms
+2023-05-29 15:10:51.673[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2023-05-29 15:10:51.694[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-29 15:10:51.722[main][com.lp.queue_demo.init.SysInit:35] INFO  - 开始初始化配置
+2023-05-29 15:10:51.723[main][com.lp.queue_demo.init.SysInit:38] INFO  - 开始基础配置
+2023-05-29 15:10:51.724[main][com.lp.queue_demo.init.SysInit:41] INFO  - 基础配置完成
+2023-05-29 15:10:51.724[main][com.lp.queue_demo.init.SysInit:43] INFO  - 初始化配置完成
+2023-05-29 15:10:51.729[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started QueueDemoApplication in 4.317 seconds (JVM running for 6.533)
+2023-05-29 15:11:58.168[http-nio-8080-exec-2][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-29 15:11:58.169[http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet:525] INFO  - Initializing Servlet 'dispatcherServlet'
+2023-05-29 15:11:58.172[http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet:547] INFO  - Completed initialization in 3 ms

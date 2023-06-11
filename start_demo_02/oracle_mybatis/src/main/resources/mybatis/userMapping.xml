@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!-- 映射文件，映射到对应的SQL接口 -->
+<mapper namespace="com.lp.oracle_mybatis.mapper.UserMapper">
+
+    <!--返回的结果集，用于关联实体类属性和数据库字段 -->
+    <!--如果实体类属性和数据库属性名保持一致，就不需要javaType和jdbcType（必须大写）属性 -->
+    <resultMap id="User" type="com.lp.oracle_mybatis.entity.User">
+        <result column="id" property="id" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+        <result column="name" property="name" javaType="java.lang.String" jdbcType="VARCHAR"/>
+        <result column="psw" property="psw" javaType="java.lang.String" jdbcType="VARCHAR"/>
+        <result column="photo" property="photo" javaType="java.lang.String" jdbcType="VARCHAR"/>
+        <result column="information" property="information" javaType="java.lang.String" jdbcType="VARCHAR"/>
+        <result column="school" property="school" javaType="java.lang.String" jdbcType="VARCHAR"/>
+        <result column="ADDRESS" property="address" javaType="java.lang.String" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!-- 根据id查询 -->
+    <!-- 语句的字段如果是小写字母需要加双引号（大写字母的话不用） -->
+    <!-- 语句末尾不能有分号：ORA-00911: invalid character -->
+    <select id="findById" resultMap="User">
+        select "id", "psw", "name", "photo", "information", "school", ADDRESS
+        from test_user
+        where "id" = #{id}
+    </select>
+
+    <!-- 根据name查询 -->
+    <select id="findByName" resultMap="User">
+        select "id", "psw", "name", "photo", "information", "school", ADDRESS
+        from test_user
+        where "name" = #{name}
+    </select>
+
+    <!-- 根据name模糊查询 -->
+    <select id="findLikeName" resultMap="User">
+        select u."id", u."psw", u."name", u."photo", u."information", u."school", u.ADDRESS
+        from test_user u
+        where u."name" like '%${name}%'
+    </select>
+
+    <!-- 分页查询所有的数据（start只能是0/1，不是的话查不到数据） -->
+    <select id="pageList" resultMap="User">
+        select u."id", u."psw", u."name", u."photo", u."information", u."school", u.ADDRESS
+        from test_user u
+        where rownum between #{start} and #{end}
+    </select>
+
+    <!-- 分页查询所有的数据（根据唯一字段来查） -->
+    <select id="pageList2" resultMap="User">
+        select u."id", u."psw", u."name", u."photo", u."information", u."school", u.ADDRESS
+        from test_user u
+        where u."id" between #{start} and #{end}
+    </select>
+
+    <!-- 条件分页查询 -->
+    <select id="pageList3" resultMap="User">
+        select u."id", u."psw", u."name", u."photo", u."information", u."school", u.ADDRESS
+        from test_user u
+        where
+        u."name" like '%${name}%'
+        u."id" between #{start} and #{end}
+    </select>
+
+    <!-- 批量插入（Oracle的插入语句和MySQL有区别），提交一次。 -->
+    <insert id="insertUsers" parameterType="java.util.List">
+        begin
+        <foreach collection="list" item="user" index="index">
+            insert into test_user
+            values(
+            #{user.id, jdbcType=INTEGER},
+            #{user.name, jdbcType=VARCHAR},
+            #{user.psw, jdbcType=VARCHAR},
+            #{user.photo, jdbcType=VARCHAR},
+            #{user.information, jdbcType=VARCHAR},
+            #{user.school, jdbcType=VARCHAR},
+            #{user.address, jdbcType=VARCHAR}
+            );
+        </foreach>
+        commit;
+        end;
+    </insert>
+
+    <!-- 单个插入 -->
+    <insert id="insertUser">
+        insert into test_user
+        values(
+            #{user.id, jdbcType=INTEGER},
+            #{user.name, jdbcType=VARCHAR},
+            #{user.psw, jdbcType=VARCHAR},
+            #{user.photo, jdbcType=VARCHAR},
+            #{user.information, jdbcType=VARCHAR},
+            #{user.school, jdbcType=VARCHAR},
+            #{user.address, jdbcType=VARCHAR}
+        )
+    </insert>
+
+
+
+</mapper>

@@ -1,0 +1,98 @@
+1，关键教程
+	1，Oracle Database 19c 安装步骤：https://blog.csdn.net/weixin_45397785/article/details/121712127
+	2，Oracle w3cschool教程：https://www.w3cschool.cn/oraclejc/
+
+2，系统操作
+	1，查看oracle监听信息：
+		lsnrctl status
+	2，登录：
+		sqlplus "/as sysdba"   --以操作系统权限认证的oracle sys管理员登陆
+		或
+		控制台依次输入
+		1，sqlplus
+		2，lp（用户名） as sysdba
+		3，123456（密码）
+	3，退出登录：
+		exit;
+	4，oracle命令创建新用户：
+		参考：https://blog.csdn.net/qq_38973841/article/details/92224568
+	5，oracle数据库的sid怎么查看：
+		参考：https://www.jianshu.com/p/44b4e118134e
+		select instance_name from V$instance;
+	6，配置监听：
+		netca
+	7，Oracle net maneger的用法：
+		https://www.bbsmax.com/A/o75N0KOjzW/
+
+3，Oracle的数据类型有哪些？
+参考：https://www.cnblogs.com/baixingqiang/p/5882549.html
+
+
+4，sqlplus常用的sql语句：
+	1，显示当前连接用户SQL> show user;
+	2，查看系统拥有哪些用户SQL> select * from all_users;
+	3，查询当前用户下所有对象SQL> select * from tab;
+	4，建立第一个表SQL>
+		CREATE TABLE test_user(
+		"id" 			NUMBER(10) NOT NULL PRIMARY KEY  ,
+		"name" 			varchar(255) ,
+		"psw"    		varchar(255) ,
+		"photo"    		varchar(255) ,
+		"information"  	varchar(255) ,
+		"school"    	varchar(255) 
+		);
+	5，查询表结构SQL> desc test_user; 
+	6，删除表SQL> drop table test_user; 
+	7，插入新记录SQL> 
+		// 注意值用单引号包围
+		insert into test_user 
+		values(1, 'lp', '131421', 'www.baidu.com/photo/981021', 'there is newest test demo', 'beng bu univercity');
+	8，查询记录SQL> select * from test_user; 
+	9，创建新用户：
+		登录sys用户：sqlplus "/as sysdba"
+		创建用户lp：create user lp identified by 123456;
+		为用户lp授权：grant connect,resource,dba to lp;
+		切换到用户lp：conn lp/123456;
+
+5，疑难杂症记录：
+	1，sqlplus能够正常使用，但是使用工具连接Oracle的时候连接不上。
+		1，开始的时候发现：服务里面没有“Oracle监听服务”。
+		2，然后：删除当前的监听（删除的时候一路下一步，然后点击完成，接着重复操作删除下一个监听）：添加新的监听报错如下：
+		caused by: TNS-04605: 无效语法错误:  ( DESCRIPTION_LIST = 之前或之中出现意外的字符或文字 "("
+		Error in file D:\Install\Oracle\WINDOWS.X64_193000_db_home\network\admin\sample\tnsnames.ora。
+		3，最终的时候：删除D:\Install\Oracle\WINDOWS.X64_193000_db_home\network\admin\sample\tnsnames.ora这个文件之后，再添加监听就ok。
+		4，结果查收：再次刷新服务之后发现有监听服务了：OracleOraDB19Home1TNSListener。
+	
+	2，监听器已经添加完成，连接Oracle的时候还是连不上，报错如下：
+	ORA-12514, TNS:listener does not currently know of service requested in connect descriptor
+		参考教程：https://blog.51cto.com/u_15127603/4230718
+		1，使用net configration assist删除所有监听，添加新的监听。
+		2，检查服务中有没有“OracleOraDB19Home1TNSListener”启动成功，有的话监听就是启动成功的状态。
+		注意：通过server name连接的时候服务“OracleServiceORCLE（OracleService服务名）”一定是启动状态否则会连接不上。
+		注意：net configration assist使用安装Oracle之后的，不能使用安装包原有的，否则监听器的位置不同导致监听器很难确定是谁的。
+	3，报错：用户名/口令无效; 登录被拒绝
+		参考：https://jingyan.baidu.com/article/19020a0a6d6b5a529d2842cb.html
+		登录sys用户：sqlplus "/as sysdba"
+		创建用户lp：create user lp identified by 123456;
+		为用户lp授权：grant connect,resource,dba to lp;
+		切换到用户lp：conn lp/123456;
+		最终：这时候在用工具连接用户lp，能够正常连接。
+	
+6，其他话题：
+		1，Oracle JDBC驱动版本、JDK版本、数据库版本对应关系
+			参考：https://blog.csdn.net/ityw520/article/details/124056620
+		2，电脑主机名怎么来看
+			参考：https://kuai.so.com/7cca05a76c3ed45721f445088cb244da/wenda/Selectedabstracts/www.dongnibaike.com?src=wenda_abstract
+	
+		3，
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

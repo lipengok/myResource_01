@@ -1,0 +1,6 @@
+参考：https://kuai.so.com/ed915000844524ae8c9f45d7185c865e/wenda/Selectedabstracts/www.51dongshi.com?src=wenda_abstract
+
+区别：
+1，#将传入的数据当作一个字符串，自动为传入的数据加上双引号。
+$将传入的数据直接接收。
+2，由于上面的处理不同，所以#很大程度上可以防止sql注入，但是$会有sql注入的风险。

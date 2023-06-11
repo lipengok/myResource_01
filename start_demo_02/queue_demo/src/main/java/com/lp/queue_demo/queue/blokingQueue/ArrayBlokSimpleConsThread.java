@@ -20,6 +20,7 @@ public class ArrayBlokSimpleConsThread{
         try {
             model = (Model) ComGlobe.arrayBlockingQueue.remove();
         }catch (Exception e){
+            e.printStackTrace();
             log.error("任务从任务队列取出失败，失败信息=>[{}]", e.getMessage());
         }
 

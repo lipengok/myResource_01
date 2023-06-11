@@ -7,12 +7,15 @@
 
 # 前言
 Java提供的线程安全的队列 主要分为阻塞队列和非阻塞队列俩大类
-1，abstractQueue--非阻塞队列
-    非阻塞并发队列最典型的就是ConcurrentLinkedQueue，这个类不会让线程阻塞，利用CAS保证了线程安全。
-2，blokingQueue--阻塞队列
+1，blokingQueue--阻塞队列
     阻塞队列的典型例子就是BlockingQueue接口的实现类
+2，abstractQueue--非阻塞队列
+    非阻塞并发队列最典型的就是ConcurrentLinkedQueue，这个类不会让线程阻塞，利用CAS保证了线程安全。
+3，阻塞队列非阻塞队列的区别
+4，什么是CAS机制
 3，deque--双端队列
 
+## 1- blokingQueue--阻塞队列
 阻塞队列的特点：
     1，平衡生产，消费两端。
     2，最重要的两个方法：take()和put()
@@ -20,6 +23,13 @@ Java提供的线程安全的队列 主要分为阻塞队列和非阻塞队列俩
         put：往队列中添加数据，如果数据满了会阻塞，知道队列有空间之后，自动解除阻塞。
     3，阻塞队列（误无界队列）的最大空间是：Integer.MAX_VALUE。
 阻塞队列的常用方法：
+    1- add             增加一个元索并返回true         如果队列已满，则抛出一个IIIegaISlabEepeplian异常
+    2- put             添加一个元素无返回             如果队列满，则阻塞
+    3- offer           添加一个元素并返回true         如果队列已满，则返回false
+
+    1- remove          移除并返回队列头部的元素        如果队列为空，则抛出NoSuchElementException异常。
+    2- take            移除并返回队列头部的元素        如果队列为空，则阻塞
+    3- poll            移除并返问队列头部的元素        如果队列为空，则返回null
     抛出异常：add、remove、element
     返回结果但是不抛出异常：offer、poll、peek、
     阻塞：take、put
@@ -50,7 +60,7 @@ Java提供的线程安全的队列 主要分为阻塞队列和非阻塞队列俩
         2，getDelay方法返回的是还剩下多长的延迟时间才会被执行。如果返回0或者负数则代表任务已过期。
         元素会根据延迟时间的长短被放到队列的不同位置，越靠近队列头代表越早过期。
 
-
+## 2- abstractQueue--非阻塞队列
 非阻塞队列的特点：
     1，java中提供了基于CAS非阻塞算法实现的队列，
     比较有代表性的有ConcurrentLinkedQueue和LinkedTransferQueue，它们的性能一般比阻塞队列的好。
@@ -69,3 +79,25 @@ Java提供的线程安全的队列 主要分为阻塞队列和非阻塞队列俩
         非阻塞队列ConcurrentLickedQueue使用CAS非阻塞算法+不停重试的实际来实现线程安全的.
     2，LinkedTransferQueue
         LinkedTransferQueue 通过使用CAS来实现并发控制，是一个无界的安全队列。其长度可以无限延伸，当然带来的问题也是显而易见的。
+
+## 3- 阻塞队列非阻塞队列的区别
+    1，阻塞队列，非阻塞队列都是线程安全的的队列。
+    2，阻塞队列通过锁，实现线程安全，所以只支持单线程操作队列。
+    3，非阻塞队列通过cas，实现线程安全，所以支持多线程并发操作队列。
+
+
+## 4- 什么是CAS机制
+参考：https://blog.csdn.net/qq_32998153/article/details/79529704?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522168532151316782427483203%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=168532151316782427483203&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-79529704-null-null.142^v88^control_2,239^v2^insert_chatgpt&utm_term=cas&spm=1018.2226.3001.4187
+
+CAS机制中使用了3个基本操作数：内存地址V，旧的预期值A，要修改的新值B。
+更新一个变量的时候，只有当变量的预期值A和内存地址V当中的实际值相同时，才会将内存地址V对应的值修改为B。
+
+
+
+
+
+
+
+
+
+

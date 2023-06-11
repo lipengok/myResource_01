@@ -16,4 +16,7 @@ public class SysGlobe {
 
     // 本机分配到的slot（槽）
     public static ArrayList<String> slots;
+
+    // 集群模式下，槽的数量
+    public static Integer slotNum;
 }

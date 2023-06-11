@@ -1,0 +1,144 @@
+2023-06-08 15:15:41.593[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting QuartzSimpleApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 15328 (E:\github\myResource_02\start_demo_02\quartz_simple\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2023-06-08 15:15:41.670[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
+2023-06-08 15:15:43.626[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2023-06-08 15:15:43.628[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2023-06-08 15:15:43.630[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2023-06-08 15:15:43.631[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2023-06-08 15:15:43.631[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-08 15:15:43.638[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2023-06-08 15:15:43.651[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-08 15:15:43.652[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2023-06-08 15:15:43.652[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-08 15:15:43.825[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2023-06-08 15:15:43.825[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 1970 ms
+2023-06-08 15:15:44.335[main][org.quartz.impl.StdSchedulerFactory:1220] INFO  - Using default implementation for ThreadExecutor
+2023-06-08 15:15:44.350[main][org.quartz.core.SchedulerSignalerImpl:61] INFO  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-06-08 15:15:44.350[main][org.quartz.core.QuartzScheduler:229] INFO  - Quartz Scheduler v.2.3.2 created.
+2023-06-08 15:15:44.351[main][org.quartz.simpl.RAMJobStore:155] INFO  - RAMJobStore initialized.
+2023-06-08 15:15:44.352[main][org.quartz.core.QuartzScheduler:294] INFO  - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2023-06-08 15:15:44.352[main][org.quartz.impl.StdSchedulerFactory:1374] INFO  - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2023-06-08 15:15:44.353[main][org.quartz.impl.StdSchedulerFactory:1378] INFO  - Quartz scheduler version: 2.3.2
+2023-06-08 15:15:44.353[main][org.quartz.core.QuartzScheduler:2293] INFO  - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@8c46918
+2023-06-08 15:15:44.381[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2023-06-08 15:15:44.401[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-08 15:15:44.403[main][org.springframework.scheduling.quartz.SchedulerFactoryBean:729] INFO  - Starting Quartz Scheduler now
+2023-06-08 15:15:44.403[main][org.quartz.core.QuartzScheduler:547] INFO  - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2023-06-08 15:15:44.408[main][com.lp.quartz_simple.init.SysInit:33] INFO  - 【配置】开始加载基础信息
+2023-06-08 15:15:44.409[main][com.lp.quartz_simple.init.SysInit:34] INFO  - 【配置】开始加载本机信息
+2023-06-08 15:15:46.716[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Pausing ProtocolHandler ["http-nio-8080"]
+2023-06-08 15:15:46.717[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Stopping service [Tomcat]
+2023-06-08 15:15:46.721[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Stopping ProtocolHandler ["http-nio-8080"]
+2023-06-08 15:15:46.741[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Destroying ProtocolHandler ["http-nio-8080"]
+2023-06-08 15:15:46.748[main][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:136] INFO  - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-08 15:15:46.796[main][org.quartz.core.QuartzScheduler:585] INFO  - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-06-08 15:15:46.798[main][org.springframework.scheduling.quartz.SchedulerFactoryBean:847] INFO  - Shutting down Quartz Scheduler
+2023-06-08 15:15:46.799[main][org.quartz.core.QuartzScheduler:666] INFO  - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2023-06-08 15:15:46.799[main][org.quartz.core.QuartzScheduler:585] INFO  - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-06-08 15:15:46.800[main][org.quartz.core.QuartzScheduler:740] INFO  - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2023-06-08 15:27:10.369[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting QuartzSimpleApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 864 (E:\github\myResource_02\start_demo_02\quartz_simple\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2023-06-08 15:27:10.374[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
+2023-06-08 15:27:12.479[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2023-06-08 15:27:12.481[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2023-06-08 15:27:12.482[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2023-06-08 15:27:12.482[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2023-06-08 15:27:12.483[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-08 15:27:12.490[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2023-06-08 15:27:12.502[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-08 15:27:12.503[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2023-06-08 15:27:12.504[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-08 15:27:12.730[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2023-06-08 15:27:12.730[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 2251 ms
+2023-06-08 15:27:13.264[main][org.quartz.impl.StdSchedulerFactory:1220] INFO  - Using default implementation for ThreadExecutor
+2023-06-08 15:27:13.277[main][org.quartz.core.SchedulerSignalerImpl:61] INFO  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-06-08 15:27:13.278[main][org.quartz.core.QuartzScheduler:229] INFO  - Quartz Scheduler v.2.3.2 created.
+2023-06-08 15:27:13.279[main][org.quartz.simpl.RAMJobStore:155] INFO  - RAMJobStore initialized.
+2023-06-08 15:27:13.280[main][org.quartz.core.QuartzScheduler:294] INFO  - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2023-06-08 15:27:13.281[main][org.quartz.impl.StdSchedulerFactory:1374] INFO  - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2023-06-08 15:27:13.281[main][org.quartz.impl.StdSchedulerFactory:1378] INFO  - Quartz scheduler version: 2.3.2
+2023-06-08 15:27:13.282[main][org.quartz.core.QuartzScheduler:2293] INFO  - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@153f66e7
+2023-06-08 15:27:13.310[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2023-06-08 15:27:13.333[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-08 15:27:13.335[main][org.springframework.scheduling.quartz.SchedulerFactoryBean:729] INFO  - Starting Quartz Scheduler now
+2023-06-08 15:27:13.335[main][org.quartz.core.QuartzScheduler:547] INFO  - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2023-06-08 15:27:13.341[main][com.lp.quartz_simple.init.SysInit:35] INFO  - 【配置】开始加载基础信息
+2023-06-08 15:27:13.341[main][com.lp.quartz_simple.init.SysInit:36] INFO  - 【配置】开始加载本机信息
+2023-06-08 15:27:16.267[main][com.lp.quartz_simple.init.SysInit:42] INFO  - 【配置】本机ip:[172.17.228.17]
+2023-06-08 15:27:16.269[main][com.lp.quartz_simple.init.SysInit:43] INFO  - 【配置】本机port:[8080]
+2023-06-08 15:27:16.269[main][com.lp.quartz_simple.init.SysInit:44] INFO  - 【配置】本机信息加载成功
+2023-06-08 15:27:16.269[main][com.lp.quartz_simple.init.SysInit:46] INFO  - 【配置】开始加载本机任务信息
+2023-06-08 15:27:16.270[main][com.lp.quartz_simple.init.SysInit:49] INFO  - 【配置】任务名:[print_info]
+2023-06-08 15:27:16.270[main][com.lp.quartz_simple.init.SysInit:50] INFO  - 【配置】任务分组:[print]
+2023-06-08 15:27:16.270[main][com.lp.quartz_simple.init.SysInit:51] INFO  - 【配置】本机任务信息加载成功
+2023-06-08 15:27:16.270[main][com.lp.quartz_simple.init.SysInit:53] INFO  - 【配置】基础信息加载完毕
+2023-06-08 15:27:16.274[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started QuartzSimpleApplication in 7.317 seconds (JVM running for 10.015)
+2023-06-08 15:27:16.277[main][com.lp.quartz_simple.QuartzSimpleApplication:13] INFO  - 项目初始化完成
+2023-06-08 15:28:34.734[http-nio-8080-exec-2][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-08 15:28:34.735[http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet:525] INFO  - Initializing Servlet 'dispatcherServlet'
+2023-06-08 15:28:34.736[http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet:547] INFO  - Completed initialization in 1 ms
+2023-06-08 15:38:49.645[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting QuartzSimpleApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 11000 (E:\github\myResource_02\start_demo_02\quartz_simple\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2023-06-08 15:38:49.652[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
+2023-06-08 15:38:52.619[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2023-06-08 15:38:52.621[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2023-06-08 15:38:52.621[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2023-06-08 15:38:52.622[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2023-06-08 15:38:52.623[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-08 15:38:52.635[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2023-06-08 15:38:52.655[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-08 15:38:52.658[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2023-06-08 15:38:52.659[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-08 15:38:53.023[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2023-06-08 15:38:53.024[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 3221 ms
+2023-06-08 15:38:53.288[main][org.quartz.impl.StdSchedulerFactory:1220] INFO  - Using default implementation for ThreadExecutor
+2023-06-08 15:38:53.317[main][org.quartz.core.SchedulerSignalerImpl:61] INFO  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-06-08 15:38:53.318[main][org.quartz.core.QuartzScheduler:229] INFO  - Quartz Scheduler v.2.3.2 created.
+2023-06-08 15:38:53.321[main][org.quartz.simpl.RAMJobStore:155] INFO  - RAMJobStore initialized.
+2023-06-08 15:38:53.323[main][org.quartz.core.QuartzScheduler:294] INFO  - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2023-06-08 15:38:53.324[main][org.quartz.impl.StdSchedulerFactory:1374] INFO  - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2023-06-08 15:38:53.324[main][org.quartz.impl.StdSchedulerFactory:1378] INFO  - Quartz scheduler version: 2.3.2
+2023-06-08 15:38:53.325[main][org.quartz.core.QuartzScheduler:2293] INFO  - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@11a82d0f
+2023-06-08 15:38:53.804[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2023-06-08 15:38:53.853[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-08 15:38:53.855[main][org.springframework.scheduling.quartz.SchedulerFactoryBean:729] INFO  - Starting Quartz Scheduler now
+2023-06-08 15:38:53.856[main][org.quartz.core.QuartzScheduler:547] INFO  - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2023-06-08 15:38:53.867[main][com.lp.quartz_simple.init.SysInit:42] INFO  - 【配置】开始加载基础信息
+2023-06-08 15:38:53.868[main][com.lp.quartz_simple.init.SysInit:45] INFO  - 【配置】开始加载本机信息
+2023-06-08 15:38:56.930[main][com.lp.quartz_simple.init.SysInit:51] INFO  - 【配置】本机ip:[172.17.228.17]
+2023-06-08 15:38:56.935[main][com.lp.quartz_simple.init.SysInit:52] INFO  - 【配置】本机port:[8080]
+2023-06-08 15:38:56.936[main][com.lp.quartz_simple.init.SysInit:53] INFO  - 【配置】本机信息加载成功
+2023-06-08 15:38:56.936[main][com.lp.quartz_simple.init.SysInit:55] INFO  - 【配置】开始加载本机任务信息
+2023-06-08 15:38:56.937[main][com.lp.quartz_simple.init.SysInit:58] INFO  - 【配置】任务名:[print_info]
+2023-06-08 15:38:56.937[main][com.lp.quartz_simple.init.SysInit:59] INFO  - 【配置】任务分组:[print]
+2023-06-08 15:38:56.938[main][com.lp.quartz_simple.init.SysInit:60] INFO  - 【配置】本机任务信息加载成功
+2023-06-08 15:38:56.938[main][com.lp.quartz_simple.init.SysInit:62] INFO  - 【配置】基础信息加载完毕
+2023-06-08 15:38:56.944[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started QuartzSimpleApplication in 9.14 seconds (JVM running for 12.417)
+2023-06-08 15:38:56.953[main][com.lp.quartz_simple.QuartzSimpleApplication:13] INFO  - 项目初始化完成
+2023-06-08 15:39:30.976[http-nio-8080-exec-2][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-08 15:39:30.977[http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet:525] INFO  - Initializing Servlet 'dispatcherServlet'
+2023-06-08 15:39:30.979[http-nio-8080-exec-2][org.springframework.web.servlet.FrameworkServlet:547] INFO  - Completed initialization in 2 ms
+2023-06-08 15:39:31.037[pool-2-thread-1][org.quartz.core.QuartzScheduler:547] INFO  - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2023-06-08 15:39:31.059[quartzScheduler_Worker-1][com.lp.quartz_simple.Job.PrintInfoJob:20] INFO  - 本机信息:[SysInfo(ip=172.17.228.17, port=8080)]
+2023-06-08 15:39:41.035[quartzScheduler_Worker-2][com.lp.quartz_simple.Job.PrintInfoJob:20] INFO  - 本机信息:[SysInfo(ip=172.17.228.17, port=8080)]
+2023-06-08 15:39:51.034[quartzScheduler_Worker-3][com.lp.quartz_simple.Job.PrintInfoJob:20] INFO  - 本机信息:[SysInfo(ip=172.17.228.17, port=8080)]

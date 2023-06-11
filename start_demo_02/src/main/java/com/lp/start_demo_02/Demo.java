@@ -21,9 +21,11 @@ public class Demo {
         // E:\github\myResource_02\start_demo_02\target\classes\test.txt
         System.out.println(file.getPath());
 
+        // E:\github\myResource_02\start_demo_02\test.txt
         File file1 = new File(System.getProperty("user.dir") + "/test.txt");
         System.out.println(file1.getPath());
 
+        // E:\github\myResource_02\start_demo_02\target\classes\application.properties
         File file2 = ResourceUtils.getFile("classpath:application.properties");
         System.out.println(file2.getPath());
     }

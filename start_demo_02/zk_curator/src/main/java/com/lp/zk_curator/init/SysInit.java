@@ -1,6 +1,6 @@
 package com.lp.zk_curator.init;
 
-import com.lp.zk_curator.demo_up.server.CuratorServer;
+import com.lp.zk_curator.server.CuratorServer;
 import com.lp.zk_curator.globe.SysGlobe;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,9 +26,18 @@ public class SysInit implements ApplicationListener<ContextRefreshedEvent> {
     @Value("${server.port}")
     private int serverPort;
 
+    @Value("${demo.curator.slot.num}")
+    private Integer slotNum;
+
     @Override
     public void onApplicationEvent(ContextRefreshedEvent contextRefreshedEvent) {
-        log.info("开始初始化基本配置");
+        log.info("【配置】开始初始化");
+
+        log.info("【配置】开始初始化基本配置");
+        SysGlobe.slotNum = slotNum;
+        log.info("【配置】槽: [{}]-[{}]", 0, slotNum-1);
+        log.info("【配置】基本配置完成");
+
         String machineIp = "";
         try {
             InetAddress addr = InetAddress.getLocalHost();
@@ -40,11 +49,12 @@ public class SysInit implements ApplicationListener<ContextRefreshedEvent> {
         }
         SysGlobe.serverPort = serverPort;
         log.info("【配置】获取得到的服务器本机端口号为[{}]", SysGlobe.serverPort);
-        log.info("初始化基本配置完成");
+        log.info("【配置】初始化基本配置完成");
 
-        log.info("开始创建节点");
+        log.info("【配置】开始创建节点");
         curatorServer.registerMachine();
-        log.info("创建节点成功");
-        log.info("项目初始化结束");
+        log.info("【配置】创建节点成功");
+
+        log.info("【配置】初始化结束");
     }
 }

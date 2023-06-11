@@ -1,0 +1,27 @@
+2023-06-08 15:15:46.791[main][org.springframework.boot.SpringApplication:821] ERROR - Application run failed
+java.util.NoSuchElementException: null
+	at java.net.NetworkInterface$1checkedAddresses.nextElement(NetworkInterface.java:144)
+	at java.net.NetworkInterface$1checkedAddresses.nextElement(NetworkInterface.java:112)
+	at com.lp.quartz_simple.util.NetUtil.getServerIp(NetUtil.java:27)
+	at com.lp.quartz_simple.init.SysInit.onApplicationEvent(SysInit.java:35)
+	at com.lp.quartz_simple.init.SysInit.onApplicationEvent(SysInit.java:18)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:940)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.lp.quartz_simple.QuartzSimpleApplication.main(QuartzSimpleApplication.java:12)
+2023-06-08 15:28:34.820[pool-2-thread-1][com.lp.quartz_simple.task.PrintInfoTask:39] ERROR - 创建定时任务失败
+java.lang.NullPointerException: null
+	at com.lp.quartz_simple.task.PrintInfoTask.run(PrintInfoTask.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
