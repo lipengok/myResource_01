@@ -1,0 +1,7 @@
+public synchronized void method(){}
+相当于
+public void method(){
+    synchronized（this）{
+        ......
+    }
+}

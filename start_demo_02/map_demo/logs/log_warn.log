@@ -1,0 +1,1 @@
+2023-07-12 15:22:04.148[http-nio-8080-exec-5][org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver:208] WARN  - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'isindoor' for method parameter type String is not present]

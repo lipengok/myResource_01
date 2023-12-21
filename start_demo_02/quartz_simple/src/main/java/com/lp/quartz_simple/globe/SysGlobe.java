@@ -1,8 +1,11 @@
 package com.lp.quartz_simple.globe;
 
 import com.lp.quartz_simple.enity.SysInfo;
+import com.lp.quartz_simple.enity.Task;
 import lombok.Data;
 import org.quartz.Scheduler;
+
+import java.util.concurrent.ConcurrentLinkedQueue;
 
 /**
  * @Author lipeng
@@ -16,4 +19,6 @@ public class SysGlobe {
 
     public static Scheduler scheduler;
 
+    // comm（通用任务队列）
+    public static ConcurrentLinkedQueue<Task> taskQueue;
 }

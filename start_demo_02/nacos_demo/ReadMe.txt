@@ -1,6 +1,9 @@
 springboot整合nacos
 参考官方文档：https://nacos.io/zh-cn/docs/quick-start-spring-boot.html
 
+nacos项目路径：E:\github\nacos-server-2.1.0
+直接用ide打开运行
+
 nacos--配置功能
 通过调用 Nacos Open API 向 Nacos server 发布配置：dataId 为example，内容为useLocalCache=true
 命令：

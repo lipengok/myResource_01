@@ -8,6 +8,8 @@ import org.quartz.*;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
+ * 简单的quartz
+ *
  * @Author lipeng
  * @Date 2023/6/8 14:23
  * @Version 1.0

@@ -9,7 +9,13 @@ import lombok.Data;
  */
 @Data
 public class TaskGlobe {
-
+    // 任务名--任务分组
     public static String printInfoName = null;
     public static String printInfoGroup = null;
+
+    public static String fetchTaskName = null;
+    public static String fetchTaskGroup = null;
+
+    // 定时任务“fetchTask”的cron表达式
+    public static String fetchTaskCron;
 }

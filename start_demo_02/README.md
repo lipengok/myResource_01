@@ -6,4 +6,39 @@
 git config --global --unset https.proxy
 git config --global --unset http.proxy
 
+# 学习网站
+1，产品文档中心：https://doc.crmeb.com/
+2，JavaGuide(Java面试 + 学习指南)：https://javaguide.cn/
+实战项目：
+https://javaguide.cn/open-source-project/practical-project.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

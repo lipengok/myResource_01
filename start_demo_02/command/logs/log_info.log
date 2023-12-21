@@ -1,0 +1,282 @@
+2023-06-21 13:51:30.053[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting CommandApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 7952 (E:\github\myResource_02\start_demo_02\command\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2023-06-21 13:51:30.391[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
+2023-06-21 13:51:32.830[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2023-06-21 13:51:32.833[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2023-06-21 13:51:32.836[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2023-06-21 13:51:32.836[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2023-06-21 13:51:32.836[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-21 13:51:32.858[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2023-06-21 13:51:32.873[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-21 13:51:32.874[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2023-06-21 13:51:32.875[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-21 13:51:33.137[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2023-06-21 13:51:33.140[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 2439 ms
+2023-06-21 13:51:33.654[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2023-06-21 13:51:33.678[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-21 13:51:33.686[main][com.lp.command.init.SysInit:33] INFO  - [配置]开始初始化配置
+2023-06-21 13:51:33.686[main][com.lp.command.init.SysInit:34] INFO  - [配置]开始配置基本信息
+2023-06-21 13:51:33.687[main][com.lp.command.init.SysInit:37] INFO  - [配置]控制台输出到[Windows]系统
+2023-06-21 13:51:33.689[main][com.lp.command.init.SysInit:38] INFO  - [配置]配置基本信息完成
+2023-06-21 13:51:33.689[main][com.lp.command.init.SysInit:40] INFO  - [配置]开启控制台端口
+2023-06-21 13:51:33.689[main][com.lp.command.init.SysInit:43] INFO  - [配置]即将开启的控制台的端口为[56788]
+2023-06-21 13:51:33.690[main][com.lp.command.init.SysInit:47] INFO  - [配置]开启控制台端口[56788]成功
+2023-06-21 13:51:33.691[main][com.lp.command.init.SysInit:49] INFO  - [配置]初始化配置完成
+2023-06-21 13:51:33.696[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started CommandApplication in 5.332 seconds (JVM running for 8.485)
+2023-06-21 13:51:37.292[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0x39b0366f] REGISTERED
+2023-06-21 13:51:37.296[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0x39b0366f] BIND: 0.0.0.0/0.0.0.0:56788
+2023-06-21 13:51:37.301[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0x39b0366f, L:/0:0:0:0:0:0:0:0:56788] ACTIVE
+2023-06-21 13:51:55.867[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0x39b0366f, L:/0:0:0:0:0:0:0:0:56788] READ: [id: 0xde81afb6, L:/127.0.0.1:56788 - R:/127.0.0.1:53153]
+2023-06-21 13:51:55.869[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0x39b0366f, L:/0:0:0:0:0:0:0:0:56788] READ COMPLETE
+2023-06-21 13:51:55.981[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:30] INFO  - [档案]收到控制指令:ssh-2.0-putty_release_0.78 
+
+2023-06-21 13:51:55.981[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:47] INFO  - [档案]准备回复:[不识别的指令,参考help指令.  
+shell>] 
+
+2023-06-21 13:52:49.502[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0x39b0366f, L:/0:0:0:0:0:0:0:0:56788] READ: [id: 0x573c0fd5, L:/127.0.0.1:56788 - R:/127.0.0.1:53161]
+2023-06-21 13:52:49.503[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0x39b0366f, L:/0:0:0:0:0:0:0:0:56788] READ COMPLETE
+2023-06-21 13:52:57.974[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0x39b0366f, L:/0:0:0:0:0:0:0:0:56788] READ: [id: 0xf89ce55d, L:/127.0.0.1:56788 - R:/127.0.0.1:53162]
+2023-06-21 13:52:57.975[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0x39b0366f, L:/0:0:0:0:0:0:0:0:56788] READ COMPLETE
+2023-06-21 13:54:52.224[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0x39b0366f, L:/0:0:0:0:0:0:0:0:56788] READ: [id: 0x115b8be3, L:/127.0.0.1:56788 - R:/127.0.0.1:53171]
+2023-06-21 13:54:52.225[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0x39b0366f, L:/0:0:0:0:0:0:0:0:56788] READ COMPLETE
+2023-06-21 13:54:56.346[nioEventLoopGroup-3-2][com.lp.command.config.TelnetServerHandler:30] INFO  - [档案]收到控制指令:���� ����'������help 
+
+2023-06-21 13:54:56.346[nioEventLoopGroup-3-2][com.lp.command.config.TelnetServerHandler:47] INFO  - [档案]准备回复:[不识别的指令,参考help指令.  
+shell>] 
+
+2023-06-21 13:55:01.319[nioEventLoopGroup-3-2][com.lp.command.config.TelnetServerHandler:30] INFO  - [档案]收到控制指令:ji 
+
+2023-06-21 13:55:01.320[nioEventLoopGroup-3-2][com.lp.command.config.TelnetServerHandler:47] INFO  - [档案]准备回复:[不识别的指令,参考help指令.  
+shell>] 
+
+2023-06-21 14:06:23.842[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting CommandApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 16324 (E:\github\myResource_02\start_demo_02\command\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2023-06-21 14:06:23.849[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
+2023-06-21 14:06:26.189[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2023-06-21 14:06:26.191[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2023-06-21 14:06:26.193[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2023-06-21 14:06:26.195[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2023-06-21 14:06:26.199[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-21 14:06:26.206[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2023-06-21 14:06:26.220[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-21 14:06:26.221[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2023-06-21 14:06:26.222[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-21 14:06:26.570[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2023-06-21 14:06:26.574[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 2500 ms
+2023-06-21 14:06:26.691[main][com.lp.command.cmd.CommandModel:26] INFO  - [指令]注册指令[help]到控制台系统
+2023-06-21 14:06:27.100[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2023-06-21 14:06:27.119[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-21 14:06:27.126[main][com.lp.command.init.SysInit:33] INFO  - [配置]开始初始化配置
+2023-06-21 14:06:27.127[main][com.lp.command.init.SysInit:34] INFO  - [配置]开始配置基本信息
+2023-06-21 14:06:27.128[main][com.lp.command.init.SysInit:37] INFO  - [配置]控制台输出到[Windows]系统
+2023-06-21 14:06:27.128[main][com.lp.command.init.SysInit:38] INFO  - [配置]配置基本信息完成
+2023-06-21 14:06:27.128[main][com.lp.command.init.SysInit:40] INFO  - [配置]开启控制台端口
+2023-06-21 14:06:27.129[main][com.lp.command.init.SysInit:43] INFO  - [配置]即将开启的控制台的端口为[56788]
+2023-06-21 14:06:27.130[main][com.lp.command.init.SysInit:47] INFO  - [配置]开启控制台端口[56788]成功
+2023-06-21 14:06:27.130[main][com.lp.command.init.SysInit:49] INFO  - [配置]初始化配置完成
+2023-06-21 14:06:27.137[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started CommandApplication in 4.995 seconds (JVM running for 7.675)
+2023-06-21 14:06:30.294[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0x863d7427] REGISTERED
+2023-06-21 14:06:30.297[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0x863d7427] BIND: 0.0.0.0/0.0.0.0:56788
+2023-06-21 14:06:30.300[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0x863d7427, L:/0:0:0:0:0:0:0:0:56788] ACTIVE
+2023-06-21 14:07:13.166[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0x863d7427, L:/0:0:0:0:0:0:0:0:56788] READ: [id: 0xdbb6a7ec, L:/127.0.0.1:56788 - R:/127.0.0.1:53271]
+2023-06-21 14:07:13.170[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0x863d7427, L:/0:0:0:0:0:0:0:0:56788] READ COMPLETE
+2023-06-21 14:07:21.334[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:36] INFO  - [控制台]收到控制指令:���� ����'������k 
+
+2023-06-21 14:07:21.335[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:53] INFO  - [控制台]准备回复:[不识别的指令,参考help指令.  
+shell>] 
+
+2023-06-21 14:07:24.151[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:36] INFO  - [控制台]收到控制指令:jk 
+
+2023-06-21 14:07:24.152[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:53] INFO  - [控制台]准备回复:[不识别的指令,参考help指令.  
+shell>] 
+
+2023-06-21 14:07:25.911[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:36] INFO  - [控制台]收到控制指令:help 
+
+2023-06-21 14:07:25.912[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:53] INFO  - [控制台]准备回复:[指令名help		-->	查询指令 
+shell>] 
+
+2023-06-21 14:11:53.047[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:36] INFO  - [控制台]收到控制指令:help 
+
+2023-06-21 14:11:53.048[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:53] INFO  - [控制台]准备回复:[指令名help		-->	查询指令 
+shell>] 
+
+2023-06-21 14:30:07.579[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting CommandApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 16080 (E:\github\myResource_02\start_demo_02\command\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2023-06-21 14:30:07.584[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
+2023-06-21 14:30:09.843[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2023-06-21 14:30:09.845[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2023-06-21 14:30:09.846[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2023-06-21 14:30:09.850[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2023-06-21 14:30:09.850[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-21 14:30:09.869[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2023-06-21 14:30:09.888[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-21 14:30:09.889[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2023-06-21 14:30:09.890[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-21 14:30:10.268[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2023-06-21 14:30:10.270[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 2516 ms
+2023-06-21 14:30:10.379[main][com.lp.command.cmd.CommandModel:26] INFO  - [指令]注册指令[help]到控制台系统
+2023-06-21 14:30:10.384[main][com.lp.command.cmd.CommandModel:26] INFO  - [指令]注册指令[sysInfo]到控制台系统
+2023-06-21 14:30:10.847[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2023-06-21 14:30:10.867[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-21 14:30:10.874[main][com.lp.command.init.SysInit:39] INFO  - [配置]开始初始化配置
+2023-06-21 14:30:10.874[main][com.lp.command.init.SysInit:40] INFO  - [配置]开始配置基本信息
+2023-06-21 14:30:10.875[main][com.lp.command.init.SysInit:43] INFO  - [配置]控制台输出到[UTF8]系统
+2023-06-21 14:30:13.614[main][com.lp.command.init.SysInit:46] INFO  - [配置]配置基本信息完成
+2023-06-21 14:30:13.614[main][com.lp.command.init.SysInit:48] INFO  - [配置]开启控制台端口
+2023-06-21 14:30:13.614[main][com.lp.command.init.SysInit:51] INFO  - [配置]即将开启的控制台的端口为[56788]
+2023-06-21 14:30:13.616[main][com.lp.command.init.SysInit:55] INFO  - [配置]开启控制台端口[56788]成功
+2023-06-21 14:30:13.617[main][com.lp.command.init.SysInit:57] INFO  - [配置]初始化配置完成
+2023-06-21 14:30:13.621[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started CommandApplication in 7.415 seconds (JVM running for 9.979)
+2023-06-21 14:30:16.525[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0x850ae489] REGISTERED
+2023-06-21 14:30:16.527[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0x850ae489] BIND: 0.0.0.0/0.0.0.0:56788
+2023-06-21 14:30:16.531[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0x850ae489, L:/0:0:0:0:0:0:0:0:56788] ACTIVE
+2023-06-21 14:30:48.634[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0x850ae489, L:/0:0:0:0:0:0:0:0:56788] READ: [id: 0xbb372e00, L:/127.0.0.1:56788 - R:/127.0.0.1:53524]
+2023-06-21 14:30:48.636[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0x850ae489, L:/0:0:0:0:0:0:0:0:56788] READ COMPLETE
+2023-06-21 14:30:51.743[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:36] INFO  - [控制台]收到控制指令:���� ����'������help 
+
+2023-06-21 14:30:51.744[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:53] INFO  - [控制台]准备回复:[不识别的指令,参考help指令.  
+shell>] 
+
+2023-06-21 14:30:58.839[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:36] INFO  - [控制台]收到控制指令:help 
+
+2023-06-21 14:30:58.840[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:53] INFO  - [控制台]准备回复:[指令名help		-->	查询指令 
+指令名sysInfo		-->	查询当前服务器信息 
+shell>] 
+
+2023-06-21 14:31:36.863[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:36] INFO  - [控制台]收到控制指令:sysinfo 
+
+2023-06-21 14:31:36.863[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:53] INFO  - [控制台]准备回复:[不识别的指令,参考help指令.  
+shell>] 
+
+2023-06-21 14:31:46.550[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:36] INFO  - [控制台]收到控制指令:sysinfo 
+
+2023-06-21 14:31:46.551[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:53] INFO  - [控制台]准备回复:[不识别的指令,参考help指令.  
+shell>] 
+
+2023-06-21 14:32:04.095[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:36] INFO  - [控制台]收到控制指令:help 
+
+2023-06-21 14:32:04.095[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:53] INFO  - [控制台]准备回复:[指令名help		-->	查询指令 
+指令名sysInfo		-->	查询当前服务器信息 
+shell>] 
+
+2023-06-21 14:32:09.646[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:36] INFO  - [控制台]收到控制指令:sysinfo 
+
+2023-06-21 14:32:09.647[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:53] INFO  - [控制台]准备回复:[不识别的指令,参考help指令.  
+shell>] 
+
+2023-06-21 14:32:22.102[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:36] INFO  - [控制台]收到控制指令:sysinfo 
+
+2023-06-21 14:32:22.103[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:53] INFO  - [控制台]准备回复:[不识别的指令,参考help指令.  
+shell>] 
+
+2023-06-21 14:36:09.836[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting CommandApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 856 (E:\github\myResource_02\start_demo_02\command\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2023-06-21 14:36:09.845[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
+2023-06-21 14:36:12.201[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2023-06-21 14:36:12.203[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2023-06-21 14:36:12.204[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2023-06-21 14:36:12.204[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2023-06-21 14:36:12.204[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-21 14:36:12.210[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2023-06-21 14:36:12.224[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-21 14:36:12.225[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2023-06-21 14:36:12.225[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-21 14:36:12.411[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2023-06-21 14:36:12.412[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 2423 ms
+2023-06-21 14:36:12.491[main][com.lp.command.cmd.CommandModel:26] INFO  - [指令]注册指令[help]到控制台系统
+2023-06-21 14:36:12.494[main][com.lp.command.cmd.CommandModel:26] INFO  - [指令]注册指令[sys_info]到控制台系统
+2023-06-21 14:36:12.868[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2023-06-21 14:36:12.895[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-21 14:36:12.906[main][com.lp.command.init.SysInit:39] INFO  - [配置]开始初始化配置
+2023-06-21 14:36:12.906[main][com.lp.command.init.SysInit:40] INFO  - [配置]开始配置基本信息
+2023-06-21 14:36:12.907[main][com.lp.command.init.SysInit:43] INFO  - [配置]控制台输出到[UTF8]系统
+2023-06-21 14:36:15.608[main][com.lp.command.init.SysInit:46] INFO  - [配置]配置基本信息完成
+2023-06-21 14:36:15.608[main][com.lp.command.init.SysInit:48] INFO  - [配置]开启控制台端口
+2023-06-21 14:36:15.608[main][com.lp.command.init.SysInit:51] INFO  - [配置]即将开启的控制台的端口为[56788]
+2023-06-21 14:36:15.609[main][com.lp.command.init.SysInit:55] INFO  - [配置]开启控制台端口[56788]成功
+2023-06-21 14:36:15.610[main][com.lp.command.init.SysInit:57] INFO  - [配置]初始化配置完成
+2023-06-21 14:36:15.615[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started CommandApplication in 7.4 seconds (JVM running for 9.88)
+2023-06-21 14:36:18.350[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0x4a31898d] REGISTERED
+2023-06-21 14:36:18.353[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0x4a31898d] BIND: 0.0.0.0/0.0.0.0:56788
+2023-06-21 14:36:18.357[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0x4a31898d, L:/0:0:0:0:0:0:0:0:56788] ACTIVE
+2023-06-21 14:37:14.413[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0x4a31898d, L:/0:0:0:0:0:0:0:0:56788] READ: [id: 0xcdd0ae30, L:/127.0.0.1:56788 - R:/127.0.0.1:53614]
+2023-06-21 14:37:14.416[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0x4a31898d, L:/0:0:0:0:0:0:0:0:56788] READ COMPLETE
+2023-06-21 14:37:17.452[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:36] INFO  - [控制台]收到控制指令:���� ����'������help 
+
+2023-06-21 14:37:17.452[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:53] INFO  - [控制台]准备回复:[不识别的指令,参考help指令.  
+shell>] 
+
+2023-06-21 14:37:20.559[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:36] INFO  - [控制台]收到控制指令:help 
+
+2023-06-21 14:37:20.559[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:53] INFO  - [控制台]准备回复:[指令名help		-->	查询指令 
+指令名sys_info		-->	查询当前服务器信息 
+shell>] 
+
+2023-06-21 14:37:26.183[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:36] INFO  - [控制台]收到控制指令:sys_info 
+
+2023-06-21 14:37:26.183[nioEventLoopGroup-3-1][com.lp.command.cmd.SysInfo:24] INFO  - [sys_info]查询当前服务器信息
+2023-06-21 14:37:26.183[nioEventLoopGroup-3-1][com.lp.command.cmd.SysInfo:28] INFO  - [sys_info]信息如下[{ipv4=172.17.228.17, sysPort=8080}]
+2023-06-21 14:37:26.352[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:53] INFO  - [控制台]准备回复:[查询成功
+{"ipv4":"172.17.228.17","sysPort":8080}shell>] 
+
+2023-06-21 14:38:49.686[main][org.springframework.boot.StartupInfoLogger:55] INFO  - Starting CommandApplication using Java 1.8.0_281 on DESKTOP-T987IHU with PID 13048 (E:\github\myResource_02\start_demo_02\command\target\classes started by TY in E:\github\myResource_02\start_demo_02)
+2023-06-21 14:38:49.692[main][org.springframework.boot.SpringApplication:631] INFO  - No active profile set, falling back to 1 default profile: "default"
+2023-06-21 14:38:51.884[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] INFO  - Tomcat initialized with port(s): 8080 (http)
+2023-06-21 14:38:51.887[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2023-06-21 14:38:51.888[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2023-06-21 14:38:51.889[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2023-06-21 14:38:51.890[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-21 14:38:51.899[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2023-06-21 14:38:51.918[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-21 14:38:51.920[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting service [Tomcat]
+2023-06-21 14:38:51.921[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-21 14:38:52.189[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Initializing Spring embedded WebApplicationContext
+2023-06-21 14:38:52.207[main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:292] INFO  - Root WebApplicationContext: initialization completed in 2388 ms
+2023-06-21 14:38:52.282[main][com.lp.command.cmd.CommandModel:26] INFO  - [指令]注册指令[help]到控制台系统
+2023-06-21 14:38:52.285[main][com.lp.command.cmd.CommandModel:26] INFO  - [指令]注册指令[sys_info]到控制台系统
+2023-06-21 14:38:52.696[main][org.apache.juli.logging.DirectJDKLog:173] INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2023-06-21 14:38:52.716[main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-21 14:38:52.723[main][com.lp.command.init.SysInit:39] INFO  - [配置]开始初始化配置
+2023-06-21 14:38:52.723[main][com.lp.command.init.SysInit:40] INFO  - [配置]开始配置基本信息
+2023-06-21 14:38:52.724[main][com.lp.command.init.SysInit:43] INFO  - [配置]控制台输出到[UTF8]系统
+2023-06-21 14:38:55.330[main][com.lp.command.init.SysInit:46] INFO  - [配置]配置基本信息完成
+2023-06-21 14:38:55.331[main][com.lp.command.init.SysInit:48] INFO  - [配置]开启控制台端口
+2023-06-21 14:38:55.331[main][com.lp.command.init.SysInit:51] INFO  - [配置]即将开启的控制台的端口为[56788]
+2023-06-21 14:38:55.332[main][com.lp.command.init.SysInit:55] INFO  - [配置]开启控制台端口[56788]成功
+2023-06-21 14:38:55.333[main][com.lp.command.init.SysInit:57] INFO  - [配置]初始化配置完成
+2023-06-21 14:38:55.336[main][org.springframework.boot.StartupInfoLogger:61] INFO  - Started CommandApplication in 7.18 seconds (JVM running for 10.04)
+2023-06-21 14:38:57.996[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0xa4a36ebd] REGISTERED
+2023-06-21 14:38:57.999[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0xa4a36ebd] BIND: 0.0.0.0/0.0.0.0:56788
+2023-06-21 14:38:58.002[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0xa4a36ebd, L:/0:0:0:0:0:0:0:0:56788] ACTIVE
+2023-06-21 14:39:24.912[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0xa4a36ebd, L:/0:0:0:0:0:0:0:0:56788] READ: [id: 0x9e5e3128, L:/127.0.0.1:56788 - R:/127.0.0.1:53644]
+2023-06-21 14:39:24.915[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0xa4a36ebd, L:/0:0:0:0:0:0:0:0:56788] READ COMPLETE
+2023-06-21 14:39:29.556[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:36] INFO  - [控制台]收到控制指令:���� ����'������k 
+
+2023-06-21 14:39:29.557[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:53] INFO  - [控制台]准备回复:[不识别的指令,参考help指令.  
+shell>] 
+
+2023-06-21 14:39:31.870[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:36] INFO  - [控制台]收到控制指令:help 
+
+2023-06-21 14:39:31.870[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:53] INFO  - [控制台]准备回复:[指令名help		-->	查询指令 
+指令名sys_info		-->	查询当前服务器信息 
+shell>] 
+
+2023-06-21 14:39:38.566[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:36] INFO  - [控制台]收到控制指令:sys_info 
+
+2023-06-21 14:39:38.566[nioEventLoopGroup-3-1][com.lp.command.cmd.SysInfo:23] INFO  - [sys_info]查询当前服务器信息
+2023-06-21 14:39:38.566[nioEventLoopGroup-3-1][com.lp.command.cmd.SysInfo:27] INFO  - [sys_info]信息如下[{ipv4=172.17.228.17, sysPort=8080}]
+2023-06-21 14:39:38.686[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:53] INFO  - [控制台]准备回复:[查询成功
+{"ipv4":"172.17.228.17","sysPort":8080}
+shell>] 
+
+2023-06-21 14:39:49.411[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0xa4a36ebd, L:/0:0:0:0:0:0:0:0:56788] READ: [id: 0x4859d3c0, L:/127.0.0.1:56788 - R:/127.0.0.1:53646]
+2023-06-21 14:39:49.412[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0xa4a36ebd, L:/0:0:0:0:0:0:0:0:56788] READ COMPLETE
+2023-06-21 14:41:24.723[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0xa4a36ebd, L:/0:0:0:0:0:0:0:0:56788] READ: [id: 0x450fc830, L:/127.0.0.1:56788 - R:/127.0.0.1:53659]
+2023-06-21 14:41:24.723[nioEventLoopGroup-2-1][io.netty.util.internal.logging.Slf4JLogger:101] INFO  - [id: 0xa4a36ebd, L:/0:0:0:0:0:0:0:0:56788] READ COMPLETE
+2023-06-21 14:41:30.125[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:36] INFO  - [控制台]收到控制指令:���� ����'������kl 
+
+2023-06-21 14:41:30.126[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:53] INFO  - [控制台]准备回复:[不识别的指令,参考help指令.  
+shell>] 
+
+2023-06-21 14:41:31.781[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:36] INFO  - [控制台]收到控制指令:help 
+
+2023-06-21 14:41:31.782[nioEventLoopGroup-3-1][com.lp.command.config.TelnetServerHandler:53] INFO  - [控制台]准备回复:[指令名help		-->	查询指令 
+指令名sys_info		-->	查询当前服务器信息 
+shell>] 
+

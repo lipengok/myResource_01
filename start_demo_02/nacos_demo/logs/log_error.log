@@ -1,0 +1,14 @@
+2023-07-18 15:12:00.144[main][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40] ERROR - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+server error: such as timeout. Request nacos server failed: 
+
+Action:
+
+please check server status
+
